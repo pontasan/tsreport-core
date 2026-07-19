@@ -1,0 +1,68 @@
+{
+  "font": "NotoSansJP-Regular.otf",
+  "text": "ｱｲｳｴｵ",
+  "options": {
+    "direction": "ltr",
+    "script": "kana",
+    "hbScript": "Kana",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 15435,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 500,
+      "ay": 0
+    },
+    {
+      "g": 15436,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 500,
+      "ay": 0
+    },
+    {
+      "g": 15437,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 500,
+      "ay": 0
+    },
+    {
+      "g": 15438,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 500,
+      "ay": 0
+    },
+    {
+      "g": 15439,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 500,
+      "ay": 0
+    }
+  ]
+}

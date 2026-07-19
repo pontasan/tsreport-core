@@ -1,0 +1,84 @@
+{
+  "font": "NotoSansJP-Regular.otf",
+  "text": "日本語テキスト",
+  "options": {
+    "direction": "ltr",
+    "script": "hani",
+    "hbScript": "Hani",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 6369,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 6605,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 12177,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1335,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1310,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 970,
+      "ay": 0
+    },
+    {
+      "g": 1322,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1337,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    }
+  ]
+}

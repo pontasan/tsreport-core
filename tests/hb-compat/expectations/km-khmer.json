@@ -1,0 +1,67 @@
+{
+  "font": "NotoSansKhmer-Regular.ttf",
+  "text": "ខ្មែរ",
+  "options": {
+    "direction": "ltr",
+    "script": "khmr",
+    "hbScript": "Khmr",
+    "features": [
+      "locl",
+      "ccmp",
+      "pref",
+      "blwf",
+      "abvf",
+      "pstf",
+      "cfar",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "liga",
+      "clig",
+      "calt",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,pref,blwf,abvf,pstf,cfar,pres,abvs,blws,psts,liga,clig,calt,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 108,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 288,
+      "ay": 0
+    },
+    {
+      "g": 26,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 635,
+      "ay": 0
+    },
+    {
+      "g": 192,
+      "cl": 0,
+      "dx": 22,
+      "dy": -26,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 54,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 288,
+      "ay": 0
+    }
+  ]
+}

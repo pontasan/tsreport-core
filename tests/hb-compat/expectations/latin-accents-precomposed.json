@@ -1,0 +1,164 @@
+{
+  "font": "Roboto-Regular.ttf",
+  "text": "café naïve résumé",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 72,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1072,
+      "ay": 0
+    },
+    {
+      "g": 70,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1114,
+      "ay": 0
+    },
+    {
+      "g": 75,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 711,
+      "ay": 0
+    },
+    {
+      "g": 2317,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1085,
+      "ay": 0
+    },
+    {
+      "g": 5,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 507,
+      "ay": 0
+    },
+    {
+      "g": 83,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1130,
+      "ay": 0
+    },
+    {
+      "g": 70,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1114,
+      "ay": 0
+    },
+    {
+      "g": 2323,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 506,
+      "ay": 0
+    },
+    {
+      "g": 91,
+      "cl": 8,
+      "dx": 0,
+      "dy": 0,
+      "ax": 992,
+      "ay": 0
+    },
+    {
+      "g": 74,
+      "cl": 9,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1085,
+      "ay": 0
+    },
+    {
+      "g": 5,
+      "cl": 10,
+      "dx": 0,
+      "dy": 0,
+      "ax": 507,
+      "ay": 0
+    },
+    {
+      "g": 87,
+      "cl": 11,
+      "dx": 0,
+      "dy": 0,
+      "ax": 693,
+      "ay": 0
+    },
+    {
+      "g": 2317,
+      "cl": 12,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1085,
+      "ay": 0
+    },
+    {
+      "g": 88,
+      "cl": 13,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1056,
+      "ay": 0
+    },
+    {
+      "g": 90,
+      "cl": 14,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1129,
+      "ay": 0
+    },
+    {
+      "g": 82,
+      "cl": 15,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1795,
+      "ay": 0
+    },
+    {
+      "g": 2317,
+      "cl": 16,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1085,
+      "ay": 0
+    }
+  ]
+}

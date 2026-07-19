@@ -1,0 +1,50 @@
+{
+  "font": "NotoSansBengali-Regular.ttf",
+  "text": "ক্ষ্ম",
+  "options": {
+    "direction": "ltr",
+    "script": "bng2",
+    "hbScript": "Beng",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 136,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1037,
+      "ay": 0
+    }
+  ]
+}

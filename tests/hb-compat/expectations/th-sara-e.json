@@ -1,0 +1,44 @@
+{
+  "font": "NotoSansThai-Regular.ttf",
+  "text": "เก",
+  "options": {
+    "direction": "ltr",
+    "script": "thai",
+    "hbScript": "Thai",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 91,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 295,
+      "ay": 0
+    },
+    {
+      "g": 29,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 600,
+      "ay": 0
+    }
+  ]
+}

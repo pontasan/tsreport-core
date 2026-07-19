@@ -1,0 +1,50 @@
+{
+  "font": "NotoSansGujarati-Regular.ttf",
+  "text": "ક્ર",
+  "options": {
+    "direction": "ltr",
+    "script": "gjr2",
+    "hbScript": "Gujr",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 204,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 517,
+      "ay": 0
+    }
+  ]
+}

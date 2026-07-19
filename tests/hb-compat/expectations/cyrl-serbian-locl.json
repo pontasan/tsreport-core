@@ -1,0 +1,19 @@
+{
+  "font": "NotoSans-Regular.ttf",
+  "text": "б",
+  "options": {
+    "direction": "ltr",
+    "script": "cyrl",
+    "hbScript": "Cyrl",
+    "language": "SRB ",
+    "hbLanguage": "sr",
+    "features": [
+      "abvm", "blwm", "ccmp", "locl", "mark", "mkmk", "rlig",
+      "calt", "clig", "curs", "dist", "kern", "liga", "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    { "g": 2092, "cl": 0, "dx": 0, "dy": 0, "ax": 604, "ay": 0 }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "font": "NotoSansThai-Regular.ttf",
+  "text": "น้ำใจ",
+  "options": {
+    "direction": "ltr",
+    "script": "thai",
+    "hbScript": "Thai",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 71,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 613,
+      "ay": 0
+    },
+    {
+      "g": 59,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 49,
+      "cl": 0,
+      "dx": -29,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 86,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 406,
+      "ay": 0
+    },
+    {
+      "g": 89,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 260,
+      "ay": 0
+    },
+    {
+      "g": 6,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 532,
+      "ay": 0
+    }
+  ]
+}

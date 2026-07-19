@@ -1,0 +1,52 @@
+{
+  "font": "NotoSansLao-Regular.ttf",
+  "text": "ທຳ",
+  "options": {
+    "direction": "ltr",
+    "script": "lao ",
+    "hbScript": "Laoo",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 28,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 726,
+      "ay": 0
+    },
+    {
+      "g": 88,
+      "cl": 0,
+      "dx": -307,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 60,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 324,
+      "ay": 0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "strict": false,
+    "noUncheckedIndexedAccess": false,
+    "declarationMap": false,
+    "sourceMap": false,
+    "lib": ["ES2020", "DOM"]
+  }
+}

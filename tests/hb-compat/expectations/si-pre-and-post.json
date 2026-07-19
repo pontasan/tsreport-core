@@ -1,0 +1,74 @@
+{
+  "font": "NotoSansSinhala-Regular.ttf",
+  "text": "මෙන්",
+  "options": {
+    "direction": "ltr",
+    "script": "sinh",
+    "hbScript": "Sinh",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 114,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 631,
+      "ay": 0
+    },
+    {
+      "g": 52,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 863,
+      "ay": 0
+    },
+    {
+      "g": 46,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 967,
+      "ay": 0
+    },
+    {
+      "g": 79,
+      "cl": 2,
+      "dx": -325,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

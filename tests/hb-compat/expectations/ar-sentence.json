@@ -1,0 +1,150 @@
+{
+  "font": "NotoSansArabic-Regular.ttf",
+  "text": "مرحبا بالعالم",
+  "options": {
+    "direction": "rtl",
+    "script": "arab",
+    "hbScript": "Arab",
+    "features": [
+      "stch",
+      "ccmp",
+      "locl",
+      "rlig",
+      "calt",
+      "liga",
+      "clig",
+      "rclt",
+      "mset",
+      "curs",
+      "dist",
+      "kern",
+      "mark",
+      "mkmk",
+      "abvm",
+      "blwm"
+    ],
+    "hbFeatures": "stch,ccmp,locl,rlig,calt,liga,clig,rclt,mset,curs,dist,kern,mark,mkmk,abvm,blwm"
+  },
+  "glyphs": [
+    {
+      "g": 77,
+      "cl": 12,
+      "dx": 0,
+      "dy": 0,
+      "ax": 562,
+      "ay": 0
+    },
+    {
+      "g": 72,
+      "cl": 11,
+      "dx": 0,
+      "dy": 0,
+      "ax": 260,
+      "ay": 0
+    },
+    {
+      "g": 9,
+      "cl": 10,
+      "dx": 0,
+      "dy": 0,
+      "ax": 291,
+      "ay": 0
+    },
+    {
+      "g": 48,
+      "cl": 9,
+      "dx": 0,
+      "dy": 0,
+      "ax": 521,
+      "ay": 0
+    },
+    {
+      "g": 72,
+      "cl": 8,
+      "dx": 0,
+      "dy": 0,
+      "ax": 260,
+      "ay": 0
+    },
+    {
+      "g": 9,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 291,
+      "ay": 0
+    },
+    {
+      "g": 317,
+      "cl": 6,
+      "dx": 31,
+      "dy": -3,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 19,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 269,
+      "ay": 0
+    },
+    {
+      "g": 3,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 260,
+      "ay": 0
+    },
+    {
+      "g": 9,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 291,
+      "ay": 0
+    },
+    {
+      "g": 317,
+      "cl": 3,
+      "dx": 94,
+      "dy": -3,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 16,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 343,
+      "ay": 0
+    },
+    {
+      "g": 27,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 589,
+      "ay": 0
+    },
+    {
+      "g": 31,
+      "cl": 1,
+      "dx": -40,
+      "dy": 0,
+      "ax": 356,
+      "ay": 0
+    },
+    {
+      "g": 79,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 525,
+      "ay": 0
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "font": "NotoSansMalayalam-Regular.ttf",
+  "text": "നന്‍മ",
+  "options": {
+    "direction": "ltr",
+    "script": "mlm2",
+    "hbScript": "Mlym",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 42,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 911,
+      "ay": 0
+    },
+    {
+      "g": 117,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1062,
+      "ay": 0
+    },
+    {
+      "g": 48,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 723,
+      "ay": 0
+    }
+  ]
+}

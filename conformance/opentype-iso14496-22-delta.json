@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "comparisonDate": "2026-07-13",
+  "opentypeBaseline": {
+    "version": "1.9.1",
+    "status": "published",
+    "source": "https://learn.microsoft.com/en-us/typography/opentype/spec/",
+    "relationship": "incorporates revisions from a preliminary working draft of ISO/IEC 14496-22 edition 5"
+  },
+  "adoptedIsoSet": [
+    {
+      "document": "ISO/IEC 14496-22:2019",
+      "edition": 4,
+      "status": "published",
+      "source": "https://www.iso.org/standard/74461.html"
+    },
+    {
+      "document": "ISO/IEC 14496-22:2019/Amd 1:2020",
+      "edition": 4,
+      "status": "published",
+      "source": "https://www.iso.org/standard/78865.html"
+    },
+    {
+      "document": "ISO/IEC 14496-22:2019/Amd 2:2023",
+      "edition": 4,
+      "status": "published",
+      "source": "https://www.iso.org/standard/82487.html"
+    }
+  ],
+  "trackedSuccessor": {
+    "document": "ISO/IEC 14496-22 edition 5",
+    "status": "under publication",
+    "source": "https://www.iso.org/standard/87621.html",
+    "adoptionRule": "Track as a successor, but do not replace the published adopted ISO set until publication completes."
+  },
+  "deltaRows": [
+    {
+      "id": "ISO-OT-01",
+      "direction": "OpenType-1.9.1-and-edition-5-draft",
+      "scope": ["BASE", "OpenType Layout common formats", "GDEF", "GPOS", "GSUB", "JSTF", "MATH"],
+      "requirements": ["renamed structures and fields", "multiple-subtable processing", "NULL cursive anchor behavior", "JSTF modification-list consolidation", "SequenceRuleSet count correction"],
+      "openTypeChangeLogAnchors": ["base", "chapter2", "gdef", "gpos", "gsub", "jstf", "math"],
+      "workIds": ["O-02", "O-07"],
+      "evidence": ["src/parsers/tables/otl-common.ts", "src/parsers/tables/gpos.ts", "src/parsers/tables/gsub.ts", "src/parsers/tables/jstf.ts", "tests/font-otl-aots-oracle.test.ts"],
+      "status": "complete"
+    },
+    {
+      "id": "ISO-OT-02",
+      "direction": "OpenType-1.9.1-and-edition-5-draft",
+      "scope": ["CFF2", "CFF2 CharStrings"],
+      "requirements": ["consolidated CFF2 and CharString model", "PrivateDICT hint operators", "blend ordering for stems and hint masks", "font-table dependencies"],
+      "openTypeChangeLogAnchors": ["cff2", "glyphformatcomparison"],
+      "workIds": ["O-00", "O-03", "O-04", "O-07"],
+      "evidence": ["src/parsers/cff2-parser.ts", "src/hinting/cff-hinter.ts", "src/subset/cff-subset.ts", "tests/font-cff2-fonttools-oracle.test.ts"],
+      "status": "complete"
+    },
+    {
+      "id": "ISO-OT-03",
+      "direction": "OpenType-1.9.1-and-edition-5-draft",
+      "scope": ["cmap", "glyf", "gvar", "loca", "sfnt data types"],
+      "requirements": ["cmap modulo arithmetic", "zero-contour glyph instructions", "overlap and composite instruction semantics", "composite variation processing", "loca offsets without a two-byte alignment recommendation", "Offset8"],
+      "openTypeChangeLogAnchors": ["cmap", "glyf", "gvar", "loca", "otff"],
+      "workIds": ["O-00", "O-03", "O-07"],
+      "evidence": ["src/parsers/tables/cmap.ts", "src/parsers/tables/glyf.ts", "src/parsers/tables/gvar.ts", "src/subset/ttf-subset.ts", "tests/subset/subset-integrity.test.ts"],
+      "status": "complete"
+    },
+    {
+      "id": "ISO-OT-04",
+      "direction": "OpenType-1.9.1-and-edition-5-draft",
+      "scope": ["COLR", "CPAL", "CBLC", "EBLC", "EBSC", "sbix"],
+      "requirements": ["foreground alpha", "gradient stop ordering and extend behavior", "negative varied radial radii", "sweep gradients", "variation clamping", "bitmap index ordering", "mandatory sbix dupe semantics"],
+      "openTypeChangeLogAnchors": ["colr", "cpal", "cblc", "eblc", "ebsc", "sbix"],
+      "workIds": ["O-05", "O-07"],
+      "evidence": ["src/parsers/tables/colr.ts", "src/parsers/tables/bitmap-index.ts", "src/parsers/tables/sbix.ts", "src/renderer/colr-v1-renderer.ts", "tests/renderer/colr-v1-raster-oracle.test.ts"],
+      "status": "complete"
+    },
+    {
+      "id": "ISO-OT-05",
+      "direction": "OpenType-1.9.1-and-edition-5-draft",
+      "scope": ["head", "hmtx", "vhea", "vmtx", "VORG", "OS/2", "post"],
+      "requirements": ["signed and unsigned font-unit field types", "head flag clarification", "CFF2 VORG use", "OS/2 signed metric fields and style-bit relations", "underline metric distinction"],
+      "openTypeChangeLogAnchors": ["head", "hmtx", "vhea", "vmtx", "vorg", "os2", "post"],
+      "workIds": ["O-00", "O-04", "O-06", "O-07"],
+      "evidence": ["src/parsers/tables/head.ts", "src/parsers/tables/hmtx.ts", "src/parsers/tables/vhea.ts", "src/parsers/tables/vmtx.ts", "src/parsers/tables/vorg.ts", "tests/font-core-fonttools-oracle.test.ts", "tests/font-vertical-opentype-oracle.test.ts"],
+      "status": "complete"
+    },
+    {
+      "id": "ISO-OT-06",
+      "direction": "OpenType-1.9.1-and-edition-5-draft",
+      "scope": ["variation common formats", "avar", "HVAR", "VVAR", "COLR variation"],
+      "requirements": ["rounding calculated values", "optional corner supplemental deltas", "delta-set entry size", "F2DOT14 and Fixed clamping"],
+      "openTypeChangeLogAnchors": ["otvaroverview", "otvarcommonformats", "hvar", "vvar"],
+      "workIds": ["O-04", "O-07"],
+      "evidence": ["src/parsers/tables/variation-common.ts", "src/parsers/tables/avar.ts", "src/parsers/tables/hvar.ts", "src/parsers/tables/vvar.ts", "tests/font-variable.test.ts"],
+      "status": "complete"
+    },
+    {
+      "id": "ISO-OT-07",
+      "direction": "OpenType-1.9.1-and-edition-5-draft",
+      "scope": ["TrueType instruction set", "prep", "scan conversion"],
+      "requirements": ["INSTCTRL semantics", "control-value program execution timing", "definition and graphics-state persistence", "SCANCTRL and dropout control"],
+      "openTypeChangeLogAnchors": ["prep", "tt_instructions", "ttch01"],
+      "workIds": ["O-03"],
+      "evidence": ["src/hinting/interpreter.ts", "src/hinting/tt-glyph-hinter.ts", "src/hinting/tt-rasterizer.ts", "tests/font-truetype-freetype-oracle.test.ts", "tests/font-truetype-raster-freetype-oracle.test.ts"],
+      "status": "complete"
+    },
+    {
+      "id": "ISO-OT-08",
+      "direction": "OpenType-registry",
+      "scope": ["feature tags", "script tags", "language-system tags"],
+      "requirements": ["apkn and vapk feature tags", "revised feature interactions including GPOS stylistic sets", "Unicode 17 script tags", "updated language-system registry"],
+      "openTypeChangeLogAnchors": ["features_ae", "features_pt", "features_uz", "scripttags", "languagetags"],
+      "workIds": ["O-02", "O-08"],
+      "evidence": ["src/font.ts", "src/shaping/unicode-shaping-data.ts", "tests/font-feature-params-fonttools-oracle.test.ts", "tests/layout/unicode-coverage.test.ts"],
+      "status": "complete"
+    },
+    {
+      "id": "ISO-OT-09",
+      "direction": "OpenType-1.9.1-errata",
+      "scope": ["CFF2", "OpenType Layout common formats", "JSTF"],
+      "requirements": ["valid out-of-order blended StemSnap values", "encoded-order hint-mask references", "SequenceRuleSet field correction", "JSTF lookupIndices correction"],
+      "openTypeChangeLogAnchors": ["errata"],
+      "workIds": ["O-02", "O-03", "O-08"],
+      "evidence": ["src/parsers/cff2-parser.ts", "src/parsers/tables/otl-common.ts", "src/parsers/tables/jstf.ts", "tests/parsers/tables/otl-common.test.ts", "tests/parsers/tables/jstf.test.ts"],
+      "status": "complete"
+    }
+  ],
+  "isoOnlyRequirements": [],
+  "isoOnlyConclusion": "No normative binary-format or processing requirement in the published edition-4 plus amendment set was identified outside the OpenType 1.9.1 coverage. Edition 5 remains tracked until publication and must be re-diffed if its final text differs from the preliminary draft incorporated by OpenType 1.9.1."
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "specification": "ISO 32000-2:2020",
+  "inventory": "Annex A operator summary, resolved to the normative clauses below",
+  "groups": [
+    { "clause": "8.4", "topic": "graphics state", "operators": ["q", "Q", "cm", "w", "J", "j", "M", "d", "ri", "i", "gs"] },
+    { "clause": "8.5", "topic": "path construction and painting", "operators": ["m", "l", "c", "v", "y", "h", "re", "S", "s", "f", "F", "f*", "B", "B*", "b", "b*", "n"] },
+    { "clause": "8.5.4", "topic": "clipping paths", "operators": ["W", "W*"] },
+    { "clause": "8.6", "topic": "colour", "operators": ["CS", "cs", "SC", "SCN", "sc", "scn", "G", "g", "RG", "rg", "K", "k"] },
+    { "clause": "8.7.4.3", "topic": "shading", "operators": ["sh"] },
+    { "clause": "8.8", "topic": "external objects", "operators": ["Do"] },
+    { "clause": "8.9.7", "topic": "inline images", "operators": ["BI", "ID", "EI"] },
+    { "clause": "9.3-9.4", "topic": "text state and text objects", "operators": ["BT", "ET", "Tc", "Tw", "Tz", "TL", "Tf", "Tr", "Ts", "Td", "TD", "Tm", "T*", "Tj", "TJ", "'", "\""] },
+    { "clause": "9.6.5", "topic": "Type 3 glyph metrics", "operators": ["d0", "d1"] },
+    { "clause": "14.6", "topic": "marked content", "operators": ["MP", "DP", "BMC", "BDC", "EMC"] },
+    { "clause": "7.8.2", "topic": "compatibility sections", "operators": ["BX", "EX"] }
+  ]
+}

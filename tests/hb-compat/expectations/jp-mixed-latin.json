@@ -1,0 +1,116 @@
+{
+  "font": "NotoSansJP-Regular.otf",
+  "text": "第1章 Section",
+  "options": {
+    "direction": "ltr",
+    "script": "hani",
+    "hbScript": "Hani",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 9738,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 18,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 555,
+      "ay": 0
+    },
+    {
+      "g": 9688,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 224,
+      "ay": 0
+    },
+    {
+      "g": 52,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 596,
+      "ay": 0
+    },
+    {
+      "g": 70,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 554,
+      "ay": 0
+    },
+    {
+      "g": 68,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 499,
+      "ay": 0
+    },
+    {
+      "g": 85,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 377,
+      "ay": 0
+    },
+    {
+      "g": 74,
+      "cl": 8,
+      "dx": 0,
+      "dy": 0,
+      "ax": 275,
+      "ay": 0
+    },
+    {
+      "g": 80,
+      "cl": 9,
+      "dx": 0,
+      "dy": 0,
+      "ax": 606,
+      "ay": 0
+    },
+    {
+      "g": 79,
+      "cl": 10,
+      "dx": 0,
+      "dy": 0,
+      "ax": 610,
+      "ay": 0
+    }
+  ]
+}

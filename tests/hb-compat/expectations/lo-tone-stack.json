@@ -1,0 +1,60 @@
+{
+  "font": "NotoSansLao-Regular.ttf",
+  "text": "ກ່ຽວ",
+  "options": {
+    "direction": "ltr",
+    "script": "lao ",
+    "hbScript": "Laoo",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 9,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 614,
+      "ay": 0
+    },
+    {
+      "g": 90,
+      "cl": 0,
+      "dx": -230,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 55,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 574,
+      "ay": 0
+    },
+    {
+      "g": 42,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 586,
+      "ay": 0
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "font": "NotoSansLao-Regular.ttf",
+  "text": "ສະບາຍດີ",
+  "options": {
+    "direction": "ltr",
+    "script": "lao ",
+    "hbScript": "Laoo",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 45,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 635,
+      "ay": 0
+    },
+    {
+      "g": 59,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 372,
+      "ay": 0
+    },
+    {
+      "g": 31,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 614,
+      "ay": 0
+    },
+    {
+      "g": 60,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 324,
+      "ay": 0
+    },
+    {
+      "g": 24,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 614,
+      "ay": 0
+    },
+    {
+      "g": 25,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 636,
+      "ay": 0
+    },
+    {
+      "g": 69,
+      "cl": 5,
+      "dx": -582,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "font": "NotoSansTelugu-Regular.ttf",
+  "text": "క్ష",
+  "options": {
+    "direction": "ltr",
+    "script": "tel2",
+    "hbScript": "Telu",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 110,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 522,
+      "ay": 0
+    }
+  ]
+}

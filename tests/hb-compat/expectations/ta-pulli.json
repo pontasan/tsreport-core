@@ -1,0 +1,82 @@
+{
+  "font": "NotoSansTamil-Regular.ttf",
+  "text": "நக்ஷத்ரம்",
+  "options": {
+    "direction": "ltr",
+    "script": "tml2",
+    "hbScript": "Taml",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 26,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 789,
+      "ay": 0
+    },
+    {
+      "g": 76,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1851,
+      "ay": 0
+    },
+    {
+      "g": 84,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 825,
+      "ay": 0
+    },
+    {
+      "g": 31,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 640,
+      "ay": 0
+    },
+    {
+      "g": 88,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 858,
+      "ay": 0
+    }
+  ]
+}

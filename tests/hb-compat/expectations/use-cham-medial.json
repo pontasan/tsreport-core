@@ -1,0 +1,75 @@
+{
+  "font": "NotoSansCham-Regular.ttf",
+  "text": "ꨆꨴꨯꨢ",
+  "options": {
+    "direction": "ltr",
+    "script": "cham",
+    "hbScript": "Cham",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "pref",
+      "rkrf",
+      "abvf",
+      "blwf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "abvs",
+      "blws",
+      "haln",
+      "pres",
+      "psts",
+      "rlig",
+      "calt",
+      "clig",
+      "liga",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,pref,rkrf,abvf,blwf,half,pstf,vatu,cjct,abvs,blws,haln,pres,psts,rlig,calt,clig,liga,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 87,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 538,
+      "ay": 0
+    },
+    {
+      "g": 124,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 400,
+      "ay": 0
+    },
+    {
+      "g": 21,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 855,
+      "ay": 0
+    },
+    {
+      "g": 49,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1298,
+      "ay": 0
+    }
+  ]
+}

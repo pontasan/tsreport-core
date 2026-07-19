@@ -1,0 +1,74 @@
+{
+  "font": "NotoSansTamil-Regular.ttf",
+  "text": "தமிழ்",
+  "options": {
+    "direction": "ltr",
+    "script": "tml2",
+    "hbScript": "Taml",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 25,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 825,
+      "ay": 0
+    },
+    {
+      "g": 29,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 858,
+      "ay": 0
+    },
+    {
+      "g": 42,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 262,
+      "ay": 0
+    },
+    {
+      "g": 94,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 858,
+      "ay": 0
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "font": "NotoSansDevanagari-Regular.ttf",
+  "text": "धर्म",
+  "options": {
+    "direction": "ltr",
+    "script": "dev2",
+    "hbScript": "Deva",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 74,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 615,
+      "ay": 0
+    },
+    {
+      "g": 80,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 598,
+      "ay": 0
+    },
+    {
+      "g": 506,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

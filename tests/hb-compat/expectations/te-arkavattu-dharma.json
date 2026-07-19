@@ -1,0 +1,66 @@
+{
+  "font": "NotoSansTelugu-Regular.ttf",
+  "text": "ధర్మ",
+  "options": {
+    "direction": "ltr",
+    "script": "tel2",
+    "hbScript": "Telu",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 41,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 706,
+      "ay": 0
+    },
+    {
+      "g": 49,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 556,
+      "ay": 0
+    },
+    {
+      "g": 921,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 259,
+      "ay": 0
+    }
+  ]
+}

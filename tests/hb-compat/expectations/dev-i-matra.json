@@ -1,0 +1,82 @@
+{
+  "font": "NotoSansDevanagari-Regular.ttf",
+  "text": "किताब",
+  "options": {
+    "direction": "ltr",
+    "script": "dev2",
+    "hbScript": "Deva",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 545,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 259,
+      "ay": 0
+    },
+    {
+      "g": 56,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 768,
+      "ay": 0
+    },
+    {
+      "g": 71,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 570,
+      "ay": 0
+    },
+    {
+      "g": 31,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 259,
+      "ay": 0
+    },
+    {
+      "g": 78,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 571,
+      "ay": 0
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "font": "NotoSans-Regular.ttf",
+  "text": "final effigy waffle",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 1654,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 602,
+      "ay": 0
+    },
+    {
+      "g": 81,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 618,
+      "ay": 0
+    },
+    {
+      "g": 68,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 561,
+      "ay": 0
+    },
+    {
+      "g": 79,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 258,
+      "ay": 0
+    },
+    {
+      "g": 3,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 260,
+      "ay": 0
+    },
+    {
+      "g": 72,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 564,
+      "ay": 0
+    },
+    {
+      "g": 1656,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 946,
+      "ay": 0
+    },
+    {
+      "g": 74,
+      "cl": 10,
+      "dx": 0,
+      "dy": 0,
+      "ax": 615,
+      "ay": 0
+    },
+    {
+      "g": 92,
+      "cl": 11,
+      "dx": 0,
+      "dy": 0,
+      "ax": 510,
+      "ay": 0
+    },
+    {
+      "g": 3,
+      "cl": 12,
+      "dx": 0,
+      "dy": 0,
+      "ax": 260,
+      "ay": 0
+    },
+    {
+      "g": 90,
+      "cl": 13,
+      "dx": 0,
+      "dy": 0,
+      "ax": 786,
+      "ay": 0
+    },
+    {
+      "g": 68,
+      "cl": 14,
+      "dx": 0,
+      "dy": 0,
+      "ax": 561,
+      "ay": 0
+    },
+    {
+      "g": 1657,
+      "cl": 15,
+      "dx": 0,
+      "dy": 0,
+      "ax": 946,
+      "ay": 0
+    },
+    {
+      "g": 72,
+      "cl": 18,
+      "dx": 0,
+      "dy": 0,
+      "ax": 564,
+      "ay": 0
+    }
+  ]
+}

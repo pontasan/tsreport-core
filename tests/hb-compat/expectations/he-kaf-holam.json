@@ -1,0 +1,60 @@
+{
+  "font": "NotoSansHebrew-Regular.ttf",
+  "text": "כֹּה",
+  "options": {
+    "direction": "rtl",
+    "script": "hebr",
+    "hbScript": "Hebr",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 42,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 627,
+      "ay": 0
+    },
+    {
+      "g": 46,
+      "cl": 0,
+      "dx": -80,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 15,
+      "cl": 0,
+      "dx": 101,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 52,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 515,
+      "ay": 0
+    }
+  ]
+}

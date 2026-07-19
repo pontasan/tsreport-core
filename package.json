@@ -1,0 +1,88 @@
+{
+  "name": "tsreport-core",
+  "version": "1.0.0",
+  "description": "Pure TypeScript report engine: OpenType font parsing and shaping, band-based report layout, barcodes, SVG, and PDF rendering with embedded fonts - zero runtime dependencies",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "browser": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "browser": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs"
+      },
+      "node": {
+        "import": "./dist/node.js",
+        "require": "./dist/node.cjs"
+      },
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.js",
+      "require": "./dist/node.cjs"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.js",
+      "require": "./dist/browser.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README.*.md",
+    "LICENSE",
+    "LICENSE-MIT",
+    "LICENSE-APACHE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "build": "tsup && tsc -p tsconfig.dts.json --declaration --emitDeclarationOnly --outDir dist",
+    "test": "vitest run",
+    "benchmark:brotli": "node scripts/benchmark-brotli.mjs",
+    "benchmark:renderer": "vite-node scripts/benchmark-rendering.ts",
+    "test:aat-conformance": "node scripts/run-aat-conformance.mjs",
+    "test:font-ecosystem-conformance": "node scripts/run-font-ecosystem-conformance.mjs",
+    "test:opentype-conformance": "node scripts/run-opentype-conformance.mjs",
+    "test:pdf-conformance": "node scripts/run-pdf-conformance.mjs",
+    "test:conformance": "node scripts/run-conformance.mjs",
+    "generate:pdf-cmaps": "node scripts/generate-pdf-cmap-resources.mjs",
+    "generate:unicode-shaping": "node scripts/generate-unicode-shaping-data.mjs",
+    "generate:unicode-normalization": "node scripts/generate-unicode-normalization-data.mjs",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0",
+    "zxing-wasm": "^3.0.0",
+    "sharp": "^0.34.5"
+  },
+  "overrides": {
+    "esbuild": "^0.28.1"
+  },
+  "license": "MIT OR Apache-2.0",
+  "sideEffects": ["./dist/node.js", "./dist/node.cjs"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "report",
+    "reporting",
+    "pdf",
+    "layout",
+    "font",
+    "opentype",
+    "typescript",
+    "barcode",
+    "invoice",
+    "zero-dependency"
+  ]
+}

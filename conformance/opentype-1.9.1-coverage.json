@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "specification": "Microsoft OpenType 1.9.1",
+  "inventorySource": "https://learn.microsoft.com/en-us/typography/opentype/spec/otff",
+  "profiles": {
+    "core": {
+      "consumer": ["src/font.ts", "src/parsers/ttf-parser.ts"],
+      "subset": ["src/subset/ttf-subset.ts", "src/subset/cff-subset.ts"],
+      "oracle": ["tests/subset/subset-integrity.test.ts"]
+    },
+    "truetype": {
+      "consumer": ["src/font.ts", "src/hinting/tt-glyph-hinter.ts"],
+      "subset": ["src/subset/ttf-subset.ts"],
+      "oracle": ["tests/font-truetype-freetype-oracle.test.ts"]
+    },
+    "cff": {
+      "consumer": ["src/font.ts", "src/hinting/cff-hinter.ts"],
+      "subset": ["src/subset/cff-subset.ts", "src/subset/cff2-subset.ts"],
+      "oracle": ["tests/font-cff-outline-oracle.test.ts", "tests/font-cff2-fonttools-oracle.test.ts"]
+    },
+    "bitmap": {
+      "consumer": ["src/font.ts", "src/renderer/bitmap-glyph.ts"],
+      "subset": ["src/subset/ttf-subset.ts", "src/subset/cff-subset.ts"],
+      "oracle": ["tests/renderer/bitmap-glyph.test.ts"]
+    },
+    "layout": {
+      "consumer": ["src/font.ts", "src/layout/text-layout.ts"],
+      "subset": ["src/subset/ttf-subset.ts", "src/subset/cff-subset.ts"],
+      "oracle": ["tests/hb-compat.test.ts"]
+    },
+    "variation": {
+      "consumer": ["src/font.ts", "src/parsers/tables/variation-common.ts"],
+      "subset": ["src/subset/ttf-subset.ts", "src/subset/cff-subset.ts"],
+      "oracle": ["tests/font-variable.test.ts"]
+    },
+    "color": {
+      "consumer": ["src/font.ts", "src/renderer/colr-v1-renderer.ts"],
+      "subset": ["src/subset/ttf-subset.ts", "src/subset/cff-subset.ts"],
+      "oracle": ["tests/renderer/colr-v1-raster-oracle.test.ts"]
+    },
+    "other": {
+      "consumer": ["src/font.ts", "src/parsers/ttf-parser.ts"],
+      "subset": ["src/subset/ttf-subset.ts", "src/subset/cff-subset.ts", "src/subset/standard-subset.ts"],
+      "oracle": ["tests/subset/subset-integrity.test.ts"]
+    }
+  },
+  "commonFormats": [
+    {
+      "id": "sfnt-directory", "name": "Offset table and table directory", "profile": "core",
+      "forms": ["sfnt versions 0x00010000/OTTO/true", "offset table search fields", "sorted table records", "printable four-byte tags", "table checksums", "four-byte table alignment", "head.checkSumAdjustment"],
+      "parser": ["src/parsers/sfnt-parser.ts"], "test": ["tests/parsers/sfnt-parser.test.ts", "tests/parsers/sfnt-conformance.test.ts", "tests/subset/subset-integrity.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "id": "ttc-header", "name": "TrueType and OpenType collection header", "profile": "core",
+      "forms": ["ttcf signature", "TTC Header versions 1.0/2.0", "font directory offsets", "shared table data", "version 2 DSIG fields", "TTC and OTC faces"],
+      "parser": ["src/parsers/index.ts", "src/parsers/sfnt-parser.ts"], "test": ["tests/parsers/ttc.test.ts", "tests/parsers/woff-fonttools-oracle.test.ts", "tests/parsers/woff2-collection.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "id": "otl-coverage", "name": "OpenType Layout Coverage table", "profile": "layout",
+      "forms": ["Coverage format 1 glyph array", "Coverage format 2 range records", "coverage-index ordering"],
+      "parser": ["src/parsers/tables/otl-common.ts"], "test": ["tests/parsers/tables/otl-common.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "id": "otl-class-definition", "name": "OpenType Layout ClassDef table", "profile": "layout",
+      "forms": ["ClassDef format 1 glyph array", "ClassDef format 2 range records", "class zero semantics"],
+      "parser": ["src/parsers/tables/otl-common.ts"], "test": ["tests/parsers/tables/otl-common.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "id": "otl-device-variation", "name": "OpenType Layout Device and VariationIndex tables", "profile": "layout",
+      "forms": ["Device deltaFormat 1 two-bit deltas", "Device deltaFormat 2 four-bit deltas", "Device deltaFormat 3 eight-bit deltas", "VariationIndex deltaFormat 0x8000", "ValueRecord formats and device offsets"],
+      "parser": ["src/parsers/tables/otl-common.ts"], "test": ["tests/parsers/tables/otl-common.test.ts", "tests/parsers/tables/gpos.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "id": "otl-layout-lists", "name": "OpenType Layout Script, Feature and Lookup lists", "profile": "layout",
+      "forms": ["ScriptList and Script records", "default and tagged LangSys tables", "FeatureList and Feature tables", "LookupList and lookup flags", "extension lookup format 1", "mark filtering sets"],
+      "parser": ["src/parsers/tables/otl-common.ts"], "test": ["tests/parsers/tables/otl-common.test.ts", "tests/parsers/tables/otl-flags.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "id": "otl-feature-variations", "name": "OpenType Layout FeatureVariations", "profile": "layout",
+      "forms": ["FeatureVariations version 1.0", "ConditionSet", "Condition format 1 axis ranges", "FeatureTableSubstitution version 1.0", "alternate Feature tables"],
+      "parser": ["src/parsers/tables/otl-common.ts"], "test": ["tests/parsers/tables/otl-common.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "id": "variation-item-store", "name": "Item variation store", "profile": "variation",
+      "forms": ["ItemVariationStore format 1", "VariationRegionList", "VariationRegion axis coordinates", "ItemVariationData", "short and byte deltas", "longWords long and short deltas"],
+      "parser": ["src/parsers/tables/variation-common.ts"], "test": ["tests/parsers/tables/variation-common.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "id": "variation-delta-index-map", "name": "Delta-set index map", "profile": "variation",
+      "forms": ["DeltaSetIndexMap formats 0/1", "one-to-four-byte map entries", "one-to-sixteen inner-index bits", "implicit identity mapping", "last-entry repetition"],
+      "parser": ["src/parsers/tables/variation-common.ts"], "test": ["tests/parsers/tables/variation-common.test.ts", "tests/parsers/tables/hvar.test.ts", "tests/parsers/tables/vvar.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "id": "variation-tuple-store", "name": "Tuple variation store", "profile": "variation",
+      "forms": ["TupleVariationStore headers", "embedded and shared peak tuples", "intermediate regions", "shared/private/all point sets", "packed point-number byte/word runs", "packed delta zero/byte/word runs", "IUP interpolation", "phantom and composite points"],
+      "parser": ["src/parsers/tables/gvar.ts", "src/parsers/tables/cvar.ts"], "test": ["tests/parsers/tables/gvar.test.ts", "tests/parsers/tables/cvar.test.ts"], "status": "complete", "remainingIds": []
+    }
+  ],
+  "tables": [
+    {
+      "tag": "cmap", "name": "Character to glyph mapping", "family": "required", "profile": "core",
+      "forms": ["version 0", "encoding records", "formats 0/2/4/6/8/10/12/13/14", "Unicode variation sequences", "platform/encoding precedence"],
+      "parser": ["src/parsers/tables/cmap.ts"], "test": ["tests/parsers/tables/cmap.test.ts", "tests/parsers/tables/cmap-fonttools-oracle.test.ts", "tests/font-os2-consumption.test.ts", "tests/subset/subset.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "head", "name": "Font header", "family": "required", "profile": "core",
+      "forms": ["version 1.0", "flags", "unitsPerEm", "LONGDATETIME", "bbox", "indexToLocFormat", "checkSumAdjustment"],
+      "parser": ["src/parsers/tables/head.ts"], "test": ["tests/parsers/tables/head.test.ts", "tests/parsers/sfnt-conformance.test.ts", "tests/font-core-fonttools-oracle.test.ts", "tests/subset/subset-integrity.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "hhea", "name": "Horizontal header", "family": "required", "profile": "core",
+      "forms": ["version 1.0", "horizontal metrics extrema", "caret metrics", "numberOfHMetrics"],
+      "parser": ["src/parsers/tables/hhea.ts"], "test": ["tests/parsers/tables/hhea.test.ts", "tests/parsers/sfnt-conformance.test.ts", "tests/font-core-fonttools-oracle.test.ts", "tests/subset/subset-integrity.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "hmtx", "name": "Horizontal metrics", "family": "required", "profile": "core",
+      "forms": ["longHorMetric array", "trailing leftSideBearing array"],
+      "parser": ["src/parsers/tables/hmtx.ts"], "test": ["tests/parsers/tables/hmtx.test.ts", "tests/font-core-fonttools-oracle.test.ts", "tests/font-advance-oracle.test.ts", "tests/subset/subset-integrity.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "maxp", "name": "Maximum profile", "family": "required", "profile": "core",
+      "forms": ["version 0.5", "version 1.0", "TrueType interpreter maxima"],
+      "parser": ["src/parsers/tables/maxp.ts"], "test": ["tests/parsers/tables/maxp.test.ts", "tests/parsers/sfnt-conformance.test.ts", "tests/font-core-fonttools-oracle.test.ts", "tests/hinting/interpreter.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "name", "name": "Naming table", "family": "required", "profile": "core",
+      "forms": ["format 0", "format 1", "name records", "language-tag records", "all specified platform encodings"],
+      "parser": ["src/parsers/tables/name.ts"], "test": ["tests/parsers/tables/name.test.ts", "tests/font-core-fonttools-oracle.test.ts", "tests/subset/subset-integrity.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "OS/2", "name": "OS/2 and Windows metrics", "family": "required", "profile": "core",
+      "forms": ["versions 0/1/2/3/4/5", "Unicode/code-page ranges", "selection", "horizontal/vertical metrics", "optical sizes"],
+      "parser": ["src/parsers/tables/os2.ts"], "test": ["tests/parsers/tables/os2.test.ts", "tests/parsers/tables/os2-fonttools-oracle.test.ts", "tests/font-os2-consumption.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "post", "name": "PostScript information", "family": "required", "profile": "core",
+      "forms": ["formats 1.0/2.0/2.5/3.0/4.0", "standard/custom glyph names", "underline/fixed-pitch/memory fields"],
+      "parser": ["src/parsers/tables/post.ts"], "test": ["tests/parsers/tables/post.test.ts", "tests/parsers/tables/post-versions.test.ts", "tests/parsers/tables/post-fonttools-oracle.test.ts"], "status": "complete", "remainingIds": []
+    },
+
+    {
+      "tag": "cvt ", "name": "Control Value Table", "family": "truetype", "profile": "truetype",
+      "forms": ["FWORD array", "cvar-adjusted values"],
+      "parser": ["src/parsers/tables/cvt.ts"], "test": ["tests/parsers/tables/cvt-fpgm-prep.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "fpgm", "name": "Font program", "family": "truetype", "profile": "truetype",
+      "forms": ["TrueType instruction bytecode", "function and instruction definitions"],
+      "parser": ["src/parsers/tables/fpgm.ts"], "test": ["tests/parsers/tables/cvt-fpgm-prep.test.ts", "tests/hinting/interpreter.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "glyf", "name": "Glyph data", "family": "truetype", "profile": "truetype",
+      "forms": ["empty glyph", "simple glyph flags/repeats/coordinates/instructions", "composite components/transforms/point matching/instructions", "overlap flags"],
+      "parser": ["src/parsers/tables/glyf.ts"], "test": ["tests/parsers/tables/glyf.test.ts", "tests/parsers/tables/glyf-composite.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "loca", "name": "Index to location", "family": "truetype", "profile": "truetype",
+      "forms": ["short offsets", "long offsets"],
+      "parser": ["src/parsers/tables/loca.ts"], "test": ["tests/parsers/tables/loca.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "prep", "name": "Control Value Program", "family": "truetype", "profile": "truetype",
+      "forms": ["TrueType instruction bytecode", "ppem-dependent graphics state"],
+      "parser": ["src/parsers/tables/prep.ts"], "test": ["tests/parsers/tables/cvt-fpgm-prep.test.ts", "tests/hinting/interpreter.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "gasp", "name": "Grid-fitting/scan-conversion", "family": "truetype", "profile": "truetype",
+      "forms": ["versions 0/1", "range records", "gridfit/grayscale/symmetric flags"],
+      "parser": ["src/parsers/tables/gasp.ts"], "test": ["tests/parsers/tables/gasp.test.ts", "tests/font-device-metrics.test.ts"], "status": "complete", "remainingIds": []
+    },
+
+    {
+      "tag": "CFF ", "name": "Compact Font Format 1", "family": "cff", "profile": "cff",
+      "forms": ["CFF 1.0", "INDEX offSize 1-4", "Name/Top DICT/String/Global Subr INDEX", "charset formats 0/1/2", "encoding formats 0/1 and supplements", "FDArray and FDSelect formats 0/3", "Type 2 charstrings/subroutines"],
+      "parser": ["src/parsers/cff-parser.ts"], "test": ["tests/parsers/cff.test.ts", "tests/parsers/cff-cidfont.test.ts", "tests/font-cff-outline-oracle.test.ts", "tests/subset/cff-subset.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "CFF2", "name": "Compact Font Format 2", "family": "cff", "profile": "cff",
+      "forms": ["CFF2 2.0", "Top DICT/Global Subr/CharStrings", "FDArray/FDSelect formats 0/3/4", "VariationStore", "vsindex/blend Type 2 operators"],
+      "parser": ["src/parsers/cff2-parser.ts"], "test": ["tests/parsers/cff2-regression.test.ts", "tests/font-cff2-fonttools-oracle.test.ts", "tests/subset/cff-subset.test.ts", "tests/subset/subset-integrity.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "VORG", "name": "Vertical origin", "family": "cff", "profile": "cff",
+      "forms": ["version 1.0", "defaultVertOriginY", "sorted per-glyph records"],
+      "parser": ["src/parsers/tables/vorg.ts"], "test": ["tests/parsers/tables/vertical.test.ts", "tests/subset/subset-integrity.test.ts"], "status": "complete", "remainingIds": []
+    },
+
+    {
+      "tag": "SVG ", "name": "SVG glyph descriptions", "family": "svg", "profile": "color",
+      "forms": ["version 0", "SVG document index", "plain and gzip-compressed documents", "shared glyph ranges", "SVG 1.1 rendering semantics"],
+      "parser": ["src/parsers/tables/svg.ts"], "test": ["tests/parsers/tables/svg.test.ts", "tests/renderer/svg-glyph.test.ts", "tests/svg/svg-parser.test.ts", "tests/svg/svg-filter.test.ts", "tests/svg/svg-renderer.test.ts"], "status": "complete", "remainingIds": []
+    },
+
+    {
+      "tag": "EBDT", "name": "Embedded bitmap data", "family": "bitmap", "profile": "bitmap",
+      "forms": ["version 2.0", "small/big metrics", "image formats 1-9", "byte/bit aligned and composite glyphs"],
+      "parser": ["src/parsers/tables/ebdt.ts"], "test": ["tests/parsers/tables/ebdt.test.ts", "tests/renderer/bitmap-glyph.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "EBLC", "name": "Embedded bitmap location", "family": "bitmap", "profile": "bitmap",
+      "forms": ["version 2.0", "bitmapSize tables", "index subtable formats 1-5"],
+      "parser": ["src/parsers/tables/bitmap-index.ts"], "test": ["tests/parsers/tables/bitmap-index.test.ts", "tests/renderer/bitmap-glyph.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "EBSC", "name": "Embedded bitmap scaling", "family": "bitmap", "profile": "bitmap",
+      "forms": ["version 2.0", "bitmapScale records"],
+      "parser": ["src/parsers/tables/ebsc.ts"], "test": ["tests/parsers/tables/ebsc.test.ts", "tests/renderer/bitmap-glyph.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "CBDT", "name": "Color bitmap data", "family": "bitmap", "profile": "bitmap",
+      "forms": ["version 3.0", "image formats 17/18/19", "PNG payloads"],
+      "parser": ["src/parsers/tables/cbdt.ts"], "test": ["tests/parsers/tables/cbdt.test.ts", "tests/renderer/bitmap-glyph.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "CBLC", "name": "Color bitmap location", "family": "bitmap", "profile": "bitmap",
+      "forms": ["version 3.0", "bitmapSize tables", "index subtable formats 1-5"],
+      "parser": ["src/parsers/tables/bitmap-index.ts"], "test": ["tests/parsers/tables/bitmap-index.test.ts", "tests/renderer/bitmap-glyph.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "sbix", "name": "Standard bitmap graphics", "family": "bitmap", "profile": "bitmap",
+      "forms": ["version 1.0", "strike offsets", "glyph records", "dupe references", "graphicType payloads", "overlay origin"],
+      "parser": ["src/parsers/tables/sbix.ts"], "test": ["tests/parsers/tables/sbix.test.ts", "tests/renderer/bitmap-glyph.test.ts"], "status": "complete", "remainingIds": []
+    },
+
+    {
+      "tag": "BASE", "name": "Baseline data", "family": "layout", "profile": "layout",
+      "forms": ["versions 1.0/1.1", "horizontal/vertical axes", "BaseTagList/BaseScriptList", "BaseCoord formats 1/2/3", "MinMax", "FeatureMinMax", "ItemVariationStore"],
+      "parser": ["src/parsers/tables/base.ts"], "test": ["tests/parsers/tables/base.test.ts", "tests/font-shaping.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "GDEF", "name": "Glyph definition data", "family": "layout", "profile": "layout",
+      "forms": ["versions 1.0/1.2/1.3", "ClassDef formats 1/2", "AttachList", "LigCaretList and CaretValue formats 1/2/3", "MarkAttachClassDef", "MarkGlyphSets format 1", "ItemVariationStore"],
+      "parser": ["src/parsers/tables/gdef.ts"], "test": ["tests/parsers/tables/gdef.test.ts", "tests/parsers/tables/otl-flags.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "GPOS", "name": "Glyph positioning data", "family": "layout", "profile": "layout",
+      "forms": ["versions 1.0/1.1", "lookup types 1-9", "SinglePos formats 1/2", "PairPos formats 1/2", "CursivePos format 1", "MarkBasePos format 1", "MarkLigPos format 1", "MarkMarkPos format 1", "ContextPos formats 1/2/3", "ChainContextPos formats 1/2/3", "PosExtension format 1", "Anchor formats 1/2/3", "ValueRecord/device/variation forms", "FeatureVariations"],
+      "parser": ["src/parsers/tables/gpos.ts", "src/parsers/tables/otl-common.ts"], "test": ["tests/parsers/tables/gpos.test.ts", "tests/parsers/tables/gpos-context.test.ts", "tests/parsers/tables/otl-flags.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "GSUB", "name": "Glyph substitution data", "family": "layout", "profile": "layout",
+      "forms": ["versions 1.0/1.1", "lookup types 1-8", "SingleSubst formats 1/2", "MultipleSubst format 1", "AlternateSubst format 1", "LigatureSubst format 1", "ContextSubst formats 1/2/3", "ChainContextSubst formats 1/2/3", "SubstExtension format 1", "ReverseChainSingleSubst format 1", "FeatureVariations"],
+      "parser": ["src/parsers/tables/gsub.ts", "src/parsers/tables/otl-common.ts"], "test": ["tests/parsers/tables/gsub.test.ts", "tests/parsers/tables/otl-flags.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "JSTF", "name": "Justification data", "family": "layout", "profile": "layout",
+      "forms": ["version 1.0", "JstfScript/LangSys/Priority", "extender glyphs", "GSUB/GPOS enable-disable lists", "maximum GPOS lookups"],
+      "parser": ["src/parsers/tables/jstf.ts"], "test": ["tests/parsers/tables/jstf.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "MATH", "name": "Math layout data", "family": "layout", "profile": "layout",
+      "forms": ["version 1.0", "MathConstants", "MathGlyphInfo", "italics/top-accent/extended-shape/math-kern", "vertical/horizontal variants", "glyph constructions and assemblies"],
+      "parser": ["src/parsers/tables/math.ts"], "test": ["tests/parsers/tables/math.test.ts", "tests/math/math-layout.test.ts"], "status": "complete", "remainingIds": []
+    },
+
+    {
+      "tag": "avar", "name": "Axis variations", "family": "variation", "profile": "variation",
+      "forms": ["versions 1.0/2.0", "SegmentMaps", "DeltaSetIndexMaps", "VarStore"],
+      "parser": ["src/parsers/tables/avar.ts"], "test": ["tests/parsers/tables/avar-v2.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "cvar", "name": "CVT variations", "family": "variation", "profile": "variation",
+      "forms": ["version 1.0", "TupleVariationStore", "embedded/shared tuples", "private/shared/all-points deltas"],
+      "parser": ["src/parsers/tables/cvar.ts", "src/parsers/tables/variation-common.ts"], "test": ["tests/parsers/tables/cvar.test.ts", "tests/parsers/tables/variation-common.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "fvar", "name": "Font variations", "family": "variation", "profile": "variation",
+      "forms": ["version 1.0", "variation axes", "named instances", "optional PostScript name IDs"],
+      "parser": ["src/parsers/tables/fvar.ts"], "test": ["tests/parsers/tables/fvar.test.ts", "tests/font-variable.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "gvar", "name": "Glyph variations", "family": "variation", "profile": "variation",
+      "forms": ["version 1.0", "shared tuples", "glyph variation data offsets", "embedded/intermediate tuples", "shared/private/all point sets", "packed point numbers/deltas", "IUP", "phantom and composite points"],
+      "parser": ["src/parsers/tables/gvar.ts", "src/parsers/tables/variation-common.ts"], "test": ["tests/parsers/tables/gvar.test.ts", "tests/font-variable.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "HVAR", "name": "Horizontal metrics variations", "family": "variation", "profile": "variation",
+      "forms": ["version 1.0", "ItemVariationStore", "advance/lsb/rsb DeltaSetIndexMaps formats 0/1"],
+      "parser": ["src/parsers/tables/hvar.ts"], "test": ["tests/parsers/tables/hvar.test.ts", "tests/font-variable.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "MVAR", "name": "Metrics variations", "family": "variation", "profile": "variation",
+      "forms": ["version 1.0", "ValueRecords", "all registered value tags", "ItemVariationStore"],
+      "parser": ["src/parsers/tables/mvar.ts"], "test": ["tests/parsers/tables/mvar.test.ts", "tests/font-variable.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "STAT", "name": "Style attributes", "family": "variation", "profile": "variation",
+      "forms": ["versions 1.0/1.1/1.2", "design axes", "AxisValue formats 1/2/3/4", "elidable and older-sibling flags", "axis ordering", "fallback name"],
+      "parser": ["src/parsers/tables/stat.ts"], "test": ["tests/parsers/tables/stat.test.ts", "tests/font-variable.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "VVAR", "name": "Vertical metrics variations", "family": "variation", "profile": "variation",
+      "forms": ["version 1.0", "ItemVariationStore", "advance/tsb/bsb/vorg DeltaSetIndexMaps formats 0/1"],
+      "parser": ["src/parsers/tables/vvar.ts"], "test": ["tests/parsers/tables/vvar.test.ts", "tests/renderer/variable-vertical.test.ts"], "status": "complete", "remainingIds": []
+    },
+
+    {
+      "tag": "COLR", "name": "Color table", "family": "color", "profile": "color",
+      "forms": ["versions 0/1", "base/layer glyph records", "BaseGlyph/Layer/Clip lists", "Paint formats 1-32", "ColorLine extend modes and color stops", "Affine2x3", "Composite modes", "ItemVariationStore and DeltaSetIndexMap"],
+      "parser": ["src/parsers/tables/colr.ts"], "test": ["tests/parsers/tables/colr-v1.test.ts", "tests/parsers/tables/colr-variation.test.ts", "tests/renderer/colr-v1-renderer.test.ts", "tests/renderer/colr-v1-raster-oracle.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "CPAL", "name": "Color palette table", "family": "color", "profile": "color",
+      "forms": ["versions 0/1", "palette entry indices", "BGRA color records", "palette types", "palette and entry labels"],
+      "parser": ["src/parsers/tables/cpal.ts"], "test": ["tests/parsers/tables/colr-cpal.test.ts", "tests/renderer/colr-v1-renderer.test.ts", "tests/renderer/colr-v1-raster-oracle.test.ts", "tests/renderer/svg-glyph.test.ts"], "status": "complete", "remainingIds": []
+    },
+
+    {
+      "tag": "DSIG", "name": "Digital signature", "family": "other", "profile": "other",
+      "forms": ["version 1", "signature records", "signature block format 1"],
+      "parser": ["src/parsers/tables/dsig.ts"], "test": ["tests/parsers/tables/dsig.test.ts", "tests/font-signature.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "hdmx", "name": "Horizontal device metrics", "family": "other", "profile": "other",
+      "forms": ["version 0", "device records", "ppem widths"],
+      "parser": ["src/parsers/tables/hdmx.ts"], "test": ["tests/parsers/tables/hdmx.test.ts", "tests/font-device-metrics.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "kern", "name": "Kerning", "family": "other", "profile": "layout",
+      "forms": ["OpenType version 0", "format 0 pair kerning", "horizontal/minimum/cross-stream/override coverage bits"],
+      "parser": ["src/parsers/tables/kern.ts"], "test": ["tests/parsers/tables/kern.test.ts", "tests/font-shaping.test.ts", "tests/subset/aat-subset.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "LTSH", "name": "Linear threshold", "family": "other", "profile": "other",
+      "forms": ["version 0", "per-glyph yPel threshold array"],
+      "parser": ["src/parsers/tables/ltsh.ts"], "test": ["tests/parsers/tables/ltsh.test.ts", "tests/font-device-metrics.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "MERG", "name": "Merge", "family": "other", "profile": "other",
+      "forms": ["version 1.0", "merge class definitions", "glyph merge entries"],
+      "parser": ["src/parsers/tables/merg.ts"], "test": ["tests/parsers/tables/merg.test.ts", "tests/subset/aat-subset.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "meta", "name": "Metadata", "family": "other", "profile": "other",
+      "forms": ["version 1", "data maps", "DLNG/SLNG UTF-8 tags", "arbitrary registered/private data tags"],
+      "parser": ["src/parsers/tables/meta.ts"], "test": ["tests/parsers/tables/meta.test.ts", "tests/font-core-table-consumption.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "PCLT", "name": "PCL 5 data", "family": "other", "profile": "other",
+      "forms": ["version 1.0", "font number/pitch/xHeight/style/typeface/character complement/file name/stroke/width/serif"],
+      "parser": ["src/parsers/tables/pclt.ts"], "test": ["tests/parsers/tables/pclt.test.ts", "tests/font-core-table-consumption.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "VDMX", "name": "Vertical device metrics", "family": "other", "profile": "other",
+      "forms": ["versions 0/1", "ratio groups", "bCharSet 0/1", "ppem height records"],
+      "parser": ["src/parsers/tables/vdmx.ts"], "test": ["tests/parsers/tables/vdmx.test.ts", "tests/font-device-metrics.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "vhea", "name": "Vertical metrics header", "family": "other", "profile": "core",
+      "forms": ["versions 1.0/1.1", "vertical metrics extrema", "caret metrics", "numberOfVMetrics"],
+      "parser": ["src/parsers/tables/vhea.ts"], "test": ["tests/parsers/tables/vertical.test.ts", "tests/font-vertical-opentype-oracle.test.ts", "tests/subset/subset-integrity.test.ts"], "status": "complete", "remainingIds": []
+    },
+    {
+      "tag": "vmtx", "name": "Vertical metrics", "family": "other", "profile": "core",
+      "forms": ["longVertMetric array", "trailing topSideBearing array"],
+      "parser": ["src/parsers/tables/vmtx.ts"], "test": ["tests/parsers/tables/vertical.test.ts", "tests/font-vertical-opentype-oracle.test.ts", "tests/renderer/pdf-vertical-text.test.ts", "tests/subset/subset-integrity.test.ts"], "status": "complete", "remainingIds": []
+    }
+  ]
+}

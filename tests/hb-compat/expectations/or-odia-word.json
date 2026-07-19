@@ -1,0 +1,74 @@
+{
+  "font": "NotoSansOriya-Regular.ttf",
+  "text": "ଓଡ଼ିଆ",
+  "options": {
+    "direction": "ltr",
+    "script": "ory2",
+    "hbScript": "Orya",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 18,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 700,
+      "ay": 0
+    },
+    {
+      "g": 80,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 734,
+      "ay": 0
+    },
+    {
+      "g": 60,
+      "cl": 1,
+      "dx": -670,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 9,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 894,
+      "ay": 0
+    }
+  ]
+}

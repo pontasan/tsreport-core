@@ -1,0 +1,86 @@
+{
+  "font": "NotoSansNKo-Regular.ttf",
+  "text": "ߡߊ߲߬ߘߋ߲",
+  "options": {
+    "direction": "rtl",
+    "script": "nko ",
+    "hbScript": "Nkoo",
+    "features": [
+      "stch",
+      "ccmp",
+      "locl",
+      "rlig",
+      "calt",
+      "liga",
+      "clig",
+      "rclt",
+      "mset",
+      "curs",
+      "dist",
+      "kern",
+      "mark",
+      "mkmk",
+      "abvm",
+      "blwm"
+    ],
+    "hbFeatures": "stch,ccmp,locl,rlig,calt,liga,clig,rclt,mset,curs,dist,kern,mark,mkmk,abvm,blwm"
+  },
+  "glyphs": [
+    {
+      "g": 58,
+      "cl": 5,
+      "dx": 332,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 70,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 660,
+      "ay": 0
+    },
+    {
+      "g": 110,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 792,
+      "ay": 0
+    },
+    {
+      "g": 52,
+      "cl": 1,
+      "dx": 136,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 58,
+      "cl": 1,
+      "dx": 136,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 68,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 265,
+      "ay": 0
+    },
+    {
+      "g": 138,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 576,
+      "ay": 0
+    }
+  ]
+}

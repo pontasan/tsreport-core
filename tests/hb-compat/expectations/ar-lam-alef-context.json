@@ -1,0 +1,62 @@
+{
+  "font": "NotoSansArabic-Regular.ttf",
+  "text": "الله",
+  "options": {
+    "direction": "rtl",
+    "script": "arab",
+    "hbScript": "Arab",
+    "features": [
+      "stch",
+      "ccmp",
+      "locl",
+      "rlig",
+      "calt",
+      "liga",
+      "clig",
+      "rclt",
+      "mset",
+      "curs",
+      "dist",
+      "kern",
+      "mark",
+      "mkmk",
+      "abvm",
+      "blwm"
+    ],
+    "hbFeatures": "stch,ccmp,locl,rlig,calt,liga,clig,rclt,mset,curs,dist,kern,mark,mkmk,abvm,blwm"
+  },
+  "glyphs": [
+    {
+      "g": 85,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 486,
+      "ay": 0
+    },
+    {
+      "g": 70,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 300,
+      "ay": 0
+    },
+    {
+      "g": 72,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 260,
+      "ay": 0
+    },
+    {
+      "g": 8,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 238,
+      "ay": 0
+    }
+  ]
+}

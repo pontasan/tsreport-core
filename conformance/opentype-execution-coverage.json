@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "specification": "Microsoft OpenType 1.9.1",
+  "unicodeVersion": "17.0.0",
+  "coverage": [
+    {
+      "id": "unicode-scripts",
+      "expected": { "scriptCount": 174, "rangeCount": 2287 },
+      "implementation": ["src/shaping/unicode-shaping-data.ts", "src/font.ts", "src/layout/text-layout.ts"],
+      "tests": ["tests/layout/unicode-coverage.test.ts", "tests/shaping/unicode-shaping-properties.test.ts", "tests/hb-compat.test.ts"],
+      "oracle": ["tests/hb-compat/expectations"]
+    },
+    {
+      "id": "gsub-lookup-types",
+      "expected": { "lookupTypes": [1, 2, 3, 4, 5, 6, 7, 8] },
+      "implementation": ["src/parsers/tables/gsub.ts", "src/font.ts"],
+      "tests": ["tests/font-otl-aots-oracle.test.ts", "tests/parsers/tables/gsub.test.ts", "tests/parsers/tables/otl-flags.test.ts"],
+      "oracle": ["tests/fixtures/fonts/hb-aots-gsub1_1_simple_f1.otf", "tests/fixtures/fonts/hb-reverse-substitution.ttf"]
+    },
+    {
+      "id": "gpos-lookup-types",
+      "expected": { "lookupTypes": [1, 2, 3, 4, 5, 6, 7, 8, 9] },
+      "implementation": ["src/parsers/tables/gpos.ts", "src/font.ts"],
+      "tests": ["tests/font-otl-aots-oracle.test.ts", "tests/parsers/tables/gpos.test.ts", "tests/parsers/tables/otl-flags.test.ts"],
+      "oracle": ["tests/fixtures/fonts/hb-aots-gpos1_1_simple_f1.otf", "tests/fixtures/fonts/hb-aots-gpos9_font1.otf"]
+    },
+    {
+      "id": "variation-formats",
+      "expected": { "tables": ["avar", "cvar", "fvar", "gvar", "HVAR", "MVAR", "STAT", "VVAR"] },
+      "implementation": ["src/parsers/tables/variation-common.ts", "src/font.ts", "src/subset/ttf-subset.ts", "src/subset/cff-subset.ts"],
+      "tests": ["tests/font-variable.test.ts", "tests/font-cff2-fonttools-oracle.test.ts", "tests/subset/subset-integrity.test.ts"],
+      "oracle": ["tests/fixtures/fonts/NotoSans-VariableFont_wdth,wght.ttf", "tests/fixtures/fonts/SFIndiaBangla-CFF2.otf.base64"]
+    },
+    {
+      "id": "color-formats",
+      "expected": { "colrPaintFormats": 32, "tables": ["COLR", "CPAL", "SVG "] },
+      "implementation": ["src/parsers/tables/colr.ts", "src/renderer/colr-v1-renderer.ts", "src/svg/svg-renderer.ts"],
+      "tests": ["tests/parsers/tables/colr-v1.test.ts", "tests/parsers/tables/colr-variation.test.ts", "tests/renderer/colr-v1-raster-oracle.test.ts", "tests/renderer/svg-glyph.test.ts"],
+      "oracle": ["tests/renderer/colr-v1-raster-oracle.test.ts", "tests/fixtures/fonts/EmojiOneColor-SVG-subset.otf"]
+    },
+    {
+      "id": "bitmap-formats",
+      "expected": { "ebdtImageFormats": [1, 2, 5, 6, 7, 8, 9], "cbdtImageFormats": [17, 18, 19], "indexSubtableFormats": [1, 2, 3, 4, 5], "tables": ["EBDT", "EBLC", "EBSC", "CBDT", "CBLC", "sbix"] },
+      "implementation": ["src/parsers/tables/embedded-bitmap-data.ts", "src/parsers/tables/bitmap-index.ts", "src/renderer/bitmap-glyph.ts", "src/subset/bitmap-subset.ts"],
+      "tests": ["tests/parsers/tables/ebdt.test.ts", "tests/parsers/tables/cbdt.test.ts", "tests/parsers/tables/bitmap-index.test.ts", "tests/renderer/bitmap-glyph.test.ts", "tests/font-subset-fonttools-oracle.test.ts"],
+      "oracle": ["tests/fixtures/fonts/NotoColorEmoji-CBDT-subset.ttf", "tests/font-subset-fonttools-oracle.test.ts"]
+    },
+    {
+      "id": "truetype-instructions",
+      "expected": { "assignedOpcodeCount": 218, "reservedOpcodes": [14, 40, 123, 127, 131, 132, 143, 144, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175] },
+      "implementation": ["src/hinting/interpreter.ts", "src/hinting/tt-glyph-hinter.ts", "src/hinting/tt-rasterizer.ts"],
+      "tests": ["tests/hinting/interpreter.test.ts", "tests/font-truetype-freetype-oracle.test.ts", "tests/font-truetype-raster-freetype-oracle.test.ts"],
+      "oracle": ["tests/font-truetype-freetype-oracle.test.ts", "tests/font-truetype-raster-freetype-oracle.test.ts"]
+    }
+  ],
+  "corpus": {
+    "realFonts": [
+      "tests/fixtures/fonts/NotoSans-Regular.ttf",
+      "tests/fixtures/fonts/SourceSans3-Regular.otf",
+      "tests/fixtures/fonts/NotoSans-VariableFont_wdth,wght.ttf",
+      "tests/fixtures/fonts/SFIndiaBangla-CFF2.otf.base64",
+      "tests/fixtures/fonts/NotoColorEmoji-CBDT-subset.ttf",
+      "tests/fixtures/fonts/EmojiOneColor-SVG-subset.otf",
+      "tests/fixtures/fonts/FiraMath-Regular.otf",
+      "tests/fixtures/fonts/NotoSansJP-Regular.otf"
+    ],
+    "minimumFormatFixtures": ["tests/font-otl-aots-oracle.test.ts", "tests/parsers/opentype-coverage-matrix.test.ts"],
+    "malformed": ["tests/parsers/sfnt-conformance.test.ts", "tests/parsers/table-version-compatibility.test.ts", "tests/hinting/interpreter.test.ts"],
+    "fuzzRegression": ["tests/parsers/sfnt-conformance.test.ts", "tests/parsers/tables/otl-common.test.ts"]
+  },
+  "classification": {
+    "supported": ["conformance/opentype-1.9.1-coverage.json", "conformance/opentype-execution-coverage.json"],
+    "invalid": ["tests/parsers/sfnt-conformance.test.ts", "tests/hinting/interpreter.test.ts"],
+    "futureVersion": ["tests/parsers/table-version-compatibility.test.ts"]
+  },
+  "requiredOracles": ["fontTools", "FreeType", "HarfBuzz shaping", "HarfBuzz color raster"]
+}

@@ -1,0 +1,52 @@
+{
+  "font": "NotoSansThai-Regular.ttf",
+  "text": "ทำ",
+  "options": {
+    "direction": "ltr",
+    "script": "thai",
+    "hbScript": "Thai",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 117,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 609,
+      "ay": 0
+    },
+    {
+      "g": 59,
+      "cl": 0,
+      "dx": -3,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 86,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 406,
+      "ay": 0
+    }
+  ]
+}

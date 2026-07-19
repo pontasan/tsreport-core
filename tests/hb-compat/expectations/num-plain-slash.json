@@ -1,0 +1,84 @@
+{
+  "font": "Roboto-Regular.ttf",
+  "text": "1/2 3/4",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 22,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1150,
+      "ay": 0
+    },
+    {
+      "g": 20,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 844,
+      "ay": 0
+    },
+    {
+      "g": 23,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1150,
+      "ay": 0
+    },
+    {
+      "g": 5,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 507,
+      "ay": 0
+    },
+    {
+      "g": 24,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1150,
+      "ay": 0
+    },
+    {
+      "g": 20,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 844,
+      "ay": 0
+    },
+    {
+      "g": 25,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1150,
+      "ay": 0
+    }
+  ]
+}

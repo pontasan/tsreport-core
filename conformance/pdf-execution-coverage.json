@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "normalCorpus": [
+    "tests/pdf/pdf-clause-fixture-corpus.test.ts",
+    "tests/pdf/pdf-structure-matrix.test.ts",
+    "tests/renderer/pdf-integration.test.ts"
+  ],
+  "malformedCorpus": [
+    "tests/pdf/pdf-file-framing.test.ts",
+    "tests/pdf/pdf-object-syntax.test.ts",
+    "tests/pdf/pdf-import-page.test.ts",
+    "tests/pdf/mesh-tiling-import.test.ts"
+  ],
+  "fuzzRegression": [
+    "tests/pdf/pdf-malformed-fuzz-regression.test.ts",
+    "tests/compression/inflate.test.ts",
+    "tests/compression/jbig2-decoder.test.ts",
+    "tests/image/jpeg-decoder.test.ts"
+  ]
+}

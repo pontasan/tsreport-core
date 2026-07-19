@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "adoptedSpecifications": {
+    "woff1": "W3C WOFF File Format 1.0 Recommendation",
+    "woff2": "W3C WOFF File Format 2.0 Recommendation",
+    "aat": "Apple TrueType Reference Manual and AAT Font Feature Registry",
+    "graphite": "SIL Graphite table, GDL, and Graphite2 1.3.15 execution semantics"
+  },
+  "profiles": {
+    "woff1": {
+      "read": ["src/parsers/woff-parser.ts", "tests/parsers/woff.test.ts"],
+      "generation": ["src/parsers/woff-parser.ts", "tests/parsers/woff-fonttools-oracle.test.ts"],
+      "shaping": ["src/font.ts", "tests/font-shaping.test.ts"],
+      "rendering": ["src/renderer/renderer.ts", "tests/renderer/glyph-run.test.ts"],
+      "metrics": ["tests/parsers/woff.test.ts", "tests/parsers/woff-fonttools-oracle.test.ts"],
+      "subsetRebuild": ["src/subset/index.ts", "tests/subset/subset-integrity.test.ts"],
+      "oracle": ["tests/parsers/woff-fonttools-oracle.test.ts"]
+    },
+    "woff2": {
+      "read": ["src/parsers/woff2-parser.ts", "tests/parsers/woff2-w3c-corpus.test.ts"],
+      "generation": ["src/parsers/woff2-parser.ts", "tests/parsers/woff2-w3c-corpus.test.ts"],
+      "shaping": ["src/font.ts", "tests/font-shaping.test.ts"],
+      "rendering": ["src/renderer/renderer.ts", "tests/renderer/glyph-run.test.ts"],
+      "metrics": ["tests/parsers/woff2-fonttools-oracle.test.ts", "tests/parsers/woff2-w3c-corpus.test.ts"],
+      "subsetRebuild": ["src/subset/index.ts", "tests/subset/subset-integrity.test.ts"],
+      "oracle": ["tests/parsers/woff2-w3c-corpus.test.ts", "tests/parsers/woff2-fonttools-oracle.test.ts"]
+    },
+    "aat": {
+      "read": ["src/parsers/tables/aat-common.ts", "tests/parsers/tables/aat-common.test.ts"],
+      "generation": ["src/subset/aat-subset.ts", "tests/subset/aat-subset.test.ts"],
+      "shaping": ["src/font.ts", "tests/aat-harfbuzz-oracle.test.ts"],
+      "rendering": ["src/font.ts", "tests/renderer/complex-script-pipeline.test.ts"],
+      "metrics": ["src/font.ts", "tests/font-aat-consumption-oracle.test.ts"],
+      "subsetRebuild": ["src/subset/aat-subset.ts", "tests/subset/aat-real-font-subset.test.ts"],
+      "oracle": ["tests/aat-coretext-oracle.test.ts", "tests/aat-harfbuzz-oracle.test.ts", "tests/aat-malformed-corpus.test.ts"]
+    },
+    "graphite": {
+      "read": ["src/parsers/tables/graphite.ts", "tests/parsers/tables/graphite.test.ts"],
+      "generation": ["src/subset/graphite-subset.ts", "tests/graphite-harfbuzz-oracle.test.ts"],
+      "shaping": ["src/shaping/graphite.ts", "tests/graphite-harfbuzz-oracle.test.ts"],
+      "rendering": ["src/font.ts", "tests/renderer/complex-script-pipeline.test.ts"],
+      "metrics": ["src/shaping/graphite.ts", "tests/graphite-harfbuzz-oracle.test.ts"],
+      "subsetRebuild": ["src/subset/graphite-subset.ts", "tests/graphite-harfbuzz-oracle.test.ts"],
+      "oracle": ["tests/graphite-harfbuzz-oracle.test.ts"]
+    }
+  },
+  "rows": [
+    { "id": "WOFF1-header", "profile": "woff1", "normativeUnit": "Header and reserved fields" },
+    { "id": "WOFF1-directory", "profile": "woff1", "normativeUnit": "Table directory, ordering, offsets, lengths, checksums, alignment" },
+    { "id": "WOFF1-table-data", "profile": "woff1", "normativeUnit": "Compressed and uncompressed table data" },
+    { "id": "WOFF1-metadata", "profile": "woff1", "normativeUnit": "Extended metadata block and XML schema" },
+    { "id": "WOFF1-private", "profile": "woff1", "normativeUnit": "Private data block" },
+    { "id": "WOFF1-conformance", "profile": "woff1", "normativeUnit": "User agent and authoring-tool conformance requirements" },
+
+    { "id": "WOFF2-header", "profile": "woff2", "normativeUnit": "Header and reserved fields" },
+    { "id": "WOFF2-directory-tags", "profile": "woff2", "normativeUnit": "Known and explicit table tags" },
+    { "id": "WOFF2-directory-integers", "profile": "woff2", "normativeUnit": "UIntBase128 and 255UInt16 encodings" },
+    { "id": "WOFF2-collection", "profile": "woff2", "normativeUnit": "Collection directory, sharing, order, pairing, mixed outlines" },
+    { "id": "WOFF2-brotli", "profile": "woff2", "normativeUnit": "Compressed font data and Brotli stream" },
+    { "id": "WOFF2-glyf-simple", "profile": "woff2", "normativeUnit": "glyf transform: simple glyph contours, triplets, instructions" },
+    { "id": "WOFF2-glyf-composite", "profile": "woff2", "normativeUnit": "glyf transform: composite glyph components and instructions" },
+    { "id": "WOFF2-glyf-bbox", "profile": "woff2", "normativeUnit": "glyf transform: bbox bitmap/stream and empty-glyph rules" },
+    { "id": "WOFF2-glyf-overlap", "profile": "woff2", "normativeUnit": "glyf transform: overlap-simple bitmap" },
+    { "id": "WOFF2-loca", "profile": "woff2", "normativeUnit": "loca transform and short/long index formats" },
+    { "id": "WOFF2-hmtx", "profile": "woff2", "normativeUnit": "hmtx transform flags and derived side bearings" },
+    { "id": "WOFF2-metadata-private", "profile": "woff2", "normativeUnit": "Extended metadata, XML schema, and private data" },
+    { "id": "WOFF2-decoder", "profile": "woff2", "normativeUnit": "Decoder conformance requirements" },
+    { "id": "WOFF2-authoring", "profile": "woff2", "normativeUnit": "Authoring-tool conformance requirements" },
+
+    { "id": "AAT-common-lookup", "profile": "aat", "normativeUnit": "Classic/extended lookup formats 0, 2, 4, 6, 8, 10" },
+    { "id": "AAT-common-state", "profile": "aat", "normativeUnit": "Classic/extended state tables and entry flags/actions" },
+    { "id": "AAT-acnt", "profile": "aat", "normativeUnit": "acnt table" },
+    { "id": "AAT-ankr", "profile": "aat", "normativeUnit": "ankr table" },
+    { "id": "AAT-bsln", "profile": "aat", "normativeUnit": "bsln formats 0, 1, 2, 3" },
+    { "id": "AAT-feat", "profile": "aat", "normativeUnit": "feat table and feature registry settings" },
+    { "id": "AAT-fdsc", "profile": "aat", "normativeUnit": "fdsc table" },
+    { "id": "AAT-fmtx", "profile": "aat", "normativeUnit": "fmtx table" },
+    { "id": "AAT-gcid", "profile": "aat", "normativeUnit": "gcid table" },
+    { "id": "AAT-just", "profile": "aat", "normativeUnit": "just width-delta clusters and postcompensation actions 0-5" },
+    { "id": "AAT-kern", "profile": "aat", "normativeUnit": "kern versions 0/1 and formats 0-3" },
+    { "id": "AAT-kerx", "profile": "aat", "normativeUnit": "kerx formats 0, 1, 2, 4, 6; variation and tuple forms" },
+    { "id": "AAT-lcar", "profile": "aat", "normativeUnit": "lcar formats 0/1" },
+    { "id": "AAT-ltag", "profile": "aat", "normativeUnit": "ltag table" },
+    { "id": "AAT-merg", "profile": "aat", "normativeUnit": "merg table" },
+    { "id": "AAT-mort", "profile": "aat", "normativeUnit": "mort subtable types 0-5" },
+    { "id": "AAT-morx", "profile": "aat", "normativeUnit": "morx subtable types 0-5 and chains" },
+    { "id": "AAT-opbd", "profile": "aat", "normativeUnit": "opbd formats 0/1" },
+    { "id": "AAT-prop", "profile": "aat", "normativeUnit": "prop versions 1-3 and lookup/default properties" },
+    { "id": "AAT-trak", "profile": "aat", "normativeUnit": "trak horizontal/vertical tracks and sizes" },
+    { "id": "AAT-zapf", "profile": "aat", "normativeUnit": "Zapf table" },
+    { "id": "AAT-variations", "profile": "aat", "normativeUnit": "AAT/OpenType variation coexistence and tuple application" },
+
+    { "id": "Graphite-Silf", "profile": "graphite", "normativeUnit": "Silf versions 1-5, passes, FSM, classes, pseudo glyphs" },
+    { "id": "Graphite-Glat", "profile": "graphite", "normativeUnit": "Glat versions 1-3, attribute runs, octaboxes/subboxes" },
+    { "id": "Graphite-Gloc", "profile": "graphite", "normativeUnit": "Gloc versions 1/2 and 16/32-bit offsets" },
+    { "id": "Graphite-Feat", "profile": "graphite", "normativeUnit": "Feat versions 1/2 and settings" },
+    { "id": "Graphite-Sill", "profile": "graphite", "normativeUnit": "Sill versions 1/2 and language defaults" },
+    { "id": "Graphite-compression", "profile": "graphite", "normativeUnit": "Graphite LZ4 table compression schemes" },
+    { "id": "Graphite-VM", "profile": "graphite", "normativeUnit": "All executable VM opcodes, stack, context, and slot mutation" },
+    { "id": "Graphite-passes", "profile": "graphite", "normativeUnit": "Substitution, positioning, justification, bidi, and direction reversal" },
+    { "id": "Graphite-attachments", "profile": "graphite", "normativeUnit": "Attachment trees, associations, clusters, ligature components" },
+    { "id": "Graphite-collision-shift", "profile": "graphite", "normativeUnit": "Collision shifting axes, zones, exclusions, sequences" },
+    { "id": "Graphite-collision-kern", "profile": "graphite", "normativeUnit": "Collision kerning and Graphite2 1.3.15 RTL non-overlap spacing" },
+    { "id": "Graphite-subset", "profile": "graphite", "normativeUnit": "Stable/compact closure, GID/class/attribute/paint rebuild" }
+  ]
+}

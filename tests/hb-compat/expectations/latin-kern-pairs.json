@@ -1,0 +1,140 @@
+{
+  "font": "Roboto-Regular.ttf",
+  "text": "To AV Ta Yo We",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 57,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1123,
+      "ay": 0
+    },
+    {
+      "g": 84,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1168,
+      "ay": 0
+    },
+    {
+      "g": 5,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 507,
+      "ay": 0
+    },
+    {
+      "g": 38,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1249,
+      "ay": 0
+    },
+    {
+      "g": 59,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1303,
+      "ay": 0
+    },
+    {
+      "g": 5,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 467,
+      "ay": 0
+    },
+    {
+      "g": 57,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1109,
+      "ay": 0
+    },
+    {
+      "g": 70,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1114,
+      "ay": 0
+    },
+    {
+      "g": 5,
+      "cl": 8,
+      "dx": 0,
+      "dy": 0,
+      "ax": 507,
+      "ay": 0
+    },
+    {
+      "g": 62,
+      "cl": 9,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1165,
+      "ay": 0
+    },
+    {
+      "g": 84,
+      "cl": 10,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1168,
+      "ay": 0
+    },
+    {
+      "g": 5,
+      "cl": 11,
+      "dx": 0,
+      "dy": 0,
+      "ax": 507,
+      "ay": 0
+    },
+    {
+      "g": 60,
+      "cl": 12,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1817,
+      "ay": 0
+    },
+    {
+      "g": 74,
+      "cl": 13,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1085,
+      "ay": 0
+    }
+  ]
+}

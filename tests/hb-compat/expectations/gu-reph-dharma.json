@@ -1,0 +1,66 @@
+{
+  "font": "NotoSansGujarati-Regular.ttf",
+  "text": "ધર્મ",
+  "options": {
+    "direction": "ltr",
+    "script": "gjr2",
+    "hbScript": "Gujr",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 39,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 606,
+      "ay": 0
+    },
+    {
+      "g": 45,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 594,
+      "ay": 0
+    },
+    {
+      "g": 131,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

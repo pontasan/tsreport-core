@@ -1,0 +1,116 @@
+{
+  "font": "SourceSans3-Regular.otf",
+  "text": "office fi ffi",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 42,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 542,
+      "ay": 0
+    },
+    {
+      "g": 687,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 577,
+      "ay": 0
+    },
+    {
+      "g": 36,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 246,
+      "ay": 0
+    },
+    {
+      "g": 30,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 435,
+      "ay": 0
+    },
+    {
+      "g": 32,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 496,
+      "ay": 0
+    },
+    {
+      "g": 1,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 200,
+      "ay": 0
+    },
+    {
+      "g": 33,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 292,
+      "ay": 0
+    },
+    {
+      "g": 36,
+      "cl": 8,
+      "dx": 0,
+      "dy": 0,
+      "ax": 246,
+      "ay": 0
+    },
+    {
+      "g": 1,
+      "cl": 9,
+      "dx": 0,
+      "dy": 0,
+      "ax": 200,
+      "ay": 0
+    },
+    {
+      "g": 687,
+      "cl": 10,
+      "dx": 0,
+      "dy": 0,
+      "ax": 577,
+      "ay": 0
+    },
+    {
+      "g": 36,
+      "cl": 12,
+      "dx": 0,
+      "dy": 0,
+      "ax": 246,
+      "ay": 0
+    }
+  ]
+}

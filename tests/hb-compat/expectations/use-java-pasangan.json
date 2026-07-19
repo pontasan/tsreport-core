@@ -1,0 +1,67 @@
+{
+  "font": "NotoSansJavanese-Regular.ttf",
+  "text": "ꦠ꧀ꦏꦸ",
+  "options": {
+    "direction": "ltr",
+    "script": "java",
+    "hbScript": "Java",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "pref",
+      "rkrf",
+      "abvf",
+      "blwf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "abvs",
+      "blws",
+      "haln",
+      "pres",
+      "psts",
+      "rlig",
+      "calt",
+      "clig",
+      "liga",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,pref,rkrf,abvf,blwf,half,pstf,vatu,cjct,abvs,blws,haln,pres,psts,rlig,calt,clig,liga,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 43,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1183,
+      "ay": 0
+    },
+    {
+      "g": 297,
+      "cl": 0,
+      "dx": -1,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 89,
+      "cl": 0,
+      "dx": -1,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

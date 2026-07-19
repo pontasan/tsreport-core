@@ -1,0 +1,50 @@
+{
+  "font": "NotoSansMyanmar-Regular.ttf",
+  "text": "င်္က",
+  "options": {
+    "direction": "ltr",
+    "script": "mym2",
+    "hbScript": "Mymr",
+    "features": [
+      "locl",
+      "ccmp",
+      "rphf",
+      "pref",
+      "blwf",
+      "pstf",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "liga",
+      "clig",
+      "calt",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,rphf,pref,blwf,pstf,pres,abvs,blws,psts,liga,clig,calt,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 4,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1124,
+      "ay": 0
+    },
+    {
+      "g": 189,
+      "cl": 0,
+      "dx": -1,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

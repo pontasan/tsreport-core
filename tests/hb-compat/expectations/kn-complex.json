@@ -1,0 +1,58 @@
+{
+  "font": "NotoSansKannada-Regular.ttf",
+  "text": "ಕ್ಷ್ಣ",
+  "options": {
+    "direction": "ltr",
+    "script": "knd2",
+    "hbScript": "Knda",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 331,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 574,
+      "ay": 0
+    },
+    {
+      "g": 395,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 457,
+      "ay": 0
+    }
+  ]
+}

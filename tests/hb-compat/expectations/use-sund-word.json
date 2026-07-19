@@ -1,0 +1,75 @@
+{
+  "font": "NotoSansSundanese-Regular.ttf",
+  "text": "ᮘᮥᮔ᮪",
+  "options": {
+    "direction": "ltr",
+    "script": "sund",
+    "hbScript": "Sund",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "pref",
+      "rkrf",
+      "abvf",
+      "blwf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "abvs",
+      "blws",
+      "haln",
+      "pres",
+      "psts",
+      "rlig",
+      "calt",
+      "clig",
+      "liga",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,pref,rkrf,abvf,blwf,half,pstf,vatu,cjct,abvs,blws,haln,pres,psts,rlig,calt,clig,liga,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 31,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 970,
+      "ay": 0
+    },
+    {
+      "g": 48,
+      "cl": 0,
+      "dx": 56,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 27,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 721,
+      "ay": 0
+    },
+    {
+      "g": 55,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 264,
+      "ay": 0
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "font": "NotoSansTelugu-Regular.ttf",
+  "text": "తెలుగు",
+  "options": {
+    "direction": "ltr",
+    "script": "tel2",
+    "hbScript": "Telu",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 278,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 778,
+      "ay": 0
+    },
+    {
+      "g": 51,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 709,
+      "ay": 0
+    },
+    {
+      "g": 63,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 346,
+      "ay": 0
+    },
+    {
+      "g": 25,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 583,
+      "ay": 0
+    },
+    {
+      "g": 63,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 346,
+      "ay": 0
+    }
+  ]
+}

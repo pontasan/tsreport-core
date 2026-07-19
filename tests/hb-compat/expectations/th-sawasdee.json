@@ -1,0 +1,76 @@
+{
+  "font": "NotoSansThai-Regular.ttf",
+  "text": "สวัสดี",
+  "options": {
+    "direction": "ltr",
+    "script": "thai",
+    "hbScript": "Thai",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 110,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 572,
+      "ay": 0
+    },
+    {
+      "g": 134,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 492,
+      "ay": 0
+    },
+    {
+      "g": 45,
+      "cl": 1,
+      "dx": 10,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 110,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 572,
+      "ay": 0
+    },
+    {
+      "g": 12,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 616,
+      "ay": 0
+    },
+    {
+      "g": 94,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

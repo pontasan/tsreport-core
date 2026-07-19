@@ -1,0 +1,66 @@
+{
+  "font": "NotoSansOriya-Regular.ttf",
+  "text": "ଧର୍ମ",
+  "options": {
+    "direction": "ltr",
+    "script": "ory2",
+    "hbScript": "Orya",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 38,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 691,
+      "ay": 0
+    },
+    {
+      "g": 44,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 741,
+      "ay": 0
+    },
+    {
+      "g": 82,
+      "cl": 1,
+      "dx": -459,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

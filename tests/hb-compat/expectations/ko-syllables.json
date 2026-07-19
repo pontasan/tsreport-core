@@ -1,0 +1,66 @@
+{
+  "font": "NotoSansKR-Regular.otf",
+  "text": "한글테스트",
+  "options": {
+    "direction": "ltr",
+    "script": "hang",
+    "hbScript": "Hang",
+    "features": [
+      "locl",
+      "ccmp",
+      "ljmo",
+      "vjmo",
+      "tjmo",
+      "rlig",
+      "liga",
+      "clig",
+      "rclt",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,ljmo,vjmo,tjmo,rlig,liga,clig,rclt,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 20904,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 920,
+      "ay": 0
+    },
+    {
+      "g": 10828,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 920,
+      "ay": 0
+    },
+    {
+      "g": 19864,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 920,
+      "ay": 0
+    },
+    {
+      "g": 16112,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 920,
+      "ay": 0
+    },
+    {
+      "g": 20228,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 920,
+      "ay": 0
+    }
+  ]
+}

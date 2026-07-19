@@ -1,0 +1,54 @@
+{
+  "font": "NotoSansNKo-Regular.ttf",
+  "text": "ߒߞߏ",
+  "options": {
+    "direction": "rtl",
+    "script": "nko ",
+    "hbScript": "Nkoo",
+    "features": [
+      "stch",
+      "ccmp",
+      "locl",
+      "rlig",
+      "calt",
+      "liga",
+      "clig",
+      "rclt",
+      "mset",
+      "curs",
+      "dist",
+      "kern",
+      "mark",
+      "mkmk",
+      "abvm",
+      "blwm"
+    ],
+    "hbFeatures": "stch,ccmp,locl,rlig,calt,liga,clig,rclt,mset,curs,dist,kern,mark,mkmk,abvm,blwm"
+  },
+  "glyphs": [
+    {
+      "g": 82,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 551,
+      "ay": 0
+    },
+    {
+      "g": 128,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 544,
+      "ay": 0
+    },
+    {
+      "g": 93,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 685,
+      "ay": 0
+    }
+  ]
+}

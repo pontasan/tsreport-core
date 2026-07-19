@@ -1,0 +1,64 @@
+{
+  "font": "NotoSerifTibetan-Regular.ttf",
+  "text": "བསྒྲུབས་",
+  "options": {
+    "direction": "ltr",
+    "script": "tibt",
+    "hbScript": "Tibt",
+    "features": [
+      "locl",
+      "ccmp",
+      "abvs",
+      "blws",
+      "calt",
+      "liga",
+      "kern",
+      "abvm",
+      "blwm",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,abvs,blws,calt,liga,kern,abvm,blwm,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 27,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 641,
+      "ay": 0
+    },
+    {
+      "g": 1103,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 675,
+      "ay": 0
+    },
+    {
+      "g": 27,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 641,
+      "ay": 0
+    },
+    {
+      "g": 43,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 675,
+      "ay": 0
+    },
+    {
+      "g": 1261,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 210,
+      "ay": 0
+    }
+  ]
+}

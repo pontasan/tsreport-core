@@ -1,0 +1,78 @@
+{
+  "font": "NotoSansSyriac-Regular.ttf",
+  "text": "ܫܠܵܡܵܐ",
+  "options": {
+    "direction": "rtl",
+    "script": "syrc",
+    "hbScript": "Syrc",
+    "features": [
+      "stch",
+      "ccmp",
+      "locl",
+      "rlig",
+      "calt",
+      "liga",
+      "clig",
+      "rclt",
+      "mset",
+      "curs",
+      "dist",
+      "kern",
+      "mark",
+      "mkmk",
+      "abvm",
+      "blwm"
+    ],
+    "hbFeatures": "stch,ccmp,locl,rlig,calt,liga,clig,rclt,mset,curs,dist,kern,mark,mkmk,abvm,blwm"
+  },
+  "glyphs": [
+    {
+      "g": 260,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 986,
+      "ay": 0
+    },
+    {
+      "g": 146,
+      "cl": 3,
+      "dx": 422,
+      "dy": -17,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 64,
+      "cl": 3,
+      "dx": -60,
+      "dy": 0,
+      "ax": 836,
+      "ay": 0
+    },
+    {
+      "g": 146,
+      "cl": 1,
+      "dx": -30,
+      "dy": 270,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 60,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 338,
+      "ay": 0
+    },
+    {
+      "g": 101,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 739,
+      "ay": 0
+    }
+  ]
+}

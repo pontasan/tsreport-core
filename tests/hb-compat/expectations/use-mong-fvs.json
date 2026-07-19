@@ -1,0 +1,67 @@
+{
+  "font": "NotoSansMongolian-Regular.ttf",
+  "text": "ᠠ᠋ᠡ",
+  "options": {
+    "direction": "ltr",
+    "script": "mong",
+    "hbScript": "Mong",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "pref",
+      "rkrf",
+      "abvf",
+      "blwf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "abvs",
+      "blws",
+      "haln",
+      "pres",
+      "psts",
+      "rlig",
+      "calt",
+      "clig",
+      "liga",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,pref,rkrf,abvf,blwf,half,pstf,vatu,cjct,abvs,blws,haln,pres,psts,rlig,calt,clig,liga,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 9,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 492,
+      "ay": 0
+    },
+    {
+      "g": 1465,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 19,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 427,
+      "ay": 0
+    }
+  ]
+}

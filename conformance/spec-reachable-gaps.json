@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "scope": [
+    "src/pdf",
+    "src/image",
+    "src/compression",
+    "src/parsers",
+    "src/hinting",
+    "src/shaping",
+    "src/subset"
+  ],
+  "classification": {
+    "included": "A branch reachable by an input permitted by ISO 32000-2, OpenType 1.9.1, or one of their mandatory referenced specifications.",
+    "excluded": [
+      "malformed input and reserved-value rejection",
+      "unknown future version or extension rejection",
+      "a value the normative specification explicitly requires consumers to ignore",
+      "an unavailable optional host capability when the format remains supported through the public injection API",
+      "WebP and AVIF APIs, which are not normative dependencies of PDF 2.0 or OpenType 1.9.1"
+    ]
+  },
+  "gaps": []
+}

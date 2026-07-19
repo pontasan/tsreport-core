@@ -1,0 +1,68 @@
+{
+  "font": "NotoSansLao-Regular.ttf",
+  "text": "ເມືອງ",
+  "options": {
+    "direction": "ltr",
+    "script": "lao ",
+    "hbScript": "Laoo",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 81,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 281,
+      "ay": 0
+    },
+    {
+      "g": 38,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 614,
+      "ay": 0
+    },
+    {
+      "g": 73,
+      "cl": 1,
+      "dx": -572,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 49,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 620,
+      "ay": 0
+    },
+    {
+      "g": 13,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 369,
+      "ay": 0
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "specifications": {
+    "PDF/A-1b": "ISO 19005-1:2005 with Cor.1:2007 and Cor.2:2011",
+    "PDF/A-2b": "ISO 19005-2:2011",
+    "PDF/A-3b": "ISO 19005-3:2012"
+  },
+  "independentProfileSource": "veraPDF validation profiles",
+  "independentValidator": {
+    "name": "veraPDF Greenfield",
+    "version": "1.30.2",
+    "installerSha256": "6cc6341cb1af644044054b81f00a6590a7918abb18f762243de115258bcad838",
+    "signingFingerprint": "13DD102B4DD69354D12DE5A83184863278B17FE7"
+  },
+  "independentCorpus": {
+    "repository": "https://github.com/veraPDF/veraPDF-corpus",
+    "commit": "49de56cd987929932c9e4fbbbe67d052bf44ef83",
+    "license": "CC-BY-4.0",
+    "profiles": {
+      "PDF/A-1b": { "total": 569, "pass": 263, "fail": 306 },
+      "PDF/A-2b": { "total": 986, "pass": 377, "fail": 609 },
+      "PDF/A-3b": { "total": 12, "pass": 7, "fail": 5 }
+    },
+    "supplementalSuites": {
+      "Isartor PDF/A-1b": { "total": 204, "pass": 0, "fail": 204 },
+      "TWG PDF/A-1b": { "total": 33, "pass": 16, "fail": 17 },
+      "TWG PDF/A-2b": { "total": 40, "pass": 22, "fail": 18 },
+      "TWG PDF/A-3b": { "total": 12, "pass": 7, "fail": 5 }
+    },
+    "total": { "fixtures": 1856, "pass": 692, "fail": 1164 }
+  },
+  "ruleFamilies": [
+    {
+      "id": "file-framing-and-trailers",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-parser.ts", "src/pdf/pdf-linearize.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/pdf-linearize.test.ts", "tests/pdf/pdf-file-framing.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/pdf-xref-integrity.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "object-syntax-and-limits",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-parser.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/pdf-object-syntax.test.ts", "tests/pdf/pdf-stream-syntax.test.ts"],
+      "negative": ["tests/pdf/pdf-object-syntax.test.ts", "tests/pdf/pdf-malformed-fuzz-regression.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "filters-encryption-and-filespec-boundary",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-parser.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/pdf-filter-decode.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/pdf-stream-syntax.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "output-intents-icc-and-device-colour",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/pdf/icc-profile-reader.ts", "src/pdf/pdf-colorspace.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/icc-conformance.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/icc-conformance.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "images-xobjects-and-jpeg2000",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/compression/jpx-decoder.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/compression/jpx-decoder.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "content-graphics-state-halftones-and-overprint",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/pdf/content-lexer.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/renderer/device-raster.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "fonts-cmaps-glyphs-widths-and-rendering-mode",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-text-decoder.ts", "src/pdf/pdf-cmap.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/pdf-cmap.test.ts", "tests/pdf/type1-embedded.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "transparency-blend-and-page-groups",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/renderer/pdf-compositor.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/renderer/pdf-transparency-group.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "annotations-actions-and-appearances",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-page-importer.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/renderer/pdf-annotations.test.ts", "tests/renderer/pdf-annotation-appearance.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "acroform-appearance-and-action-boundary",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/renderer/form-field-appearance.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/renderer/pdf-acroform.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "xmp-identification-synchronization-and-extension-schemas",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-xmp.ts", "src/xml/xml-parser.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-page-importer.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/pdf-xmp.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts", "tests/pdf/pdf-xml-unicode-conformance.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "signatures-permissions-and-whole-file-byte-range",
+      "profiles": ["PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-signature.ts"],
+      "reachable": ["src/pdf/pdf-signature.ts", "src/pdf/pdf-signer.ts"],
+      "tested": ["tests/pdf/pdf-sign-roundtrip.test.ts", "tests/pdf/pdf-signature-extensions-conformance.test.ts"],
+      "negative": ["tests/pdf/pdf-signature-extensions-conformance.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "optional-content-configurations",
+      "profiles": ["PDF/A-1b", "PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-page-importer.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts", "tests/renderer/pdf-ocg.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts"],
+      "noOpenBranch": true
+    },
+    {
+      "id": "embedded-and-associated-files",
+      "profiles": ["PDF/A-2b", "PDF/A-3b"],
+      "implemented": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-page-importer.ts"],
+      "reachable": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-page-importer.ts"],
+      "tested": ["tests/renderer/pdf-pdfa.test.ts"],
+      "negative": ["tests/renderer/pdf-pdfa.test.ts"],
+      "noOpenBranch": true
+    }
+  ]
+}

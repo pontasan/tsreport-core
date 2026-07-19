@@ -1,0 +1,75 @@
+{
+  "font": "NotoSansBuginese-Regular.ttf",
+  "text": "ᨀᨙᨁᨗ",
+  "options": {
+    "direction": "ltr",
+    "script": "bugi",
+    "hbScript": "Bugi",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "pref",
+      "rkrf",
+      "abvf",
+      "blwf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "abvs",
+      "blws",
+      "haln",
+      "pres",
+      "psts",
+      "rlig",
+      "calt",
+      "clig",
+      "liga",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,pref,rkrf,abvf,blwf,half,pstf,vatu,cjct,abvs,blws,haln,pres,psts,rlig,calt,clig,liga,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 37,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 357,
+      "ay": 0
+    },
+    {
+      "g": 1,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 677,
+      "ay": 0
+    },
+    {
+      "g": 2,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1046,
+      "ay": 0
+    },
+    {
+      "g": 35,
+      "cl": 2,
+      "dx": -597,
+      "dy": -117,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

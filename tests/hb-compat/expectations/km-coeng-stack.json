@@ -1,0 +1,67 @@
+{
+  "font": "NotoSansKhmer-Regular.ttf",
+  "text": "ស្ត្រី",
+  "options": {
+    "direction": "ltr",
+    "script": "khmr",
+    "hbScript": "Khmr",
+    "features": [
+      "locl",
+      "ccmp",
+      "pref",
+      "blwf",
+      "abvf",
+      "pstf",
+      "cfar",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "liga",
+      "clig",
+      "calt",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,pref,blwf,abvf,pstf,cfar,pres,abvs,blws,psts,liga,clig,calt,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 196,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 287,
+      "ay": 0
+    },
+    {
+      "g": 59,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 928,
+      "ay": 0
+    },
+    {
+      "g": 180,
+      "cl": 0,
+      "dx": 14,
+      "dy": -26,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 85,
+      "cl": 0,
+      "dx": -32,
+      "dy": -29,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

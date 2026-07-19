@@ -1,0 +1,70 @@
+{
+  "font": "NotoSansAdlam-Regular.ttf",
+  "text": "𞤀𞤣𞤤𞤢𞤥",
+  "options": {
+    "direction": "rtl",
+    "script": "adlm",
+    "hbScript": "Adlm",
+    "features": [
+      "stch",
+      "ccmp",
+      "locl",
+      "rlig",
+      "calt",
+      "liga",
+      "clig",
+      "rclt",
+      "mset",
+      "curs",
+      "dist",
+      "kern",
+      "mark",
+      "mkmk",
+      "abvm",
+      "blwm"
+    ],
+    "hbFeatures": "stch,ccmp,locl,rlig,calt,liga,clig,rclt,mset,curs,dist,kern,mark,mkmk,abvm,blwm"
+  },
+  "glyphs": [
+    {
+      "g": 258,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 588,
+      "ay": 0
+    },
+    {
+      "g": 143,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 669,
+      "ay": 0
+    },
+    {
+      "g": 254,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 616,
+      "ay": 0
+    },
+    {
+      "g": 180,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 625,
+      "ay": 0
+    },
+    {
+      "g": 3,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 715,
+      "ay": 0
+    }
+  ]
+}

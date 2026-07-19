@@ -1,0 +1,75 @@
+{
+  "font": "NotoSansKhmer-Regular.ttf",
+  "text": "កម្ពុជា",
+  "options": {
+    "direction": "ltr",
+    "script": "khmr",
+    "hbScript": "Khmr",
+    "features": [
+      "locl",
+      "ccmp",
+      "pref",
+      "blwf",
+      "abvf",
+      "pstf",
+      "cfar",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "liga",
+      "clig",
+      "calt",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,pref,blwf,abvf,pstf,cfar,pres,abvs,blws,psts,liga,clig,calt,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 25,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 636,
+      "ay": 0
+    },
+    {
+      "g": 52,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 635,
+      "ay": 0
+    },
+    {
+      "g": 189,
+      "cl": 1,
+      "dx": -1,
+      "dy": -26,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 91,
+      "cl": 1,
+      "dx": -22,
+      "dy": -296,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 226,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 923,
+      "ay": 0
+    }
+  ]
+}

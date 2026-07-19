@@ -1,0 +1,90 @@
+{
+  "font": "NotoSansMalayalam-Regular.ttf",
+  "text": "മലയാളം",
+  "options": {
+    "direction": "ltr",
+    "script": "mlm2",
+    "hbScript": "Mlym",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 48,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 723,
+      "ay": 0
+    },
+    {
+      "g": 52,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 859,
+      "ay": 0
+    },
+    {
+      "g": 49,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1035,
+      "ay": 0
+    },
+    {
+      "g": 64,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 504,
+      "ay": 0
+    },
+    {
+      "g": 53,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 724,
+      "ay": 0
+    },
+    {
+      "g": 6,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 453,
+      "ay": 0
+    }
+  ]
+}

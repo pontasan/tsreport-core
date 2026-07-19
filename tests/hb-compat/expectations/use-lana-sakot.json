@@ -1,0 +1,67 @@
+{
+  "font": "NotoSansTaiTham-Regular.ttf",
+  "text": "ᨠ᩠ᨲᩮ",
+  "options": {
+    "direction": "ltr",
+    "script": "lana",
+    "hbScript": "Lana",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "pref",
+      "rkrf",
+      "abvf",
+      "blwf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "abvs",
+      "blws",
+      "haln",
+      "pres",
+      "psts",
+      "rlig",
+      "calt",
+      "clig",
+      "liga",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,pref,rkrf,abvf,blwf,half,pstf,vatu,cjct,abvs,blws,haln,pres,psts,rlig,calt,clig,liga,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 519,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1058,
+      "ay": 0
+    },
+    {
+      "g": 625,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 579,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 590,
+      "ay": 0
+    }
+  ]
+}

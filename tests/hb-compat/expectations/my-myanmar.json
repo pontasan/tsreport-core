@@ -1,0 +1,82 @@
+{
+  "font": "NotoSansMyanmar-Regular.ttf",
+  "text": "မြန်မာ",
+  "options": {
+    "direction": "ltr",
+    "script": "mym2",
+    "hbScript": "Mymr",
+    "features": [
+      "locl",
+      "ccmp",
+      "rphf",
+      "pref",
+      "blwf",
+      "pstf",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "liga",
+      "clig",
+      "calt",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,rphf,pref,blwf,pstf,pres,abvs,blws,psts,liga,clig,calt,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 47,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 229,
+      "ay": 0
+    },
+    {
+      "g": 29,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 676,
+      "ay": 0
+    },
+    {
+      "g": 24,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 570,
+      "ay": 0
+    },
+    {
+      "g": 381,
+      "cl": 2,
+      "dx": 43,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 29,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 676,
+      "ay": 0
+    },
+    {
+      "g": 368,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 455,
+      "ay": 0
+    }
+  ]
+}

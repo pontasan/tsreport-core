@@ -1,0 +1,60 @@
+{
+  "font": "NotoSansThai-Regular.ttf",
+  "text": "ปิ่น",
+  "options": {
+    "direction": "ltr",
+    "script": "thai",
+    "hbScript": "Thai",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 80,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 605,
+      "ay": 0
+    },
+    {
+      "g": 93,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 44,
+      "cl": 0,
+      "dx": -138,
+      "dy": -59,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 71,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 613,
+      "ay": 0
+    }
+  ]
+}

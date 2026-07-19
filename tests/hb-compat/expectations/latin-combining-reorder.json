@@ -1,0 +1,44 @@
+{
+  "font": "NotoSans-Regular.ttf",
+  "text": "ạ́",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 759,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 561,
+      "ay": 0
+    },
+    {
+      "g": 2665,
+      "cl": 0,
+      "dx": -8,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

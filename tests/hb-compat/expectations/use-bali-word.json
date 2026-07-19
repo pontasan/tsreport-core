@@ -1,0 +1,83 @@
+{
+  "font": "NotoSansBalinese-Regular.ttf",
+  "text": "ᬩᬸᬫ᭄ᬤᬾ",
+  "options": {
+    "direction": "ltr",
+    "script": "bali",
+    "hbScript": "Bali",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "pref",
+      "rkrf",
+      "abvf",
+      "blwf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "abvs",
+      "blws",
+      "haln",
+      "pres",
+      "psts",
+      "rlig",
+      "calt",
+      "clig",
+      "liga",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,pref,rkrf,abvf,blwf,half,pstf,vatu,cjct,abvs,blws,haln,pres,psts,rlig,calt,clig,liga,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 46,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1205,
+      "ay": 0
+    },
+    {
+      "g": 61,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 67,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 523,
+      "ay": 0
+    },
+    {
+      "g": 48,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 838,
+      "ay": 0
+    },
+    {
+      "g": 193,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

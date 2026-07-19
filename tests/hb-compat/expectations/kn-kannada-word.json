@@ -1,0 +1,74 @@
+{
+  "font": "NotoSansKannada-Regular.ttf",
+  "text": "ಕನ್ನಡ",
+  "options": {
+    "direction": "ltr",
+    "script": "knd2",
+    "hbScript": "Knda",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 23,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 574,
+      "ay": 0
+    },
+    {
+      "g": 42,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 711,
+      "ay": 0
+    },
+    {
+      "g": 123,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 105,
+      "ay": 0
+    },
+    {
+      "g": 35,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 768,
+      "ay": 0
+    }
+  ]
+}

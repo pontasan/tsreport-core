@@ -1,0 +1,70 @@
+{
+  "font": "NotoSansArabic-Regular.ttf",
+  "text": "١٢٣٤٥",
+  "options": {
+    "direction": "rtl",
+    "script": "arab",
+    "hbScript": "Arab",
+    "features": [
+      "stch",
+      "ccmp",
+      "locl",
+      "rlig",
+      "calt",
+      "liga",
+      "clig",
+      "rclt",
+      "mset",
+      "curs",
+      "dist",
+      "kern",
+      "mark",
+      "mkmk",
+      "abvm",
+      "blwm"
+    ],
+    "hbFeatures": "stch,ccmp,locl,rlig,calt,liga,clig,rclt,mset,curs,dist,kern,mark,mkmk,abvm,blwm"
+  },
+  "glyphs": [
+    {
+      "g": 135,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 572,
+      "ay": 0
+    },
+    {
+      "g": 134,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 572,
+      "ay": 0
+    },
+    {
+      "g": 133,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 572,
+      "ay": 0
+    },
+    {
+      "g": 132,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 572,
+      "ay": 0
+    },
+    {
+      "g": 131,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 572,
+      "ay": 0
+    }
+  ]
+}

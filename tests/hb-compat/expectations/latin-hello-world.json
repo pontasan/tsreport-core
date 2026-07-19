@@ -1,0 +1,116 @@
+{
+  "font": "Roboto-Regular.ttf",
+  "text": "Hello World",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 45,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1460,
+      "ay": 0
+    },
+    {
+      "g": 74,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1085,
+      "ay": 0
+    },
+    {
+      "g": 81,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 81,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 84,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1168,
+      "ay": 0
+    },
+    {
+      "g": 5,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 507,
+      "ay": 0
+    },
+    {
+      "g": 60,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1786,
+      "ay": 0
+    },
+    {
+      "g": 84,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1168,
+      "ay": 0
+    },
+    {
+      "g": 87,
+      "cl": 8,
+      "dx": 0,
+      "dy": 0,
+      "ax": 693,
+      "ay": 0
+    },
+    {
+      "g": 81,
+      "cl": 9,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 73,
+      "cl": 10,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1155,
+      "ay": 0
+    }
+  ]
+}

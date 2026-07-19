@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "specification": "ISO 32000-2:2020 with PDF Association Errata Collection 3",
+  "fixtures": [
+    { "id": "syntax-and-extensions", "clause": "7", "builder": "syntax", "checks": ["core-reader", "qpdf"] },
+    { "id": "graphics", "clause": "8", "builder": "graphics", "checks": ["core-reader", "qpdf", "poppler-render", "ghostscript-render"] },
+    { "id": "text", "clause": "9", "builder": "text", "checks": ["core-reader", "qpdf", "pdftotext", "pdffonts"] },
+    { "id": "rendering", "clause": "10", "builder": "rendering", "checks": ["core-reader", "qpdf", "poppler-render", "ghostscript-render"] },
+    { "id": "transparency", "clause": "11", "builder": "transparency", "checks": ["core-reader", "qpdf", "poppler-render", "ghostscript-render"] },
+    { "id": "interactive", "clause": "12", "builder": "interactive", "checks": ["core-reader", "qpdf"] },
+    { "id": "multimedia", "clause": "13", "builder": "multimedia", "checks": ["core-reader", "qpdf"] },
+    { "id": "document-interchange", "clause": "14", "builder": "interchange", "checks": ["core-reader", "qpdf", "pdftotext"] }
+  ]
+}

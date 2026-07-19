@@ -1,0 +1,98 @@
+{
+  "font": "NotoSansGujarati-Regular.ttf",
+  "text": "ગુજરાતી",
+  "options": {
+    "direction": "ltr",
+    "script": "gjr2",
+    "hbScript": "Gujr",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 480,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 654,
+      "ay": 0
+    },
+    {
+      "g": 60,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 28,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 822,
+      "ay": 0
+    },
+    {
+      "g": 47,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 445,
+      "ay": 0
+    },
+    {
+      "g": 57,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 265,
+      "ay": 0
+    },
+    {
+      "g": 36,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 572,
+      "ay": 0
+    },
+    {
+      "g": 59,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 265,
+      "ay": 0
+    }
+  ]
+}

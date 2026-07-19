@@ -1,0 +1,74 @@
+{
+  "font": "NotoSansGurmukhi-Regular.ttf",
+  "text": "ਪੱਕਾ",
+  "options": {
+    "direction": "ltr",
+    "script": "gur2",
+    "hbScript": "Guru",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 37,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 593,
+      "ay": 0
+    },
+    {
+      "g": 78,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 17,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 622,
+      "ay": 0
+    },
+    {
+      "g": 51,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 235,
+      "ay": 0
+    }
+  ]
+}

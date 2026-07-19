@@ -1,0 +1,109 @@
+{
+  "font": "SourceSans3-Regular.otf",
+  "text": "0123456789",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt",
+      "onum"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt,onum"
+  },
+  "glyphs": [
+    {
+      "g": 1357,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 1358,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 1359,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 1360,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 1361,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 1362,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 1363,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 1364,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 1365,
+      "cl": 8,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    },
+    {
+      "g": 1366,
+      "cl": 9,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    }
+  ]
+}

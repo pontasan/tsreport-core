@@ -1,0 +1,84 @@
+{
+  "font": "NotoSansThai-Regular.ttf",
+  "text": "เกียรติ",
+  "options": {
+    "direction": "ltr",
+    "script": "thai",
+    "hbScript": "Thai",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 91,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 295,
+      "ay": 0
+    },
+    {
+      "g": 29,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 600,
+      "ay": 0
+    },
+    {
+      "g": 94,
+      "cl": 1,
+      "dx": -2,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 136,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 594,
+      "ay": 0
+    },
+    {
+      "g": 81,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 488,
+      "ay": 0
+    },
+    {
+      "g": 126,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 636,
+      "ay": 0
+    },
+    {
+      "g": 92,
+      "cl": 5,
+      "dx": -4,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "specification": "ISO 32000-2:2020 with PDF Association Errata Collection 3",
+  "sourceOfClauseInventory": "ISO 32000-2:2020 table of contents",
+  "profiles": {
+    "syntax": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/content-lexer.ts", "src/pdf/pdf-parser.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/pdf/pdf-serializer.ts", "src/pdf/pdf-rewrite.ts"] },
+      "renderer": { "status": "not-applicable", "reason": "File syntax is resolved before the rendering model is entered." },
+      "publicApi": { "status": "partial", "evidence": ["src/index.ts", "src/pdf/pdf-import.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/pdf/pdf-corpus.test.ts", "tests/pdf/pdf-rewrite.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/pdf/qpdf-oracle.test.ts"] }
+    },
+    "security": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/pdf-parser.ts", "src/pdf/pdf-pubsec.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/renderer/pdf-encryption.ts", "src/pdf/pdf-pubsec.ts"] },
+      "renderer": { "status": "not-applicable", "reason": "Security handlers expose decrypted PDF objects to the renderer and do not define page painting." },
+      "publicApi": { "status": "partial", "evidence": ["src/index.ts", "src/types/template.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/pdf/pdf-pubsec.test.ts", "tests/renderer/pdf-encryption.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/pdf/qpdf-oracle.test.ts"] }
+    },
+    "graphics": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/content-interpreter.ts", "src/pdf/pdf-colorspace.ts", "src/pdf/pdf-image-importer.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/renderer/pdf-backend.ts"] },
+      "renderer": { "status": "partial", "evidence": ["src/renderer/renderer.ts", "src/renderer/canvas-backend.ts", "src/renderer/svg-backend.ts"] },
+      "publicApi": { "status": "partial", "evidence": ["src/index.ts", "src/types/render.ts", "src/types/template.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/pdf/pdf-import-page.test.ts", "tests/renderer/pdf-integration.test.ts", "tests/renderer/canvas-integration.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/pdf/qpdf-oracle.test.ts", "tests/renderer/pdf-wysiwyg-precision.test.ts"] }
+    },
+    "text": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/pdf-text-decoder.ts", "src/pdf/pdf-encoding.ts", "src/pdf/content-interpreter.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/renderer/pdf-backend.ts"] },
+      "renderer": { "status": "partial", "evidence": ["src/renderer/renderer.ts", "src/measure/glyph-run.ts"] },
+      "publicApi": { "status": "partial", "evidence": ["src/index.ts", "src/font.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/pdf/pdftext-oracle.test.ts", "tests/pdf/pdffonts-oracle.test.ts", "tests/renderer/glyph-run.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/pdf/pdftext-oracle.test.ts", "tests/pdf/pdffonts-oracle.test.ts"] }
+    },
+    "rendering": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/content-interpreter.ts", "src/pdf/pdf-colorspace.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/renderer/pdf-backend.ts"] },
+      "renderer": { "status": "partial", "evidence": ["src/renderer/renderer.ts", "src/renderer/canvas-backend.ts", "src/renderer/svg-backend.ts"] },
+      "publicApi": { "status": "partial", "evidence": ["src/renderer/backend.ts", "src/types/render.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/renderer/pdf-device-params.test.ts", "tests/renderer/print-color.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/renderer/pdf-wysiwyg-precision.test.ts"] }
+    },
+    "transparency": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/content-interpreter.ts", "src/pdf/pdf-page-importer.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/renderer/pdf-backend.ts"] },
+      "renderer": { "status": "partial", "evidence": ["src/renderer/canvas-backend.ts", "src/renderer/svg-backend.ts"] },
+      "publicApi": { "status": "partial", "evidence": ["src/types/render.ts", "src/renderer/backend.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/renderer/pdf-transparency-group.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/renderer/pdf-wysiwyg-precision.test.ts"] }
+    },
+    "interactive": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/pdf-page-importer.ts", "src/pdf/pdf-parser.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-signer.ts"] },
+      "renderer": { "status": "partial", "evidence": ["src/renderer/form-field-appearance.ts", "src/renderer/pdf-backend.ts"] },
+      "publicApi": { "status": "partial", "evidence": ["src/types/template.ts", "src/index.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/renderer/pdf-annotations.test.ts", "tests/renderer/pdf-acroform.test.ts", "tests/pdf/pdf-signature.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/pdf/qpdf-oracle.test.ts"] }
+    },
+    "multimedia": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/pdf-page-importer.ts", "src/pdf/pdf-3d.ts", "src/pdf/pdf-media.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/renderer/pdf-backend.ts"] },
+      "renderer": { "status": "partial", "evidence": ["src/pdf/pdf-3d.ts", "src/renderer/pdf-backend.ts"] },
+      "publicApi": { "status": "partial", "evidence": ["src/index.ts", "src/pdf/pdf-3d.ts", "src/pdf/pdf-media.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/pdf/pdf-3d.test.ts", "tests/pdf/pdf-media.test.ts", "tests/renderer/pdf-annotations.test.ts"] },
+      "oracle": { "status": "missing", "evidence": ["tests/pdf/qpdf-oracle.test.ts"] }
+    },
+    "interchange": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/pdf-page-importer.ts", "src/pdf/pdf-parser.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/renderer/pdf-backend.ts"] },
+      "renderer": { "status": "partial", "evidence": ["src/renderer/renderer.ts"] },
+      "publicApi": { "status": "partial", "evidence": ["src/types/template.ts", "src/index.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/renderer/pdf-tagged.test.ts", "tests/renderer/pdf-document-parts.test.ts", "tests/renderer/pdf-metadata.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/pdf/pdftext-oracle.test.ts", "tests/pdf/qpdf-oracle.test.ts"] }
+    },
+    "linearization": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/pdf-parser.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/pdf/pdf-linearize.ts"] },
+      "renderer": { "status": "not-applicable", "reason": "Linearization changes byte layout and access order, not page appearance." },
+      "publicApi": { "status": "partial", "evidence": ["src/index.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/pdf/pdf-linearize.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/pdf/qpdf-oracle.test.ts"] }
+    },
+    "extensions": {
+      "reader": { "status": "missing", "evidence": ["src/pdf/pdf-parser.ts"] },
+      "writer": { "status": "missing", "evidence": ["src/renderer/pdf-backend.ts"] },
+      "renderer": { "status": "not-applicable", "reason": "Extension negotiation controls feature interpretation before rendering." },
+      "publicApi": { "status": "missing", "evidence": ["src/index.ts"] },
+      "test": { "status": "missing", "evidence": ["tests/pdf/pdf-corpus.test.ts"] },
+      "oracle": { "status": "missing", "evidence": ["tests/pdf/qpdf-oracle.test.ts"] }
+    },
+    "encoding": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/pdf-encoding.ts", "src/pdf/content-lexer.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/pdf/pdf-serializer.ts", "src/renderer/pdf-backend.ts"] },
+      "renderer": { "status": "partial", "evidence": ["src/renderer/renderer.ts"] },
+      "publicApi": { "status": "partial", "evidence": ["src/index.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/pdf/symbol-encoding.test.ts", "tests/pdf/pdftext-oracle.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/pdf/pdftext-oracle.test.ts"] }
+    },
+    "compatibility": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/pdf-parser.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/pdf/pdf-serializer.ts"] },
+      "renderer": { "status": "not-applicable", "reason": "Version negotiation selects syntax and feature semantics before rendering." },
+      "publicApi": { "status": "partial", "evidence": ["src/index.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/pdf/pdf-corpus.test.ts"] },
+      "oracle": { "status": "partial", "evidence": ["tests/pdf/qpdf-oracle.test.ts"] }
+    },
+    "xfa": {
+      "reader": { "status": "partial", "evidence": ["src/pdf/pdf-page-importer.ts", "src/pdf/pdf-xfa.ts"] },
+      "writer": { "status": "partial", "evidence": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-xfa.ts"] },
+      "renderer": { "status": "missing", "evidence": ["src/renderer/form-field-appearance.ts"] },
+      "publicApi": { "status": "partial", "evidence": ["src/index.ts", "src/renderer/pdf-backend.ts", "src/pdf/pdf-page-importer.ts"] },
+      "test": { "status": "partial", "evidence": ["tests/pdf/pdf-xfa.test.ts", "tests/renderer/pdf-acroform.test.ts"] },
+      "oracle": { "status": "missing", "evidence": ["tests/pdf/qpdf-oracle.test.ts"] }
+    }
+  },
+  "normativeUnits": [
+    { "section": "7.1", "title": "General", "profile": "syntax", "remainingIds": ["P-00"] },
+    { "section": "7.2", "title": "Lexical conventions", "profile": "syntax", "remainingIds": ["P-00"] },
+    { "section": "7.3", "title": "Objects", "profile": "syntax", "remainingIds": ["P-00"] },
+    { "section": "7.4", "title": "Filters", "profile": "syntax", "remainingIds": ["P-00", "P-01", "P-02", "P-03"] },
+    { "section": "7.5", "title": "File structure", "profile": "syntax", "remainingIds": ["P-00", "P-08"] },
+    { "section": "7.6", "title": "Encryption", "profile": "security", "remainingIds": ["P-07"] },
+    { "section": "7.7", "title": "Document structure", "profile": "syntax", "remainingIds": ["P-05", "P-06", "P-10"] },
+    { "section": "7.8", "title": "Content streams and resources", "profile": "graphics", "remainingIds": ["P-04", "P-05"] },
+    { "section": "7.9", "title": "Common data structures", "profile": "syntax", "remainingIds": ["P-00", "P-10"] },
+    { "section": "7.10", "title": "Functions", "profile": "graphics", "remainingIds": ["P-04"] },
+    { "section": "7.11", "title": "File specifications", "profile": "interchange", "remainingIds": ["P-06", "P-10"] },
+    { "section": "7.12", "title": "Extensions dictionary", "profile": "extensions", "remainingIds": ["P-10"] },
+
+    { "section": "8.1", "title": "General", "profile": "graphics", "remainingIds": ["P-04", "P-09"] },
+    { "section": "8.2", "title": "Graphics objects", "profile": "graphics", "remainingIds": ["P-04"] },
+    { "section": "8.3", "title": "Coordinate systems", "profile": "graphics", "remainingIds": ["P-04", "P-09"] },
+    { "section": "8.4", "title": "Graphics state", "profile": "graphics", "remainingIds": ["P-04", "P-09"] },
+    { "section": "8.5", "title": "Path construction and painting", "profile": "graphics", "remainingIds": ["P-04", "P-09"] },
+    { "section": "8.6", "title": "Colour spaces", "profile": "graphics", "remainingIds": ["P-04", "P-09"] },
+    { "section": "8.7", "title": "Patterns", "profile": "graphics", "remainingIds": ["P-04"] },
+    { "section": "8.8", "title": "External objects", "profile": "graphics", "remainingIds": ["P-04"] },
+    { "section": "8.9", "title": "Images", "profile": "graphics", "remainingIds": ["P-01", "P-02", "P-03", "P-04"] },
+    { "section": "8.10", "title": "Form XObjects", "profile": "graphics", "remainingIds": ["P-04", "P-05"] },
+    { "section": "8.11", "title": "Optional content", "profile": "graphics", "remainingIds": ["P-04"] },
+
+    { "section": "9.1", "title": "General", "profile": "text", "remainingIds": ["P-05"] },
+    { "section": "9.2", "title": "Organisation and use of fonts", "profile": "text", "remainingIds": ["P-05"] },
+    { "section": "9.3", "title": "Text state parameters and operators", "profile": "text", "remainingIds": ["P-05"] },
+    { "section": "9.4", "title": "Text objects", "profile": "text", "remainingIds": ["P-05"] },
+    { "section": "9.5", "title": "Introduction to font data structures", "profile": "text", "remainingIds": ["P-05"] },
+    { "section": "9.6", "title": "Simple fonts", "profile": "text", "remainingIds": ["P-05"] },
+    { "section": "9.7", "title": "Composite fonts", "profile": "text", "remainingIds": ["P-05"] },
+    { "section": "9.8", "title": "Font descriptors", "profile": "text", "remainingIds": ["P-05"] },
+    { "section": "9.9", "title": "Embedded font programs", "profile": "text", "remainingIds": ["P-05"] },
+    { "section": "9.10", "title": "Extraction of text content", "profile": "text", "remainingIds": ["P-05", "P-10"] },
+
+    { "section": "10.1", "title": "General", "profile": "rendering", "remainingIds": ["P-09"] },
+    { "section": "10.2", "title": "Raster output device native colour", "profile": "rendering", "remainingIds": ["P-09"] },
+    { "section": "10.3", "title": "CIE-Based colour to device colour", "profile": "rendering", "remainingIds": ["P-04", "P-09"] },
+    { "section": "10.4", "title": "Conversions among device colour spaces", "profile": "rendering", "remainingIds": ["P-04", "P-09"] },
+    { "section": "10.5", "title": "Transfer functions", "profile": "rendering", "remainingIds": ["P-04", "P-09"] },
+    { "section": "10.6", "title": "Halftones", "profile": "rendering", "remainingIds": ["P-09"] },
+    { "section": "10.7", "title": "Scan conversion details", "profile": "rendering", "remainingIds": ["P-09"] },
+    { "section": "10.8", "title": "Rendering for separations", "profile": "rendering", "remainingIds": ["P-09"] },
+
+    { "section": "11.1", "title": "General", "profile": "transparency", "remainingIds": ["P-04", "P-09"] },
+    { "section": "11.2", "title": "Overview of transparency", "profile": "transparency", "remainingIds": ["P-04", "P-09"] },
+    { "section": "11.3", "title": "Basic compositing computations", "profile": "transparency", "remainingIds": ["P-04", "P-09"] },
+    { "section": "11.4", "title": "Transparency groups", "profile": "transparency", "remainingIds": ["P-04", "P-09"] },
+    { "section": "11.5", "title": "Soft masks", "profile": "transparency", "remainingIds": ["P-04", "P-09"] },
+    { "section": "11.6", "title": "Specifying transparency in PDF", "profile": "transparency", "remainingIds": ["P-04", "P-09"] },
+    { "section": "11.7", "title": "Colour space and rendering issues", "profile": "transparency", "remainingIds": ["P-04", "P-09"] },
+
+    { "section": "12.1", "title": "General", "profile": "interactive", "remainingIds": ["P-06"] },
+    { "section": "12.2", "title": "Viewer preferences", "profile": "interactive", "remainingIds": ["P-06"] },
+    { "section": "12.3", "title": "Document-level navigation", "profile": "interactive", "remainingIds": ["P-06", "P-10"] },
+    { "section": "12.4", "title": "Page-level navigation", "profile": "interactive", "remainingIds": ["P-06", "P-10"] },
+    { "section": "12.5", "title": "Annotations", "profile": "interactive", "remainingIds": ["P-06"] },
+    { "section": "12.6", "title": "Actions", "profile": "interactive", "remainingIds": ["P-06"] },
+    { "section": "12.7", "title": "Forms", "profile": "interactive", "remainingIds": ["P-06"] },
+    { "section": "12.8", "title": "Digital signatures", "profile": "security", "remainingIds": ["P-06", "P-07"] },
+    { "section": "12.9", "title": "Measurement properties", "profile": "interactive", "remainingIds": ["P-10"] },
+    { "section": "12.10", "title": "Geospatial features", "profile": "interactive", "remainingIds": ["P-10"] },
+    { "section": "12.11", "title": "Document requirements", "profile": "interactive", "remainingIds": ["P-10"] },
+
+    { "section": "13.1", "title": "General", "profile": "multimedia", "remainingIds": ["P-06"] },
+    { "section": "13.2", "title": "Multimedia", "profile": "multimedia", "remainingIds": ["P-06"] },
+    { "section": "13.3", "title": "Sounds", "profile": "multimedia", "remainingIds": ["P-06"] },
+    { "section": "13.4", "title": "Movies", "profile": "multimedia", "remainingIds": ["P-06"] },
+    { "section": "13.5", "title": "Alternate presentations", "profile": "multimedia", "remainingIds": ["P-06"] },
+    { "section": "13.6", "title": "3D Artwork", "profile": "multimedia", "remainingIds": ["P-06"] },
+    { "section": "13.7", "title": "Rich media", "profile": "multimedia", "remainingIds": ["P-06"] },
+
+    { "section": "14.1", "title": "General", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "14.2", "title": "Procedure sets", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "14.3", "title": "Metadata", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "14.4", "title": "File identifiers", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "14.5", "title": "Page-piece dictionaries", "profile": "interchange", "remainingIds": ["P-09", "P-10"] },
+    { "section": "14.6", "title": "Marked content", "profile": "interchange", "remainingIds": ["P-09", "P-10"] },
+    { "section": "14.7", "title": "Logical structure", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "14.8", "title": "Tagged PDF", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "14.9", "title": "Repurposing and accessibility support", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "14.10", "title": "Web capture", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "14.11", "title": "Prepress support", "profile": "interchange", "remainingIds": ["P-09", "P-10"] },
+    { "section": "14.12", "title": "Document parts", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "14.13", "title": "Associated files", "profile": "interchange", "remainingIds": ["P-10"] },
+
+    { "section": "Annex D", "title": "Character sets and encodings", "profile": "encoding", "remainingIds": ["P-00", "P-05", "P-08"] },
+    { "section": "Annex E", "title": "Extending PDF", "profile": "extensions", "remainingIds": ["P-10"] },
+    { "section": "Annex F", "title": "Linearized PDF", "profile": "linearization", "remainingIds": ["P-08"] },
+    { "section": "Annex I", "title": "PDF versions and compatibility", "profile": "compatibility", "remainingIds": ["P-08", "P-10"] },
+    { "section": "Annex K", "title": "XFA forms", "profile": "xfa", "remainingIds": ["P-06"] },
+    { "section": "Annex L", "title": "Parent-child relationships between standard structure elements", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "Annex O", "title": "Fragment identifiers", "profile": "interchange", "remainingIds": ["P-10"] },
+    { "section": "Annex Q", "title": "Method for determining transparency on a page", "profile": "transparency", "remainingIds": ["P-09"] }
+  ],
+  "informativeUnits": [
+    { "section": "Annex A", "title": "Operator Summary" },
+    { "section": "Annex B", "title": "Operators in Type 4 Functions" },
+    { "section": "Annex C", "title": "Advice on maximising portability" },
+    { "section": "Annex G", "title": "Linearized PDF access strategies" },
+    { "section": "Annex H", "title": "Example PDF files" },
+    { "section": "Annex J", "title": "XObject comparison" },
+    { "section": "Annex M", "title": "Differences between standard structure namespaces" },
+    { "section": "Annex N", "title": "Best practice for halftones" },
+    { "section": "Annex P", "title": "Algorithm to determine the actual blending colour space" }
+  ]
+}

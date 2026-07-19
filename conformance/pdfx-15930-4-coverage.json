@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "specification": "ISO 15930-4:2003 PDF/X-1a:2003",
+  "source": "https://www.iso.org/standard/39938.html",
+  "independentPreflight": {
+    "status": "complete",
+    "validator": "independent PDF/X-1a:2003 preflight",
+    "script": "scripts/run-pdf-conformance.mjs",
+    "test": "tests/pdf/pdfx-preflight-oracle.test.ts",
+    "environmentVariable": "PDFX_PREFLIGHT_BIN",
+    "verificationRun": {
+      "verifiedAt": "2026-07-14 23:28:57 JST",
+      "profile": "PDF/X-1a:2003 への準拠を確認",
+      "fixtures": [
+        {
+          "name": "embedded font, TrapNet, and process colour",
+          "sha256": "840b079fb7634a24cbe3849eb2a5e938f8211cfced0497b5165e5b39dd15edf8",
+          "expected": "compliant",
+          "errors": 0,
+          "warnings": 0,
+          "information": 0,
+          "fixed": 0,
+          "notFixed": 0
+        },
+        {
+          "name": "Separation spot colour",
+          "sha256": "1c553fdc5a40ebe38bdeb087f40a4f7f74078e8f801d31bd4ec7da52fae88a8b",
+          "expected": "compliant",
+          "errors": 0,
+          "warnings": 0,
+          "information": 0,
+          "fixed": 0,
+          "notFixed": 0
+        },
+        {
+          "name": "CMYK JPEG and sampled CMYK shading",
+          "sha256": "3f96ae72d77b4e2c9857a5ea90ab7bf21e43d4bbddbbe6fef534d53c96fda906",
+          "expected": "compliant",
+          "errors": 0,
+          "warnings": 0,
+          "information": 0,
+          "fixed": 0,
+          "notFixed": 0
+        },
+        {
+          "name": "invalid GTS_PDFXVersion",
+          "sha256": "9d6283b387134269395b4287f767e4a2eeab74dff3ff72c6dba2a7ddc6ea28fa",
+          "expected": "non-compliant",
+          "errors": 1,
+          "warnings": 0,
+          "information": 0,
+          "fixed": 0,
+          "notFixed": 0
+        }
+      ]
+    }
+  },
+  "units": [
+    {
+      "section": "5",
+      "title": "Conforming files and equipment",
+      "status": "complete",
+      "requirements": [
+        "Header and Catalog version values do not determine PDF/X conformance.",
+        "The writer emits PDF/X-1a:2003 files and the reader processes every conforming page operator.",
+        "The reader processes the PDF/X-1a:2001 predecessor identifiers required by clause 5."
+      ],
+      "implementation": ["src/renderer/pdf-backend.ts", "src/pdf/pdf-page-importer.ts", "src/pdf/content-interpreter.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/pdf/pdf-import-page.test.ts"]
+    },
+    {
+      "section": "6.1",
+      "title": "Data structure",
+      "status": "complete",
+      "requirements": [
+        "The file has a valid header, body, classic cross-reference table, and trailer.",
+        "Pre-separated page descriptions are rejected.",
+        "All used resources and print elements are contained in one file."
+      ],
+      "implementation": ["src/pdf/pdf-parser.ts", "src/renderer/pdf-backend.ts"],
+      "tests": ["tests/pdf/pdf-xref-integrity.test.ts", "tests/renderer/pdf-pdfx.test.ts"]
+    },
+    {
+      "section": "6.2",
+      "title": "Colour",
+      "status": "complete",
+      "requirements": [
+        "Print elements use only DeviceCMYK, DeviceGray, Separation, DeviceN, Indexed, and Pattern without Default device colour spaces.",
+        "Exactly one GTS_PDFX OutputIntent is present and its identifier is a PDF text string.",
+        "Registered identifiers are verified exactly; unregistered conditions carry an ICC.1:1998 version 2 CMYK output profile.",
+        "DeviceCMYK and DeviceGray are interpreted through the output profile, including Indexed bases.",
+        "Separation and DeviceN alternates are DeviceGray or DeviceCMYK and use the same output-condition transform.",
+        "Non-print annotation appearances retain the colour spaces permitted to non-print elements."
+      ],
+      "implementation": ["src/pdf/pdf-colorspace.ts", "src/pdf/pdf-image-importer.ts", "src/pdf/content-interpreter.ts", "src/pdf/pdf-page-importer.ts", "src/renderer/pdf-backend.ts"],
+      "tests": ["tests/pdf/pdf-import-page.test.ts", "tests/renderer/pdf-pdfx.test.ts", "tests/renderer/pdf-print-color.test.ts"]
+    },
+    {
+      "section": "6.3",
+      "title": "Fonts",
+      "status": "complete",
+      "requirements": [
+        "Every used font program, glyph, metric, and encoding is embedded and the reader uses that embedded program.",
+        "OS/2 embedding and no-subsetting permissions are enforced at the PDF output boundary."
+      ],
+      "implementation": ["src/font.ts", "src/pdf/pdf-text-decoder.ts", "src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/pdf/type1-embedded.test.ts", "tests/font-os2-consumption.test.ts"]
+    },
+    {
+      "section": "6.4",
+      "title": "File specifications",
+      "status": "complete",
+      "requirements": ["File specifications, external streams, OPI, and referenced Form XObjects are rejected across every active object."],
+      "implementation": ["src/pdf/pdf-parser.ts", "src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/pdf/pdf-xref-integrity.test.ts"]
+    },
+    {
+      "section": "6.5",
+      "title": "Data compression",
+      "status": "complete",
+      "requirements": ["LZW and JBIG2 filters are rejected on every stream, including unreachable active objects."],
+      "implementation": ["src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts"]
+    },
+    {
+      "section": "6.6",
+      "title": "Trapping",
+      "status": "complete",
+      "requirements": [
+        "Info Trapped is exactly True or False and TrapNet requires True.",
+        "TrapNet FontFauxing is absent or empty and appearance PCM is DeviceCMYK.",
+        "TrapNet is last, has flags 68, and uses one complete PDF 1.4 invalidation mechanism."
+      ],
+      "implementation": ["src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/renderer/pdf-annotations.test.ts"]
+    },
+    {
+      "section": "6.7",
+      "title": "PDF file identification",
+      "status": "complete",
+      "requirements": [
+        "Info contains the exact PDF/X-1a:2003 identifier and non-empty Title, CreationDate, and ModDate values.",
+        "The trailer contains two file identifier strings."
+      ],
+      "implementation": ["src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/renderer/pdf-metadata.test.ts"]
+    },
+    {
+      "section": "6.8",
+      "title": "Bounding boxes",
+      "status": "complete",
+      "requirements": ["Every page has exactly one TrimBox or ArtBox and all finished, bleed, crop, and media boxes have the required containment."],
+      "implementation": ["src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts"]
+    },
+    {
+      "section": "6.9",
+      "title": "Extended graphics state",
+      "status": "complete",
+      "requirements": [
+        "ExtGState TR, TR2, and HTP are rejected.",
+        "Halftones are limited to types 1 and 5, contain no HalftoneName, and validate component transfer functions."
+      ],
+      "implementation": ["src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/renderer/pdf-device-params.test.ts"]
+    },
+    {
+      "section": "6.10",
+      "title": "PostScript XObject and PS operator",
+      "status": "complete",
+      "requirements": ["PS operators, PostScript XObjects, and Form Subtype2 PS are rejected recursively."],
+      "implementation": ["src/pdf/content-interpreter.ts", "src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts"]
+    },
+    {
+      "section": "6.11",
+      "title": "Encrypt dictionary",
+      "status": "complete",
+      "requirements": ["An Encrypt dictionary is rejected from the trailer."],
+      "implementation": ["src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/renderer/pdf-encryption.test.ts"]
+    },
+    {
+      "section": "6.12",
+      "title": "Alternate images",
+      "status": "complete",
+      "requirements": [
+        "No alternate image is DefaultForPrinting true.",
+        "Base and alternate images have the same image-area aspect and alternates are not recursively nested."
+      ],
+      "implementation": ["src/pdf/pdf-image-importer.ts", "src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/pdf/pdf-import-page.test.ts"]
+    },
+    {
+      "section": "6.13",
+      "title": "Annotations",
+      "status": "complete",
+      "requirements": [
+        "Non-print annotations lie wholly outside BleedBox or the finished box.",
+        "PrinterMark annotations lie wholly outside the finished box and prepress appearances are print elements."
+      ],
+      "implementation": ["src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/renderer/pdf-annotations.test.ts"]
+    },
+    {
+      "section": "6.14",
+      "title": "Actions and JavaScripts",
+      "status": "complete",
+      "requirements": ["Actions and JavaScript are rejected in the Catalog, pages, annotations, name trees, and every active object."],
+      "implementation": ["src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts"]
+    },
+    {
+      "section": "6.15",
+      "title": "BX and EX operators",
+      "status": "complete",
+      "requirements": [
+        "Undefined operators are rejected even inside BX and EX.",
+        "Defined operators inside BX and EX are parsed and processed normally."
+      ],
+      "implementation": ["src/pdf/content-lexer.ts", "src/pdf/content-interpreter.ts", "src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/pdf/pdf-import-page.test.ts"]
+    },
+    {
+      "section": "6.16",
+      "title": "Transparency",
+      "status": "complete",
+      "requirements": [
+        "SMask is absent or None, image embedded alpha is absent, and transparency groups are rejected.",
+        "ExtGState BM is Normal or Compatible and CA and ca are exactly 1.0."
+      ],
+      "implementation": ["src/renderer/pdf-backend.ts", "src/pdf/content-interpreter.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts", "tests/pdf/pdf-transparency-analysis.test.ts"]
+    },
+    {
+      "section": "6.17",
+      "title": "Viewer preferences",
+      "status": "complete",
+      "requirements": ["When BleedBox is present, ViewArea, ViewClip, PrintArea, and PrintClip are MediaBox or BleedBox."],
+      "implementation": ["src/renderer/pdf-backend.ts"],
+      "tests": ["tests/renderer/pdf-pdfx.test.ts"]
+    }
+  ]
+}

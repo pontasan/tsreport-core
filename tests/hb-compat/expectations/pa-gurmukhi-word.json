@@ -1,0 +1,90 @@
+{
+  "font": "NotoSansGurmukhi-Regular.ttf",
+  "text": "ਪੰਜਾਬੀ",
+  "options": {
+    "direction": "ltr",
+    "script": "gur2",
+    "hbScript": "Guru",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 37,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 593,
+      "ay": 0
+    },
+    {
+      "g": 77,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 24,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 612,
+      "ay": 0
+    },
+    {
+      "g": 51,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 235,
+      "ay": 0
+    },
+    {
+      "g": 39,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 608,
+      "ay": 0
+    },
+    {
+      "g": 53,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 259,
+      "ay": 0
+    }
+  ]
+}

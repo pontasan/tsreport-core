@@ -1,0 +1,100 @@
+{
+  "font": "NotoSansJP-Regular.otf",
+  "text": "こんにちは、世界。",
+  "options": {
+    "direction": "ltr",
+    "script": "kana",
+    "hbScript": "Kana",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 1222,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1286,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1246,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1236,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1250,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1141,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 2408,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 8788,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 1142,
+      "cl": 8,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    }
+  ]
+}

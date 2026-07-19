@@ -1,0 +1,66 @@
+{
+  "font": "NotoSansKannada-Regular.ttf",
+  "text": "ಧರ್ಮ",
+  "options": {
+    "direction": "ltr",
+    "script": "knd2",
+    "hbScript": "Knda",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 41,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 765,
+      "ay": 0
+    },
+    {
+      "g": 47,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1156,
+      "ay": 0
+    },
+    {
+      "g": 99,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 567,
+      "ay": 0
+    }
+  ]
+}

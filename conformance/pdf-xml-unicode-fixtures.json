@@ -1,0 +1,39 @@
+{
+  "references": {
+    "xml": "XML 1.0 Fifth Edition",
+    "xmlNamespaces": "Namespaces in XML 1.0 Third Edition",
+    "rdf": "RDF 1.1 XML Syntax",
+    "unicode": "Unicode 17.0.0",
+    "dateTime": "ISO 8601-1:2019",
+    "languageTags": "BCP 47 / RFC 5646"
+  },
+  "xmlValid": [
+    { "xml": "<root attr=\"A &amp; B\">月&#x1F642;<![CDATA[<raw>]]></root>", "root": "root", "text": "月🙂<raw>" },
+    { "xml": "﻿<?xml version=\"1.0\"?><ns:root xmlns:ns=\"urn:test\"><ns:item>é</ns:item></ns:root>", "root": "ns:root", "text": "é" }
+  ],
+  "xmlInvalid": [
+    "<root><child></root>",
+    "<root attr=\"1\" attr=\"2\"/>",
+    "<root>&unknown;</root>",
+    "<root>&#xD800;</root>",
+    "<!DOCTYPE root><root/>",
+    "<p:root/>",
+    "<root xmlns:a=\"urn:x\" xmlns:b=\"urn:x\" a:id=\"1\" b:id=\"2\"/>"
+  ],
+  "languageTagsValid": [
+    "ja", "en-US", "zh-Hant-TW", "de-CH-1901", "sl-rozaj-biske", "en-a-myext-b-another", "x-private", "i-klingon", "x-default"
+  ],
+  "languageTagsInvalid": [
+    "", "en--US", "e", "en_US", "en-a", "en-x", "en-1901-1901", "en-a-one-a-two"
+  ],
+  "pdfDates": [
+    { "value": "D:20260714010203+09'00'", "iso": "2026-07-13T16:02:03.000Z" },
+    { "value": "D:20240229", "iso": "2024-02-29T00:00:00.000Z" },
+    { "value": "D:2026", "iso": "2026-01-01T00:00:00.000Z" }
+  ],
+  "xmp": {
+    "title": "請求書🙂",
+    "author": "経理部",
+    "date": "2026-07-14T01:02:03+09:00"
+  }
+}

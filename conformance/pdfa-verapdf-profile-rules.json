@@ -1,0 +1,2133 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "creator": "veraPDF Consortium",
+    "copyright": "Copyright © 2015 veraPDF Consortium",
+    "repository": "https://github.com/veraPDF/veraPDF-validation-profiles",
+    "commit": "c4b3ab5164e4f0ae9bb235f8154db587e0ea483e",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modifications": "Extracted PDF/A-1b, PDF/A-2b, and PDF/A-3b rule identifiers and object names; assigned tsreport-core coverage-family labels; recorded source hashes."
+  },
+  "profiles": [
+    {
+      "profile": "PDF/A-1b",
+      "file": "PDFA-1B.xml",
+      "sha256": "93a8254a209a298cdf38d2f259906d585dfcdd1cc700650271b86920be9c00e6",
+      "ruleIdSha256": "47e33277c7944455aaac798625d9d715fcb901738555a8419f0d15126ebf8879",
+      "rules": [
+        {
+          "id": "ISO_19005_1:6.1.2:1",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_1:6.1.2:2",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_1:6.1.3:1",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_1:6.1.3:2",
+          "object": "CosTrailer",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_1:6.1.3:3",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_1:6.1.3:4",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_1:6.1.4:1",
+          "object": "CosXRef",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_1:6.1.4:2",
+          "object": "CosXRef",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_1:6.1.4:3",
+          "object": "PDDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_1:6.1.6:1",
+          "object": "CosString",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.6:2",
+          "object": "CosString",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.7:1",
+          "object": "CosStream",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_1:6.1.7:2",
+          "object": "CosStream",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_1:6.1.7:3",
+          "object": "CosStream",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_1:6.1.8:1",
+          "object": "CosIndirect",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.10:1",
+          "object": "CosFilter",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_1:6.1.10:2",
+          "object": "CosIIFilter",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_1:6.1.11:1",
+          "object": "CosFileSpecification",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_1:6.1.11:2",
+          "object": "CosDocument",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:1",
+          "object": "CosInteger",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:2",
+          "object": "CosReal",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:3",
+          "object": "CosString",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:4",
+          "object": "CosName",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:5",
+          "object": "CosArray",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:6",
+          "object": "CosDict",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:7",
+          "object": "CosDocument",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:8",
+          "object": "Op_q_gsave",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:9",
+          "object": "PDDeviceN",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.12:10",
+          "object": "CMapFile",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_1:6.1.13:1",
+          "object": "CosDocument",
+          "family": "optional-content-configurations"
+        },
+        {
+          "id": "ISO_19005_1:6.2.2:1",
+          "object": "ICCOutputProfile",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_1:6.2.2:2",
+          "object": "OutputIntents",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_1:6.2.3.2:1",
+          "object": "ICCInputProfile",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_1:6.2.3.2:2",
+          "object": "ICCProfile",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_1:6.2.3.3:1",
+          "object": "PDDeviceRGB",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_1:6.2.3.3:2",
+          "object": "PDDeviceCMYK",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_1:6.2.3.3:3",
+          "object": "PDDeviceGray",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_1:6.2.4:1",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_1:6.2.4:2",
+          "object": "PDXObject",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_1:6.2.4:3",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_1:6.2.4:4",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_1:6.2.4:5",
+          "object": "PDMaskImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_1:6.2.5:1",
+          "object": "PDXForm",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_1:6.2.6:1",
+          "object": "PDXForm",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_1:6.2.7:1",
+          "object": "PDXObject",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_1:6.2.8:1",
+          "object": "PDExtGState",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_1:6.2.8:2",
+          "object": "PDExtGState",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_1:6.2.9:1",
+          "object": "CosRenderingIntent",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_1:6.2.10:1",
+          "object": "Op_Undefined",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_1:6.3.2:1",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.2:2",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.2:3",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.2:4",
+          "object": "PDSimpleFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.2:5",
+          "object": "PDSimpleFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.2:6",
+          "object": "PDSimpleFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.2:7",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.3.1:1",
+          "object": "PDType0Font",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.3.2:1",
+          "object": "PDCIDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.3.3:1",
+          "object": "PDCMap",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.3.3:2",
+          "object": "CMapFile",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.4:1",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.5:1",
+          "object": "Glyph",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.5:2",
+          "object": "PDType1Font",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.5:3",
+          "object": "PDCIDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.6:1",
+          "object": "Glyph",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.7:1",
+          "object": "PDTrueTypeFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.7:2",
+          "object": "PDTrueTypeFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.3.7:3",
+          "object": "TrueTypeFontProgram",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_1:6.4:1",
+          "object": "PDExtGState",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_1:6.4:2",
+          "object": "PDXObject",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_1:6.4:3",
+          "object": "PDGroup",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_1:6.4:4",
+          "object": "PDExtGState",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_1:6.4:5",
+          "object": "PDExtGState",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_1:6.4:6",
+          "object": "PDExtGState",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_1:6.5.2:1",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.5.3:1",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.5.3:2",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.5.3:3",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.5.3:4",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.5.3:5",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.5.3:6",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.6.1:1",
+          "object": "PDAction",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.6.1:2",
+          "object": "PDNamedAction",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.6.1:3",
+          "object": "PDWidgetAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.6.2:1",
+          "object": "PDWidgetAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.6.2:2",
+          "object": "PDFormField",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.6.2:3",
+          "object": "PDDocument",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_1:6.7.2:1",
+          "object": "PDDocument",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.2:2",
+          "object": "PDMetadata",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.3:1",
+          "object": "CosInfo",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.3:2",
+          "object": "CosInfo",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.3:3",
+          "object": "CosInfo",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.3:4",
+          "object": "CosInfo",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.3:5",
+          "object": "CosInfo",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.3:6",
+          "object": "CosInfo",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.3:7",
+          "object": "CosInfo",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.3:8",
+          "object": "CosInfo",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.5:1",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.5:2",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:1",
+          "object": "ExtensionSchemaObject",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:2",
+          "object": "ExtensionSchemasContainer",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:3",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:4",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:5",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:6",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:7",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:8",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:9",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:10",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:11",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:12",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:13",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:14",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:15",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:16",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:17",
+          "object": "ExtensionSchemaField",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:18",
+          "object": "ExtensionSchemaField",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.8:19",
+          "object": "ExtensionSchemaField",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.9:1",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.9:2",
+          "object": "XMPProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.9:3",
+          "object": "XMPProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.11:1",
+          "object": "MainXMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.11:2",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.11:3",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.11:4",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.11:5",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.7.11:6",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_1:6.9:1",
+          "object": "PDAcroForm",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_1:6.9:2",
+          "object": "PDWidgetAnnot",
+          "family": "acroform-appearance-and-action-boundary"
+        }
+      ]
+    },
+    {
+      "profile": "PDF/A-2b",
+      "file": "PDFA-2B.xml",
+      "sha256": "bae015161f0c9b4296481f11936c97728dfd12dffb2df48ea744f885794da382",
+      "ruleIdSha256": "c02bcee8d96649eebeeb18d3803083b081edb2d1f4ecf6c1b00c49251d727ae5",
+      "rules": [
+        {
+          "id": "ISO_19005_2:6.1.2:1",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_2:6.1.2:2",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_2:6.1.3:1",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_2:6.1.3:2",
+          "object": "CosTrailer",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_2:6.1.3:3",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_2:6.1.4:2",
+          "object": "CosXRef",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_2:6.1.6:1",
+          "object": "CosString",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.6:2",
+          "object": "CosString",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.7.1:1",
+          "object": "CosStream",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.1.7.1:2",
+          "object": "CosStream",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.1.7.1:3",
+          "object": "CosStream",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.1.7.2:1",
+          "object": "CosFilter",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.1.8:1",
+          "object": "CosUnicodeName",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.9:1",
+          "object": "CosIndirect",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.10:1",
+          "object": "CosIIFilter",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.1.12:1",
+          "object": "PDPerms",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_2:6.1.12:2",
+          "object": "PDSigRef",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:1",
+          "object": "CosInteger",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:2",
+          "object": "CosReal",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:3",
+          "object": "CosString",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:4",
+          "object": "CosName",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:5",
+          "object": "CosReal",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:7",
+          "object": "CosDocument",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:8",
+          "object": "Op_q_gsave",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:9",
+          "object": "PDDeviceN",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:10",
+          "object": "CMapFile",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.1.13:11",
+          "object": "CosBBox",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.2.2:1",
+          "object": "Op_Undefined",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_2:6.2.2:2",
+          "object": "PDContentStream",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_2:6.2.3:1",
+          "object": "ICCOutputProfile",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.3:2",
+          "object": "OutputIntents",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.3:3",
+          "object": "PDOutputIntent",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.4.2:1",
+          "object": "ICCInputProfile",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.4.2:2",
+          "object": "PDICCBasedCMYK",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.4.3:2",
+          "object": "PDDeviceRGB",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.4.3:3",
+          "object": "PDDeviceCMYK",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.4.3:4",
+          "object": "PDDeviceGray",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.4.4:1",
+          "object": "PDDeviceN",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.4.4:2",
+          "object": "PDSeparation",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_2:6.2.5:1",
+          "object": "PDExtGState",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_2:6.2.5:2",
+          "object": "PDExtGState",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_2:6.2.5:3",
+          "object": "PDExtGState",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_2:6.2.5:4",
+          "object": "PDHalftone",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_2:6.2.5:5",
+          "object": "PDHalftone",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_2:6.2.5:6",
+          "object": "PDHalftone",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_2:6.2.6:1",
+          "object": "CosRenderingIntent",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8:1",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8:2",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8:3",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8:4",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8:5",
+          "object": "PDMaskImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8.3:1",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8.3:2",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8.3:3",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8.3:4",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.8.3:5",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.9:1",
+          "object": "PDXForm",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.9:2",
+          "object": "PDXForm",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.9:3",
+          "object": "PDXObject",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_2:6.2.10:1",
+          "object": "CosBM",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_2:6.2.10:2",
+          "object": "PDPage",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.2:1",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.2:2",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.2:3",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.2:4",
+          "object": "PDSimpleFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.2:5",
+          "object": "PDSimpleFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.2:6",
+          "object": "PDSimpleFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.2:7",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.3.1:1",
+          "object": "PDType0Font",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.3.2:1",
+          "object": "PDCIDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.3.3:1",
+          "object": "PDCMap",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.3.3:2",
+          "object": "CMapFile",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.3.3:3",
+          "object": "PDReferencedCMap",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.4.1:1",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.4.1:2",
+          "object": "Glyph",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.4.2:1",
+          "object": "PDType1Font",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.4.2:2",
+          "object": "PDCIDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.5:1",
+          "object": "Glyph",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.6:1",
+          "object": "TrueTypeFontProgram",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.6:2",
+          "object": "PDTrueTypeFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.6:3",
+          "object": "PDTrueTypeFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.6:4",
+          "object": "TrueTypeFontProgram",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.2.11.8:1",
+          "object": "Glyph",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_2:6.3.1:1",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.3.2:1",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.3.2:2",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.3.3:1",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.3.3:2",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.3.3:3",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.3.3:4",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.4.1:1",
+          "object": "PDWidgetAnnot",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.4.1:2",
+          "object": "PDFormField",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.4.1:3",
+          "object": "PDAcroForm",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.4.2:1",
+          "object": "PDAcroForm",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.4.2:2",
+          "object": "CosDocument",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_2:6.4.3:1",
+          "object": "PDSignature",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_2:6.4.3:2",
+          "object": "PKCSDataObject",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_2:6.4.3:3",
+          "object": "PKCSDataObject",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_2:6.5.1:1",
+          "object": "PDAction",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.5.1:2",
+          "object": "PDNamedAction",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.5.2:1",
+          "object": "PDDocument",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.5.2:2",
+          "object": "PDPage",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.1:1",
+          "object": "PDDocument",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.1:2",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.1:3",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.1:4",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.1:5",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.1:1",
+          "object": "XMPProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.1:2",
+          "object": "XMPProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.2:1",
+          "object": "ExtensionSchemaObject",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:1",
+          "object": "ExtensionSchemasContainer",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:2",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:3",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:4",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:5",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:6",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:7",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:8",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:9",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:10",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:11",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:12",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:13",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:14",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:15",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:16",
+          "object": "ExtensionSchemaField",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:17",
+          "object": "ExtensionSchemaField",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.2.3.3:18",
+          "object": "ExtensionSchemaField",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.4:1",
+          "object": "MainXMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.4:2",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.4:3",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.4:4",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.4:5",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.4:6",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.6.4:7",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_2:6.8:2",
+          "object": "CosFileSpecification",
+          "family": "embedded-and-associated-files"
+        },
+        {
+          "id": "ISO_19005_2:6.8:5",
+          "object": "EmbeddedFile",
+          "family": "embedded-and-associated-files"
+        },
+        {
+          "id": "ISO_19005_2:6.9:1",
+          "object": "PDOCConfig",
+          "family": "optional-content-configurations"
+        },
+        {
+          "id": "ISO_19005_2:6.9:2",
+          "object": "PDOCConfig",
+          "family": "optional-content-configurations"
+        },
+        {
+          "id": "ISO_19005_2:6.9:3",
+          "object": "PDOCConfig",
+          "family": "optional-content-configurations"
+        },
+        {
+          "id": "ISO_19005_2:6.9:4",
+          "object": "PDOCConfig",
+          "family": "optional-content-configurations"
+        },
+        {
+          "id": "ISO_19005_2:6.10:1",
+          "object": "PDDocument",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.10:2",
+          "object": "PDPage",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_2:6.11:1",
+          "object": "CosDocument",
+          "family": "object-syntax-and-limits"
+        }
+      ]
+    },
+    {
+      "profile": "PDF/A-3b",
+      "file": "PDFA-3B.xml",
+      "sha256": "fc6f5c9cccc8c52af8584f98505fe62979522e66acd525a67ce391c36d8dbc17",
+      "ruleIdSha256": "d27063cf209d23c0e2d4ba69f92487e033efb60a04d6338a1387b0f97d33e53d",
+      "rules": [
+        {
+          "id": "ISO_19005_3:6.1.2:1",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_3:6.1.2:2",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_3:6.1.3:1",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_3:6.1.3:2",
+          "object": "CosTrailer",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_3:6.1.3:3",
+          "object": "CosDocument",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_3:6.1.4:2",
+          "object": "CosXRef",
+          "family": "file-framing-and-trailers"
+        },
+        {
+          "id": "ISO_19005_3:6.1.6:1",
+          "object": "CosString",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.6:2",
+          "object": "CosString",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.7.1:1",
+          "object": "CosStream",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.1.7.1:2",
+          "object": "CosStream",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.1.7.1:3",
+          "object": "CosStream",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.1.7.2:1",
+          "object": "CosFilter",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.1.8:1",
+          "object": "CosUnicodeName",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.9:1",
+          "object": "CosIndirect",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.10:1",
+          "object": "CosIIFilter",
+          "family": "filters-encryption-and-filespec-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.1.12:1",
+          "object": "PDPerms",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_3:6.1.12:2",
+          "object": "PDSigRef",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:1",
+          "object": "CosInteger",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:2",
+          "object": "CosReal",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:3",
+          "object": "CosString",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:4",
+          "object": "CosName",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:5",
+          "object": "CosReal",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:7",
+          "object": "CosDocument",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:8",
+          "object": "Op_q_gsave",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:9",
+          "object": "PDDeviceN",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:10",
+          "object": "CMapFile",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.1.13:11",
+          "object": "CosBBox",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.2.2:1",
+          "object": "Op_Undefined",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_3:6.2.2:2",
+          "object": "PDContentStream",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_3:6.2.3:1",
+          "object": "ICCOutputProfile",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.3:2",
+          "object": "OutputIntents",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.3:3",
+          "object": "PDOutputIntent",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.4.2:1",
+          "object": "ICCInputProfile",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.4.2:2",
+          "object": "PDICCBasedCMYK",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.4.3:2",
+          "object": "PDDeviceRGB",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.4.3:3",
+          "object": "PDDeviceCMYK",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.4.3:4",
+          "object": "PDDeviceGray",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.4.4:1",
+          "object": "PDDeviceN",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.4.4:2",
+          "object": "PDSeparation",
+          "family": "output-intents-icc-and-device-colour"
+        },
+        {
+          "id": "ISO_19005_3:6.2.5:1",
+          "object": "PDExtGState",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_3:6.2.5:2",
+          "object": "PDExtGState",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_3:6.2.5:3",
+          "object": "PDExtGState",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_3:6.2.5:4",
+          "object": "PDHalftone",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_3:6.2.5:5",
+          "object": "PDHalftone",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_3:6.2.5:6",
+          "object": "PDHalftone",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_3:6.2.6:1",
+          "object": "CosRenderingIntent",
+          "family": "content-graphics-state-halftones-and-overprint"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8:1",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8:2",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8:3",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8:4",
+          "object": "PDXImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8:5",
+          "object": "PDMaskImage",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8.3:1",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8.3:2",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8.3:3",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8.3:4",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.8.3:5",
+          "object": "JPEG2000",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.9:1",
+          "object": "PDXForm",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.9:2",
+          "object": "PDXForm",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.9:3",
+          "object": "PDXObject",
+          "family": "images-xobjects-and-jpeg2000"
+        },
+        {
+          "id": "ISO_19005_3:6.2.10:1",
+          "object": "CosBM",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_3:6.2.10:2",
+          "object": "PDPage",
+          "family": "transparency-blend-and-page-groups"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.2:1",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.2:2",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.2:3",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.2:4",
+          "object": "PDSimpleFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.2:5",
+          "object": "PDSimpleFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.2:6",
+          "object": "PDSimpleFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.2:7",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.3.1:1",
+          "object": "PDType0Font",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.3.2:1",
+          "object": "PDCIDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.3.3:1",
+          "object": "PDCMap",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.3.3:2",
+          "object": "CMapFile",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.3.3:3",
+          "object": "PDReferencedCMap",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.4.1:1",
+          "object": "PDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.4.1:2",
+          "object": "Glyph",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.4.2:1",
+          "object": "PDType1Font",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.4.2:2",
+          "object": "PDCIDFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.5:1",
+          "object": "Glyph",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.6:1",
+          "object": "TrueTypeFontProgram",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.6:2",
+          "object": "PDTrueTypeFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.6:3",
+          "object": "PDTrueTypeFont",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.6:4",
+          "object": "TrueTypeFontProgram",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.2.11.8:1",
+          "object": "Glyph",
+          "family": "fonts-cmaps-glyphs-widths-and-rendering-mode"
+        },
+        {
+          "id": "ISO_19005_3:6.3.1:1",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.3.2:1",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.3.2:2",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.3.3:1",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.3.3:2",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.3.3:3",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.3.3:4",
+          "object": "PDAnnot",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.4.1:1",
+          "object": "PDWidgetAnnot",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.4.1:2",
+          "object": "PDFormField",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.4.1:3",
+          "object": "PDAcroForm",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.4.2:1",
+          "object": "PDAcroForm",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.4.2:2",
+          "object": "CosDocument",
+          "family": "acroform-appearance-and-action-boundary"
+        },
+        {
+          "id": "ISO_19005_3:6.4.3:1",
+          "object": "PDSignature",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_3:6.4.3:2",
+          "object": "PKCSDataObject",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_3:6.4.3:3",
+          "object": "PKCSDataObject",
+          "family": "signatures-permissions-and-whole-file-byte-range"
+        },
+        {
+          "id": "ISO_19005_3:6.5.1:1",
+          "object": "PDAction",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.5.1:2",
+          "object": "PDNamedAction",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.5.2:1",
+          "object": "PDDocument",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.5.2:2",
+          "object": "PDPage",
+          "family": "annotations-actions-and-appearances"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.1:1",
+          "object": "PDDocument",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.1:2",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.1:3",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.1:4",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.1:5",
+          "object": "XMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.1:1",
+          "object": "XMPProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.1:2",
+          "object": "XMPProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.2:1",
+          "object": "ExtensionSchemaObject",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:1",
+          "object": "ExtensionSchemasContainer",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:2",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:3",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:4",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:5",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:6",
+          "object": "ExtensionSchemaDefinition",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:7",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:8",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:9",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:10",
+          "object": "ExtensionSchemaProperty",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:11",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:12",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:13",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:14",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:15",
+          "object": "ExtensionSchemaValueType",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:16",
+          "object": "ExtensionSchemaField",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:17",
+          "object": "ExtensionSchemaField",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.2.3.3:18",
+          "object": "ExtensionSchemaField",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.4:1",
+          "object": "MainXMPPackage",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.4:2",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.4:3",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.4:4",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.4:5",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.4:6",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.6.4:7",
+          "object": "PDFAIdentification",
+          "family": "xmp-identification-synchronization-and-extension-schemas"
+        },
+        {
+          "id": "ISO_19005_3:6.8:1",
+          "object": "EmbeddedFile",
+          "family": "embedded-and-associated-files"
+        },
+        {
+          "id": "ISO_19005_3:6.8:2",
+          "object": "CosFileSpecification",
+          "family": "embedded-and-associated-files"
+        },
+        {
+          "id": "ISO_19005_3:6.8:3",
+          "object": "CosFileSpecification",
+          "family": "embedded-and-associated-files"
+        },
+        {
+          "id": "ISO_19005_3:6.8:4",
+          "object": "CosFileSpecification",
+          "family": "embedded-and-associated-files"
+        },
+        {
+          "id": "ISO_19005_3:6.9:1",
+          "object": "PDOCConfig",
+          "family": "optional-content-configurations"
+        },
+        {
+          "id": "ISO_19005_3:6.9:2",
+          "object": "PDOCConfig",
+          "family": "optional-content-configurations"
+        },
+        {
+          "id": "ISO_19005_3:6.9:3",
+          "object": "PDOCConfig",
+          "family": "optional-content-configurations"
+        },
+        {
+          "id": "ISO_19005_3:6.9:4",
+          "object": "PDOCConfig",
+          "family": "optional-content-configurations"
+        },
+        {
+          "id": "ISO_19005_3:6.10:1",
+          "object": "PDDocument",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.10:2",
+          "object": "PDPage",
+          "family": "object-syntax-and-limits"
+        },
+        {
+          "id": "ISO_19005_3:6.11:1",
+          "object": "CosDocument",
+          "family": "object-syntax-and-limits"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "font": "NotoSansHebrew-Regular.ttf",
+  "text": "שלום",
+  "options": {
+    "direction": "rtl",
+    "script": "hebr",
+    "hbScript": "Hebr",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 23,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 684,
+      "ay": 0
+    },
+    {
+      "g": 124,
+      "cl": 2,
+      "dx": -10,
+      "dy": 0,
+      "ax": 291,
+      "ay": 0
+    },
+    {
+      "g": 55,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 522,
+      "ay": 0
+    },
+    {
+      "g": 96,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 730,
+      "ay": 0
+    }
+  ]
+}

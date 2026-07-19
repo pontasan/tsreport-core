@@ -1,0 +1,44 @@
+{
+  "font": "NotoSansJP-Regular.otf",
+  "text": "葛󠄀城",
+  "options": {
+    "direction": "ltr",
+    "script": "hani",
+    "hbScript": "Hani",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 16311,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    },
+    {
+      "g": 4095,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1000,
+      "ay": 0
+    }
+  ]
+}

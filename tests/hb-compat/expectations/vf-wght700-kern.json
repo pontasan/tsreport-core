@@ -1,0 +1,79 @@
+{
+  "font": "NotoSans-VariableFont_wdth,wght.ttf",
+  "text": "AVATAR",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt",
+    "variations": {
+      "wght": 700
+    }
+  },
+  "glyphs": [
+    {
+      "g": 36,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 652,
+      "ay": 0
+    },
+    {
+      "g": 57,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 610,
+      "ay": 0
+    },
+    {
+      "g": 36,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 622,
+      "ay": 0
+    },
+    {
+      "g": 55,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 507,
+      "ay": 0
+    },
+    {
+      "g": 36,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 692,
+      "ay": 0
+    },
+    {
+      "g": 53,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 656,
+      "ay": 0
+    }
+  ]
+}

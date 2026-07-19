@@ -1,0 +1,84 @@
+{
+  "font": "NotoSans-Regular.ttf",
+  "text": "nghiêng",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 81,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 618,
+      "ay": 0
+    },
+    {
+      "g": 74,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 615,
+      "ay": 0
+    },
+    {
+      "g": 75,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 618,
+      "ay": 0
+    },
+    {
+      "g": 76,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 258,
+      "ay": 0
+    },
+    {
+      "g": 172,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 564,
+      "ay": 0
+    },
+    {
+      "g": 81,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 618,
+      "ay": 0
+    },
+    {
+      "g": 74,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 615,
+      "ay": 0
+    }
+  ]
+}

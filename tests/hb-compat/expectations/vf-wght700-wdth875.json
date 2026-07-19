@@ -1,0 +1,64 @@
+{
+  "font": "NotoSans-VariableFont_wdth,wght.ttf",
+  "text": "Wavy",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt",
+    "variations": {
+      "wght": 700,
+      "wdth": 87.5
+    }
+  },
+  "glyphs": [
+    {
+      "g": 58,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 869,
+      "ay": 0
+    },
+    {
+      "g": 68,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 549,
+      "ay": 0
+    },
+    {
+      "g": 89,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 524,
+      "ay": 0
+    },
+    {
+      "g": 92,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 524,
+      "ay": 0
+    }
+  ]
+}

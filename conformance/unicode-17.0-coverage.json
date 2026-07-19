@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "unicodeVersion": "17.0.0",
+  "requirements": [
+    {
+      "id": "Unicode-Script-Shaping",
+      "sources": ["Scripts.txt", "Blocks.txt", "DerivedJoiningType.txt", "IndicSyllabicCategory.txt", "IndicPositionalCategory.txt", "DerivedGeneralCategory.txt"],
+      "runtime": ["src/shaping/unicode-shaping-data.ts", "src/shaping/unicode-shaping-properties.ts", "src/shaping/unicode-general-category.ts"],
+      "generator": "scripts/generate-unicode-shaping-data.mjs",
+      "tests": ["tests/shaping/unicode-shaping-properties.test.ts", "tests/shaping/unicode-general-category.test.ts"]
+    },
+    {
+      "id": "UAX-9",
+      "sources": ["DerivedBidiClass.txt", "BidiMirroring.txt", "BidiBrackets.txt", "BidiTest.txt", "BidiCharacterTest.txt"],
+      "runtime": ["src/layout/bidi.ts"],
+      "tests": ["tests/layout/bidi-uax9.test.ts", "tests/layout/bidi-conformance.test.ts"]
+    },
+    {
+      "id": "UAX-15",
+      "sources": ["UnicodeData.txt", "DerivedNormalizationProps.txt", "NormalizationTest.txt"],
+      "runtime": ["src/layout/unicode-normalization.ts", "src/layout/unicode-normalization-data.ts"],
+      "generator": "scripts/generate-unicode-normalization-data.mjs",
+      "tests": ["tests/layout/unicode-normalization-conformance.test.ts"]
+    },
+    {
+      "id": "UAX-29-Grapheme",
+      "sources": ["GraphemeBreakProperty.txt", "DerivedCoreProperties.txt", "emoji-data.txt", "GraphemeBreakTest.txt"],
+      "runtime": ["src/layout/grapheme-break.ts", "src/layout/grapheme-break-data.ts"],
+      "tests": ["tests/layout/grapheme-break.test.ts"]
+    }
+  ]
+}

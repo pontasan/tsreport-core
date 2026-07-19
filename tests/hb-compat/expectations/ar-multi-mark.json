@@ -1,0 +1,102 @@
+{
+  "font": "NotoSansArabic-Regular.ttf",
+  "text": "مُحَمَّدٌ",
+  "options": {
+    "direction": "rtl",
+    "script": "arab",
+    "hbScript": "Arab",
+    "features": [
+      "stch",
+      "ccmp",
+      "locl",
+      "rlig",
+      "calt",
+      "liga",
+      "clig",
+      "rclt",
+      "mset",
+      "curs",
+      "dist",
+      "kern",
+      "mark",
+      "mkmk",
+      "abvm",
+      "blwm"
+    ],
+    "hbFeatures": "stch,ccmp,locl,rlig,calt,liga,clig,rclt,mset,curs,dist,kern,mark,mkmk,abvm,blwm"
+  },
+  "glyphs": [
+    {
+      "g": 376,
+      "cl": 7,
+      "dx": 36,
+      "dy": -1,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 29,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 532,
+      "ay": 0
+    },
+    {
+      "g": 371,
+      "cl": 4,
+      "dx": 120,
+      "dy": 104,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 368,
+      "cl": 4,
+      "dx": 128,
+      "dy": -96,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 78,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 578,
+      "ay": 0
+    },
+    {
+      "g": 371,
+      "cl": 2,
+      "dx": -6,
+      "dy": -106,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 26,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 637,
+      "ay": 0
+    },
+    {
+      "g": 372,
+      "cl": 0,
+      "dx": 130,
+      "dy": -100,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 79,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 525,
+      "ay": 0
+    }
+  ]
+}

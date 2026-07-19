@@ -1,0 +1,100 @@
+{
+  "font": "NotoSansHebrew-Regular.ttf",
+  "text": "וַיֹּאמֶר",
+  "options": {
+    "direction": "rtl",
+    "script": "hebr",
+    "hbScript": "Hebr",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 86,
+      "cl": 8,
+      "dx": 0,
+      "dy": 0,
+      "ax": 523,
+      "ay": 0
+    },
+    {
+      "g": 91,
+      "cl": 6,
+      "dx": 218,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 61,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 660,
+      "ay": 0
+    },
+    {
+      "g": 3,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 632,
+      "ay": 0
+    },
+    {
+      "g": 46,
+      "cl": 2,
+      "dx": 48,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 15,
+      "cl": 2,
+      "dx": -38,
+      "dy": 98,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 138,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 295,
+      "ay": 0
+    },
+    {
+      "g": 73,
+      "cl": 0,
+      "dx": 34,
+      "dy": 0,
+      "ax": 0,
+      "ay": 0
+    },
+    {
+      "g": 124,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 301,
+      "ay": 0
+    }
+  ]
+}

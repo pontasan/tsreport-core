@@ -1,0 +1,13 @@
+node_modules/
+/dist/
+/out/
+/tests/out/
+/tests/fixtures/fonts/
+.DS_Store
+*.log
+.vscode/settings.json
+.npm
+.claude
+/tests/fixtures/ucd/
+__pycache__/
+*.pyc

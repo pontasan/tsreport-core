@@ -1,0 +1,92 @@
+{
+  "font": "NotoSans-Regular.ttf",
+  "text": "Việt Nam",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt"
+  },
+  "glyphs": [
+    {
+      "g": 57,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 600,
+      "ay": 0
+    },
+    {
+      "g": 76,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 258,
+      "ay": 0
+    },
+    {
+      "g": 797,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 564,
+      "ay": 0
+    },
+    {
+      "g": 87,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 361,
+      "ay": 0
+    },
+    {
+      "g": 3,
+      "cl": 4,
+      "dx": 0,
+      "dy": 0,
+      "ax": 260,
+      "ay": 0
+    },
+    {
+      "g": 49,
+      "cl": 5,
+      "dx": 0,
+      "dy": 0,
+      "ax": 760,
+      "ay": 0
+    },
+    {
+      "g": 68,
+      "cl": 6,
+      "dx": 0,
+      "dy": 0,
+      "ax": 561,
+      "ay": 0
+    },
+    {
+      "g": 80,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 935,
+      "ay": 0
+    }
+  ]
+}

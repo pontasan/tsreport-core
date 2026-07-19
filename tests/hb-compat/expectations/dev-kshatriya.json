@@ -1,0 +1,74 @@
+{
+  "font": "NotoSansDevanagari-Regular.ttf",
+  "text": "क्षत्रिय",
+  "options": {
+    "direction": "ltr",
+    "script": "dev2",
+    "hbScript": "Deva",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 90,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 717,
+      "ay": 0
+    },
+    {
+      "g": 545,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 259,
+      "ay": 0
+    },
+    {
+      "g": 304,
+      "cl": 3,
+      "dx": 0,
+      "dy": 0,
+      "ax": 552,
+      "ay": 0
+    },
+    {
+      "g": 81,
+      "cl": 7,
+      "dx": 0,
+      "dy": 0,
+      "ax": 580,
+      "ay": 0
+    }
+  ]
+}

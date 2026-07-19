@@ -1,0 +1,102 @@
+/** ISO 14739-1 fixed Huffman codes for PRC Double values. */
+const EXPONENT_CODES_BASE64 = 'BY0dMgWNHTMFj3jYBY942QWPeNoFj3jbBY943AWPeN0Fj3jeBY943wWPeOAFj3jhBY944gWPeOMFj3jkBY945QWPeOYFj3jnBY946AWPeOkFj3jqBY946wWPeOwFj3jtBY947gWPeO8Fj3jwBY948QWPePIFj3jzBY949AWPePUFj3j2BY949wWPePgFj3j5BY94+gWPePsFj3j8BY94/QWPeP4Fj3j/BbqDAAW6gwEFuoMCBbqDAwW6gwQFuoMFBbqDBgW6gwcFuoMIBbqDCQW6gwoFuoMLBbqDDAW6gw0FuoMOBbqDDwW6gxAFuoMRBbqDEgW6gxMFuoMUBbqDFQW6gxYFuoMXBbqDGAW6gxkFuoMaBbqDGwW6gxwFuoMdBbqDHgW6gx8FuoMgBbqDIQW6gyIFuoMjBbqDJAW6gyUFuoMmBbqDJwW6gygFuoMpBbqDKgW6gysFuoMsBbqDLQW6gy4FuoMvBbqDMAW6gzEFuoMyBbqDMwW6gzQFuoM1BbqDNgW6gzcFuoM4BbqDOQW6gzoFuoM7BbqDPAW6gz0FuoM+BbqDPwW6g0AFuoNBBbqDQgW6g0MFuoNEBbqDRQW6g0YFuoNHBbqDSAW6g0kFuoNKBbqDSwW6g0wFuoNNBbqDTgW6g08FuoNQBbqDUQW6g1IFuoNTBbqDVAW6g1UFuoNWBbqDVwW6g1gFuoNZBbqDWgW6g1sFuoNcBbqDXQW6g14FuoNfBbqDYAW6g2EFuoNiBbqDYwW6g2QFuoNlBbqDZgW6g2cFuoNoBbqDaQW6g2oFuoNrBbqDbAW6g20FuoNuBbqDbwW6g3AFuoNxBbqDcgW6g3MFuoN0BbqDdQW6g3YFuoN3BbqDeAW6g3kFuoN6BbqDewW6g3wFuoN9BbqDfgW6g38FuoOABbqDgQW6g4IFuoODBbqDhAW6g4UFuoOGBbqDhwW6g4gFuoOJBbqDigW6g4sFuoOMBbqDjQW6g44FuoOPBbqDkAW6g5EFuoOSBbqDkwW6g5QFuoOVBbqDlgW6g5cFuoOYBbqDmQW6g5oFuoObBbqDnAW6g50FuoOeBbqDnwW6g6AFuoOhBbqDogW6g6MFuoOkBbqDpQW6g6YFuoOnBbqDqAW6g6kFuoOqBbqDqwW6g6wFuoOtBbqDrgW6g68FuoOwBbqDsQW6g7IFuoOzBbqDtAW6g7UFuoO2BbqDtwW6g7gFuoO5BbqDugW6g7sFuoO8BbqDvQW6g74FuoO/BbqDwAW6g8EFuoPCBbqDwwW6g8QFuoPFBbqDxgW6g8cFuoPIBbqDyQW6g8oFuoPLBbqDzAW6g80FuoPOBbqDzwW6g9AFuoPRBbqD0gW6g9MFuoPUBbqD1QW6g9YFuoPXBbqD2AW6g9kFuoPaBbqD2wW6g9wFuoPdBbqD3gW6g98FuoPgBbqD4QW6g+IFuoPjBbqD5AW6g+UFuoPmBbqD5wW6g+gFuoPpBbqD6gW6g+sFuoPsBbqD7QW6g+4FuoPvBbqD8AW6g/EFuoPyBbqD8wW6g/QFuoP1BbqD9gW6g/cFuoP4BbqD+QW6g/oFuoP7BbqD/AW6g/0FuoP+BbqD/wW6hAAFuoQBBbqEAgW6hAMFuoQEBbqEBQW6hAYFuoQHBbqECAW6hAkFuoQKBbqECwW6hAwFuoQNBbqEDgW6hA8FuoQQBbqEEQW6hBIFuoQTBbqEFAW6hBUFuoQWBbqEFwW6hBgFuoQZBbqEGgW6hBsFuoQcBbqEHQW6hB4FuoQfBbqEIAW6hCEFuoQiBbqEIwW6hCQFuoQlBbqEJgW6hCcFuoQoBbqEKQW6hCoFuoQrBbqELAW6hC0FuoQuBbqELwW6hDAFuoQxBbqEMgW6hDMFuoQ0BbqENQW6hDYFuoQ3BbqEOAW6hDkFuoQ6BbqEOwW6hDwFuoQ9BbqEPgW6hD8FuoRABbqEQQW6hEIFuoRDBbqERAW6hEUFuoRGBbqERwW6hEgFuoRJBbqESgW6hEsFuoRMBbqETQW6hE4FuoRPBbqEUAW6hFEFuoRSBbqEUwW6hFQFuoRVBbqEVgW6hFcFuoRYBbqEWQW6hFoFuoRbBbqEXAW6hF0FuoReBbqEXwW6hGAFuoRhBbqEYgW6hGMFuoRkBbqEZQW6hGYFuoRnBbqEaAW6hGkFuoRqBbqEawW6hGwFuoRtBbqEbgW6hG8FuoRwBbqEcQW6hHIFuoRzBbqEdAW6hHUFuoR2BbqEdwW6hHgFuoR5BbqEegW6hHsFuoR8BbqEfQW6hH4FuoR/BbqEgAW6hIEFuoSCBbqEgwW6hIQFuoSFBbqEhgW6hIcFuoSIBbqEiQW6hIoFuoSLBbqEjAW6hI0FuoSOBbqEjwW6hJAFuoSRBbqEkgW6hJMFuoSUBbqElQW6hJYFuoSXBbqEmAW6hJkFuoSaBbqEmwW6hJwFuoSdBbqEngW6hJ8FuoSgBbqEoQW6hKIFuoSjBbqEpAW6hKUFuoSmBbqEpwW6hKgFuoSpBbqEqgW6hKsFuoSsBbqErQW6hK4FuoSvBbqEsAW6hLEFuoSyBbqEswW6hLQFuoS1BbqEtgW6hLcFuoS4BbqEuQW6hLoFuoS7BbqEvAW6hL0FuoS+BbqEvwW6hMAFuoTBBbqEwgW6hMMFuoTEBbqExQW6hMYFuoTHBbqEyAW6hMkFuoTKBbqEywW6hMwFuoTNBbqEzgW6hM8FuoTQBbqE0QW6hNIFuoTTBbqE1AW6hNUFuoTWBbqE1wW6hNgFuoTZBbqE2gW6hNsFuoTcBbqE3QW6hN4FuoTfBbqE4AW6hOEFuoTiBbqE4wW6hOQFuoTlBbqE5gW6hOcFuoToBbqE6QW6hOoFuoTrBbqE7AW6hO0FuoTuBbqE7wW6hPAFuoTxBbqE8gW6hPMFuoT0BbqE9QW6hPYFuoT3BbqE+AW6hPkFuoT6BbqE+wW6hPwFuoT9BbqE/gW6hP8FuoUABbqFAQW6hQIFuoUDBbqFBAW6hQUFuoUGBbqFBwW6hQgFuoUJBbqFCgW6hQsFuoUMBbqFDQW6hQ4FuoUPBbqFEAW6hREFuoUSBbqFEwW6hRQFuoUVBbqFFgW6hRcFuoUYBbqFGQW6hRoFuoUbBbqFHAW6hR0FuoUeBbqFHwW6hSAFuoUhBbqFIgW6hSMFuoUkBbqFJQW6hSYFuoUnBbqFKAW6hSkFuoUqBbqFKwW6hSwFuoUtBbqFLgW6hS8FuoUwBbqFMQW6hTIFuoUzBbqFNAW6hTUFuoU2BbqFNwW6hTgFuoU5BbqFOgW6hTsFuoU8BbqFPQW6hT4FuoU/BbqFQAW6hUEFuoVCBbqFQwW6hUQFuoVFBbqFRgW6hUcFuoVIBbqFSQW6hUoFuoVLBbqFTAW6hU0FuoVOBbqFTwW6hVAFuoVRBbqFUgW6hVMFuoVUBbqFVQW6hVYFuoVXBbqFWAW6hVkFuoVaBbqFWwW6hVwFuoVdBbqFXgW6hV8FuoVgBbqFYQW6hWIFuoVjBbqFZAW6hWUFuoVmBbqFZwW6hWgFuoVpBbqFagW6hWsFuoVsBbqFbQW6hW4FuoVvBbqFcAW6hXEFuoVyBbqFcwW6hXQFuoV1BbqFdgW6hXcFuoV4BbqFeQW6hXoFuoV7BbqFfAW6hX0FuoV+BbqFfwW6hYAFuoWBBbqFggW6hYMFuoWEBbqFhQW6hYYFuoWHBbqFiAW6hYkFuoWKBbqFiwW6hYwFuoWNBbqFjgW6hY8FuoWQBbqFkQW6hZIFuoWTBbqFlAW6hZUFuoWWBbqFlwW6hZgFuoWZBbqFmgW6hZsFuoWcBbqFnQW6hZ4FuoWfBbqFoAW6haEFuoWiBbqFowW6haQFuoWlBbqFpgW6hacFuoWoBbqFqQW6haoFuoWrBbqFrAW6ha0FuoWuBbqFrwW6hbAFuoWxBbqFsgW6hbMFuoW0BbqFtQW6hbYFuoW3BbqFuAW6hbkFuoW6BbqFuwW6hbwFuoW9BbqFvgW6hb8FuoXABbqFwQW6hcIFuoXDBbqFxAW6hcUFuoXGBbqFxwW6hcgFuoXJBbqFygW6hcsFuoXMBbqFzQW6hc4FuoXPBbqF0AW6hdEFuoXSBbqF0wW6hdQFuoXVBbqF1gW6hdcFuoXYBbqF2QW6hdoFuoXbBbqF3AW6hd0FuoXeBbqF3wW6heAFuoXhBbqF4gW6heMFuoXkBbqF5QW6heYFuoXnBbqF6AW6hekFuoXqBbqF6wW6hewFuoXtBbqF7gW6he8FuoXwBbqF8QW6hfIFuoXzBbqF9AW6hfUFuoX2BbqF9wW6hfgFuoX5BbqF+gW6hfsFuoX8BbqF/QW6hf4FuoX/BbqGAAW6hgEFuoYCBbqGAwW6hgQFuoYFBbqGBgW6hgcFuoYIBbqGCQW6hgoFuoYLBbqGDAW6hg0FuoYOBbqGDwW6hhAFuoYRBbqGEgW6hhMFuoYUBbqGFQW6hhYFuoYXBbqGGAW6hhkFuoYaBbqGGwW6hhwFuoYdBbqGHgW6hh8FuoYgBbqGIQW6hiIFuoYjBbqGJAW6hiUFuoYmBbqGJwW6higFuoYpBID3hwSA0dQEx3+fBIO4+wTB7xoFXUMVBAA94gW6hiwFuoYtBbqGLgW6hi8FuoYwBbqGMQW6hjIFuoYzBbqGNAW6hjUFuoY2BbqGNwW6hjgFXUMdBbqGOQW6hjwEAD3gBIOpXgVdQx8FuoY9BbqGQAUDR0kFA0dNBbqGQQW6hkIFuoZDBbqGRAW6hkUFuoZGBbqGRwW6hkgFuoZJBbqGSgW6hksFuoZMBbqGTQW6hk4FuoZPBbqGUAW6hlEFuoZSBbqGUwW6hlQFuoZVBbqGVgW6hlcFuoZYBbqGWQW6hloFuoZbBbqGXAW6hl0FXUMvBbqGYAW6hmEFuoZiBV1DMgSA0dUEg7/aA8B1KAPAdSkEg6lfBEHUNATHUM0Eg6hnBMdx/QPAd2QFDuP5BIO/2wQA7/cEgNHWBbqGYwW6hmYEg7j6BEHUNQRB3+QEx1DYBIOpWwTHf54Ex1DZBIDR1wSDuP8EQdx8BMdQ2gRAe8IEg7/KBMGjpQRB1KwEg6huBEHUOASDv8sEwaOnBEHUrgSDv84EgPeMBEHf7ARB1DkEQGjoBID3hgPAdx4EQd/mA8B3+AOAO7MDgDuOA4A6ggOAO5YDQAaPAwAD1ANAHcoDAANGAwAO5wMADuoCwAHtAwAD3wLAAaICwAVvAsAAuQNAB7IDQB3YA0AVugMADuYDQBW4A4APeQOAOoEDgA0cA8B3ZQOAD1QDQBW5A0AHqwPAdQADwB6qA8B1AQPAHqsDgDuXA8B1KgPAd/oDgDqTA0AdxgNAB70DQB3/AwAO/gMADu0CwAC4AwAD2ALAAesDQB1LA0AHswKAAF0DAA7rAsAB7gKAAF8CgAK2AkAB3gIAAOgCAACuAcAAGwHAAHYBwAAKAYAACAGAAA4BgAAEAYAADAFAAAMBAAAIAUAAEwFAABsBQAAXAUAAEgFAABkBQAAaAUAAGAFAABwBQAAUAUAABQIAABYDAA7iAwAO5AIAAKwDQBW7BbqGZwW6htgFuobZBbqG2gRB3H4FuobbBbqG3AW6ht0FuobeBbqG3wW6hvAFuobxBbqG8gW6hvMFuob0BbqG9QW6hvYFuob3BbqG+AW6hvkFuob6BbqG+wW6hvwFuob9BbqG/gW6hv8FuodABbqHQQW6h0IFuodDBbqHRAW6h0UFuodGBbqHRwW6h0gFuodJBbqHSgW6h0sFuodMBbqHTQW6h04FuodPBbqHUAW6h1EFuodSBbqHUwW6h1QFuodVBbqHVgW6h1cFuodYA8AaOwW6h1kFuodaBbqHWwW6h1wFuoddBbqHXgW6h18FuodgBbqHYQW6h2IFuodjBbqHZAW6h2UFuodmBbqHZwW6h2gFuodpBbqHagW6h2sFuodsBbqHbQW6h24FuodvBbqHcAW6h3EFuodyBbqHcwW6h3QFuod1BbqHdgW6h3cFuod4BbqHeQW6h3oFuod7BbqHfAW6h30Fuod+BbqHfwW6h4AFuoeBBbqHggW6h4MFuoeEBbqHhQW6h4YFuoeHBbqHiAW6h4kFuoeKBbqHiwW6h4wFuoeNBbqHjgW6h48FuoeQBbqHkQW6h5IFuoeTBbqHlAW6h5UFuoeWBbqHlwW6h5gFuoeZBbqHmgW6h5sFuoecBbqHnQW6h54FuoefBbqHoAW6h6EFuoeiBbqHowW6h6QFuoelBbqHpgW6h6cFuoeoBbqHqQW6h6oFuoerBbqHrAW6h60FuoeuBbqHrwW6h7AFuoexBbqHsgW6h7MFuoe0BbqHtQW6h7YFuoe3BbqHuAW6h7kFuoe6BbqHuwW6h7wFuoe9BbqHvgW6h78FuofABbqHwQW6h8IFuofDBbqHxAW6h8UFuofGBbqHxwW6h8gFuofJBbqHygW6h8sFuofMBbqHzQW6h84FuofPBbqH0AW6h9EFuofSBbqH0wW6h9QFuofVBbqH1gW6h9cFuofYBbqH2QW6h9oFuofbBbqH3AW6h90FuofeBbqH3wW6h+AFuofhBbqH4gW6h+MFuofkBbqH5QW6h+YFuofnBbqH6AW6h+kFuofqBbqH6wW6h+wFuoftBbqH7gW6h+8FuofwBbqH8QW6h/IFuofzBbqH9AW6h/UFuof2BbqH9wW6h/gFuof5BbqH+gW6h/sFuof8BbqH/QW6h/4Fuof/BbqQAAW6kAEFupACBbqQAwW6kAQFupAFBbqQBgW6kAcFupAIBbqQCQW6kAoFupALBbqQDAW6kA0FupAOBbqQDwW6kBAFupARBbqQEgW6kBMFupAUBbqQFQW6kBYFupAXBbqQGAW6kBkFupAaBbqQGwW6kBwFupAdBbqQHgW6kB8FupAgBbqQIQW6kCIFupAjBbqQJAW6kCUFupAmBbqQJwW6kCgFupApBbqQKgW6kCsFupAsBbqQLQW6kC4FupAvBbqQMAW6kDEFupAyBbqQMwW6kDQFupA1BbqQNgW6kDcFupA4BbqQOQW6kDoFupA7BbqQPAW6kD0FupA+BbqQPwW6kEAFupBBBbqQQgW6kEMFupBEBbqQRQW6kEYFupBHBbqQSAW6kEkFupBKBbqQSwW6kEwFupBNBbqQTgW6kE8FupBQBbqQUQW6kFIFupBTBbqQVAW6kFUFupBWBbqQVwW6kFgFupBZBbqQWgW6kFsFupBcBbqQXQW6kF4FupBfBbqQYAW6kGEFupBiBbqQYwW6kGQFupBlBbqQZgW6kGcFupBoBbqQaQW6kGoFupBrBbqQbAW6kG0FupBuBbqQbwW6kHAFupBxBbqQcgW6kHMFupB0BbqQdQW6kHYFupB3BbqQeAW6kHkFupB6BbqQewW6kHwFupB9BbqQfgW6kH8FupCABbqQgQW6kIIFupCDBbqQhAW6kIUFupCGBbqQhwW6kIgFupCJBbqQigW6kIsFupCMBbqQjQW6kI4FupCPBbqQkAW6kJEFupCSBbqQkwW6kJQFupCVBbqQlgW6kJcFupCYBbqQmQW6kJoFupCbBbqQnAW6kJ0FupCeBbqQnwW6kKAFupChBbqQogW6kKMFupCkBbqQpQW6kKYFupCnBbqQqAW6kKkFupCqBbqQqwW6kKwFupCtBbqQrgW6kK8FupCwBbqQsQW6kLIFupCzBbqQtAW6kLUFupC2BbqQtwW6kLgFupC5BbqQugW6kLsFupC8BbqQvQW6kL4FupC/BbqQwAW6kMEFupDCBbqQwwW6kMQFupDFBbqQxgW6kMcFupDIBbqQyQW6kMoFupDLBbqQzAW6kM0FupDOBbqQzwW6kNAFupDRBbqQ0gW6kNMFupDUBbqQ1QW6kNYFupDXBbqQ2AW6kNkFupDaBbqQ2wW6kNwFupDdBbqQ3gW6kN8FupDgBbqQ4QW6kOIFupDjBbqQ5AW6kOUFupDmBbqQ5wW6kOgFupDpBbqQ6gW6kOsFupDsBbqQ7QW6kO4FupDvBbqQ8AW6kPEFupDyBbqQ8wW6kPQFupD1BbqQ9gW6kPcFupD4BbqQ+QW6kPoFupD7BbqQ/AW6kP0FupD+BbqQ/wW6kQAFupEBBbqRAgW6kQMFupEEBbqRBQW6kQYFupEHBbqRCAW6kQkFupEKBbqRCwW6kQwFupENBbqRDgW6kQ8FupEQBbqREQW6kRIFupETBbqRFAW6kRUFupEWBbqRFwW6kRgFupEZBbqRGgW6kRsFupEcBbqRHQW6kR4FupEfBbqRIAW6kSEFupEiBbqRIwW6kSQFupElBbqRJgW6kScFupEoBbqRKQW6kSoFupErBbqRLAW6kS0FupEuBbqRLwW6kTAFupExBbqRMgW6kTMFupE0BbqRNQW6kTYFupE3BbqROAW6kTkFupE6BbqROwW6kTwFupE9BbqRPgW6kT8FupFABbqRQQW6kUIFupFDBbqRRAW6kUUFupFGBbqRRwW6kUgFupFJBbqRSgW6kUsFupFMBbqRTQW6kU4FupFPBbqRUAW6kVEFupFSBbqRUwW6kVQFupFVBbqRVgW6kVcFupFYBbqRWQW6kVoFupFbBbqRXAW6kV0FupFeBbqRXwW6kWAFupFhBbqRYgW6kWMFupFkBbqRZQW6kWYFupFnBbqRaAW6kWkFupFqBbqRawW6kWwFupFtBbqRbgW6kW8FupFwBbqRcQW6kXIFupFzBbqRdAW6kXUFupF2BbqRdwW6kXgFupF5BbqRegW6kXsFupF8BbqRfQW6kX4FupF/BbqRgAW6kYEFupGCBbqRgwW6kYQFupGFBbqRhgW6kYcFupGIBbqRiQW6kYoFupGLBbqRjAW6kY0FupGOBbqRjwW6kZAFupGRBbqRkgW6kZMFupGUBbqRlQW6kZYFupGXBbqRmAW6kZkFupGaBbqRmwW6kZwFupGdBbqRngW6kZ8FupGgBbqRoQW6kaIFupGjBbqRpAW6kaUFupGmBbqRpwW6kagFupGpBbqRqgW6kasFupGsBbqRrQW6ka4FupGvBbqRsAW6kbEFupGyBbqRswW6kbQFupG1BbqRtgW6kbcFupG4BbqRuQW6kboFupG7BbqRvAW6kb0FupG+BbqRvwW6kcAFupHBBbqRwgW6kcMFupHEBbqRxQW6kcYFupHHBbqRyAW6kckFupHKBbqRywW6kcwFupHNBbqRzgW6kc8FupHQBbqR0QW6kdIFupHTBbqR1AW6kdUFupHWBbqR1wW6kdgFupHZBbqR2gW6kdsFupHcBbqR3QW6kd4FupHfBbqR4AW6keEFupHiBbqR4wW6keQFupHlBbqR5gW6kecFupHoBbqR6QW6keoFupHrBbqR7AW6ke0FupHuBbqR7wW6kfAFupHxBbqR8gW6kfMFupH0BbqR9QW6kfYFupH3BbqR+AW6kfkFupH6BbqR+wW6kfwFupH9BbqR/gW6kf8FupIABbqSAQW6kgIFupIDBbqSBAW6kgUFupIGBbqSBwW6kggFupIJBbqSCgW6kgsFupIMBbqSDQW6kg4FupIPBbqSEAW6khEFupISBbqSEwW6khQFupIVBbqSFgW6khcFupIYBbqSGQW6khoFupIbBbqSHAW6kh0FupIeBbqSHwW6kiAFupIhBbqSIgW6kiMFupIkBbqSJQW6kiYFupInBbqSKAW6kikFupIqBbqSKwW6kiwFupItBbqSLgW6ki8FupIwBbqSMQW6kjIFupIzBbqSNAW6kjUFupI2BbqSNwW6kjgFupI5BbqSOgW6kjsFupI8BbqSPQW6kj4FupI/BbqSQAW6kkEFupJCBbqSQwW6kkQFupJFBbqSRgW6kkcFupJIBbqSSQW6kkoFupJLBbqSTAW6kk0FupJOBbqSTwW6klAFupJRBbqSUgW6klMFupJUBbqSVQW6klYFupJXBbqSWAW6klkFupJaBbqSWwW6klwFupJdBbqSXgW6kl8FupJgBbqSYQW6kmIFupJjBbqSZAW6kmUFupJmBbqSZwW6kmgFupJpBbqSagW6kmsFupJsBbqSbQW6km4FupJvBbqScAW6knEFupJyBbqScwW6knQFupJ1BbqSdgW6kncFupJ4BbqSeQW6knoFupJ7BbqSfAW6kn0FupJ+BbqSfwW6koAFupKBBbqSggW6koMFupKEBbqShQW6koYFupKHBbqSiAW6kokFupKKBbqSiwW6kowFupKNBbqSjgW6ko8FupKQBbqSkQW6kpIFupKTBbqSlAW6kpUFupKWBbqSlwW6kpgFupKZBbqSmgW6kpsFupKcBbqSnQW6kp4FupKfBbqSoAW6kqEFupKiBbqSowW6kqQFupKlBbqSpgW6kqcFupKoBbqSqQW6kqoFupKrBbqSrAW6kq0FupKuBbqSrwW6krAFupKxBbqSsgW6krMFupK0BbqStQW6krYFupK3BbqSuAW6krkFupK6BbqSuwW6krwFupK9BbqSvgW6kr8FupLABbqSwQW6ksIFupLDBbqSxAW6ksUFupLGBbqSxwW6ksgFupLJBbqSygW6kssFupLMBbqSzQW6ks4FupLPBbqS0AW6ktEFupLSBbqS0wW6ktQFupLVBbqS1gW6ktcFupLYBbqS2QW6ktoFupLbBbqS3AW6kt0FupLeBbqS3wW6kuAFupLhBbqS4gW6kuMFupLkBbqS5QW6kuYFupLnBbqS6AW6kukFupLqBbqS6wW6kuwFupLtBbqS7gW6ku8FupLwBbqS8QW6kvIFupLzBbqS9AW6kvUFupL2BbqS9wW6kvgFupL5BbqS+gW6kvsFupL8BbqS/QW6kv4FupL/BbqVoAW6laEFupWiBbqVowW6laQFupWlBbqVpgW6lacFupWoBbqVqQW6laoFupWrBbqVrAW6la0FupWuBbqVrwW7j+AFu4/hBbuP4gW7j+MFRo6QBUaOkQVGjpg='
+const FREQUENT_DOUBLE_CODES: ReadonlyArray<readonly [number, number, number, number]> = [
+  [2,0x1,0x00000000,0x00000000],
+  [10,0xf4,0x3e35798e,0xe2308c3a],
+  [11,0x77c,0x3e45798e,0xe2308c3a],
+  [8,0xaf,0x3e8ad7f2,0x9abcaf4a],
+  [9,0x1d2,0x3ec0c6f7,0xa0b5ed8e],
+  [10,0xd0,0x3f454c98,0x5f06f694],
+  [6,0x9,0x3f4a36e2,0xeb1c432d],
+  [4,0xf,0x3f50624d,0xd2f1a9fc],
+  [5,0x16,0x3f60624d,0xd2f1a9fc],
+  [11,0x751,0x3fbe69ad,0x42c3c9ee],
+  [11,0x777,0x3fe00000,0x00000000],
+  [9,0x1d6,0x3fefffff,0xf8000002],
+  [4,0x0,0x3ff00000,0x00000000],
+  [9,0x15a,0x401921fb,0x54442d18],
+  [11,0x774,0x4035ee14,0x80000000],
+  [9,0x1d3,0x404ca5dc,0x1a63c1f8],
+  [11,0x77e,0x405bb32f,0xe0000000],
+  [10,0x5e,0x405c332f,0xe0000000],
+  [9,0x1d7,0x40668000,0x00000000],
+  [9,0x1d5,0x40768000,0x00000000],
+  [11,0x77d,0x408f4000,0x00000000],
+  [10,0xd2,0x409233ff,0xffffffff],
+  [8,0x3c,0x40923400,0x00000000],
+  [11,0x753,0x40923400,0x00000001],
+  [10,0xd3,0x4092abff,0xffffffff],
+  [8,0x35,0x4092ac00,0x00000000],
+  [11,0x770,0x4092ac00,0x00000001],
+  [7,0x1f,0x40c81c80,0x00000000],
+  [6,0x2a,0x41cdcd64,0xff800000],
+]
+
+interface PrcDoubleCodeNode { zero: number; one: number; exponent: number; value: number }
+let prcDoubleCodeTree: PrcDoubleCodeNode[] | undefined
+
+export function readPrcDoubleCode(readBit: () => number): { exponent?: number; value?: number } {
+  const tree = prcDoubleCodeTree ?? (prcDoubleCodeTree = buildPrcDoubleCodeTree())
+  let node = 0
+  while (tree[node]!.exponent < 0 && Number.isNaN(tree[node]!.value)) {
+    node = readBit() === 0 ? tree[node]!.zero : tree[node]!.one
+    if (node < 0) throw new Error('PRC decode error: invalid Double Huffman code')
+  }
+  const entry = tree[node]!
+  return entry.exponent >= 0 ? { exponent: entry.exponent } : { value: entry.value }
+}
+function buildPrcDoubleCodeTree(): PrcDoubleCodeNode[] {
+  const tree: PrcDoubleCodeNode[] = [{ zero: -1, one: -1, exponent: -1, value: NaN }]
+  const bytes = decodeBase64(EXPONENT_CODES_BASE64)
+  if (bytes.length !== 2048 * 4) throw new Error('PRC decode error: corrupt Double exponent table')
+  for (let exponent = 0; exponent < 2048; exponent++) {
+    const offset = exponent * 4
+    const packed = ((bytes[offset]! << 24) | (bytes[offset + 1]! << 16) | (bytes[offset + 2]! << 8) | bytes[offset + 3]!) >>> 0
+    insertCode(tree, packed & 0x3FFFFF, packed >>> 22, exponent, NaN)
+  }
+  for (let index = 0; index < FREQUENT_DOUBLE_CODES.length; index++) {
+    const entry = FREQUENT_DOUBLE_CODES[index]!
+    insertCode(tree, entry[1], entry[0], -1, wordsToDouble(entry[2], entry[3]))
+  }
+  return tree
+}
+
+function insertCode(tree: PrcDoubleCodeNode[], code: number, length: number, exponent: number, value: number): void {
+  let node = 0
+  for (let bit = length - 1; bit >= 0; bit--) {
+    const side = ((code >>> bit) & 1) === 0 ? 'zero' : 'one'
+    let next = tree[node]![side]
+    if (next < 0) {
+      next = tree.length
+      tree[node]![side] = next
+      tree.push({ zero: -1, one: -1, exponent: -1, value: NaN })
+    }
+    node = next
+  }
+  if (tree[node]!.exponent >= 0 || !Number.isNaN(tree[node]!.value)) throw new Error('PRC decode error: duplicate Double Huffman code')
+  tree[node]!.exponent = exponent
+  tree[node]!.value = value
+}
+
+function wordsToDouble(upper: number, lower: number): number {
+  const bytes = new Uint8Array(8)
+  const view = new DataView(bytes.buffer)
+  view.setUint32(0, upper); view.setUint32(4, lower)
+  return view.getFloat64(0)
+}
+
+function decodeBase64(value: string): Uint8Array {
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+  const result = new Uint8Array(value.length / 4 * 3)
+  let output = 0
+  for (let index = 0; index < value.length; index += 4) {
+    const a = alphabet.indexOf(value[index]!), b = alphabet.indexOf(value[index + 1]!)
+    const c = value[index + 2] === '=' ? 0 : alphabet.indexOf(value[index + 2]!)
+    const d = value[index + 3] === '=' ? 0 : alphabet.indexOf(value[index + 3]!)
+    const packed = (a << 18) | (b << 12) | (c << 6) | d
+    result[output++] = packed >>> 16
+    if (value[index + 2] !== '=') result[output++] = packed >>> 8
+    if (value[index + 3] !== '=') result[output++] = packed
+  }
+  return result.subarray(0, output)
+}

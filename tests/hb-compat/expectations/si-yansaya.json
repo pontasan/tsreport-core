@@ -1,0 +1,58 @@
+{
+  "font": "NotoSansSinhala-Regular.ttf",
+  "text": "ක්‍ය",
+  "options": {
+    "direction": "ltr",
+    "script": "sinh",
+    "hbScript": "Sinh",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 23,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 1007,
+      "ay": 0
+    },
+    {
+      "g": 126,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 635,
+      "ay": 0
+    }
+  ]
+}

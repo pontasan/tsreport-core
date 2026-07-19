@@ -1,0 +1,50 @@
+{
+  "font": "NotoSansOriya-Regular.ttf",
+  "text": "କ୍ଷ",
+  "options": {
+    "direction": "ltr",
+    "script": "ory2",
+    "hbScript": "Orya",
+    "features": [
+      "locl",
+      "ccmp",
+      "nukt",
+      "akhn",
+      "rphf",
+      "rkrf",
+      "pref",
+      "blwf",
+      "abvf",
+      "half",
+      "pstf",
+      "vatu",
+      "cjct",
+      "init",
+      "pres",
+      "abvs",
+      "blws",
+      "psts",
+      "haln",
+      "calt",
+      "clig",
+      "rclt",
+      "dist",
+      "abvm",
+      "blwm",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,nukt,akhn,rphf,rkrf,pref,blwf,abvf,half,pstf,vatu,cjct,init,pres,abvs,blws,psts,haln,calt,clig,rclt,dist,abvm,blwm,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 259,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 785,
+      "ay": 0
+    }
+  ]
+}

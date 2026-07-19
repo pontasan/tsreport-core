@@ -1,0 +1,34 @@
+{
+  "font": "NotoSansKR-Regular.otf",
+  "text": "각",
+  "options": {
+    "direction": "ltr",
+    "script": "hang",
+    "hbScript": "Hang",
+    "features": [
+      "locl",
+      "ccmp",
+      "ljmo",
+      "vjmo",
+      "tjmo",
+      "rlig",
+      "liga",
+      "clig",
+      "rclt",
+      "kern",
+      "mark",
+      "mkmk"
+    ],
+    "hbFeatures": "locl,ccmp,ljmo,vjmo,tjmo,rlig,liga,clig,rclt,kern,mark,mkmk"
+  },
+  "glyphs": [
+    {
+      "g": 10317,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 920,
+      "ay": 0
+    }
+  ]
+}

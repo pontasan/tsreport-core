@@ -1,0 +1,53 @@
+{
+  "font": "NotoSansJP-Regular.otf",
+  "text": "テーブル",
+  "options": {
+    "direction": "ttb",
+    "script": "kana",
+    "hbScript": "Kana",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,-calt,-clig,-curs,-dist,-kern,-liga,-rclt"
+  },
+  "glyphs": [
+    {
+      "g": 17736,
+      "cl": 0,
+      "dx": -500,
+      "dy": -880,
+      "ax": 0,
+      "ay": -1000
+    },
+    {
+      "g": 17789,
+      "cl": 1,
+      "dx": -500,
+      "dy": -880,
+      "ax": 0,
+      "ay": -1000
+    },
+    {
+      "g": 17752,
+      "cl": 2,
+      "dx": -500,
+      "dy": -880,
+      "ax": 0,
+      "ay": -1000
+    },
+    {
+      "g": 17773,
+      "cl": 3,
+      "dx": -500,
+      "dy": -880,
+      "ax": 0,
+      "ay": -1000
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "font": "SourceSans3-Regular.otf",
+  "text": "aG9",
+  "options": {
+    "direction": "ltr",
+    "script": "latn",
+    "hbScript": "Latn",
+    "features": [
+      "abvm",
+      "blwm",
+      "ccmp",
+      "locl",
+      "mark",
+      "mkmk",
+      "rlig",
+      "calt",
+      "clig",
+      "curs",
+      "dist",
+      "kern",
+      "liga",
+      "rclt",
+      "aalt"
+    ],
+    "hbFeatures": "abvm,blwm,ccmp,locl,mark,mkmk,rlig,calt,clig,curs,dist,kern,liga,rclt,aalt"
+  },
+  "glyphs": [
+    {
+      "g": 710,
+      "cl": 0,
+      "dx": 0,
+      "dy": 0,
+      "ax": 555,
+      "ay": 0
+    },
+    {
+      "g": 1504,
+      "cl": 1,
+      "dx": 0,
+      "dy": 0,
+      "ax": 549,
+      "ay": 0
+    },
+    {
+      "g": 1386,
+      "cl": 2,
+      "dx": 0,
+      "dy": 0,
+      "ax": 497,
+      "ay": 0
+    }
+  ]
+}
