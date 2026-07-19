@@ -14,6 +14,14 @@ npm install tsreport-core
 
 Este README está repleto de exemplos que você pode copiar e executar como estão, cobrindo tudo, desde a sua primeira geração de PDF até os 16 elementos de relatório, escrita vertical, composição tipográfica multilíngue, incorporação de fontes e conversão de texto em contornos, e pré-visualização no navegador. Se ferramentas de relatório são novidade para você, comece por **Fundamentos do layout de relatórios** para assimilar os conceitos e, em seguida, construa seu primeiro PDF com o tutorial.
 
+## Criar relatórios WYSIWYG visualmente com o tsreport-editor
+
+O [tsreport-editor](https://github.com/pontasan/tsreport-editor) é um designer de relatórios WYSIWYG construído sobre o tsreport-core. Você pode organizar bandas e elementos visualmente, vincular dados de teste JSON, conferir a pré-visualização de impressão, importar PDFs e gerar PDFs com o mesmo motor central de renderização. Os vídeos mostram uma IA editando um relatório via MCP e abrindo a pré-visualização concluída no Editor.
+
+| Demonstração em inglês | Demonstração em japonês |
+| --- | --- |
+| [![Demonstração WYSIWYG do tsreport-editor em inglês](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![Demonstração WYSIWYG do tsreport-editor em japonês](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## Compor corretamente os sistemas de escrita do mundo, com um único motor
 
 Um relatório multilíngue não pode ser exibido corretamente simplesmente gravando strings diretamente em um PDF. Seleção de glifos, medição da largura dos caracteres, posicionamento, quebra de linha, escrita vertical e incorporação de fontes no PDF — somente quando toda essa cadeia de processamento se engrena é que você obtém a página esperada.
@@ -2604,6 +2612,13 @@ A coleta de referências de imagem trata não apenas dos elementos `image` comun
 - Nenhum pacote de dependência em tempo de execução
 
 A compressão e a descompressão Brotli do WOFF2 usam a implementação em TypeScript puro embutida no tsreport-core, tanto no Node.js quanto em navegadores. Nenhum pacote externo, WASM ou biblioteca nativa é necessário.
+
+## Projetos relacionados
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## Licença
 

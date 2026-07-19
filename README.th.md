@@ -14,6 +14,14 @@ npm install tsreport-core
 
 README นี้เต็มไปด้วยตัวอย่างที่คัดลอกไปรันได้ทันที ครอบคลุมตั้งแต่การสร้าง PDF ครั้งแรก ไปจนถึงเอลิเมนต์รายงานทั้ง 16 ชนิด การเขียนแนวตั้ง การจัดวางตัวอักษรหลายภาษา การฝังฟอนต์และการแปลงข้อความเป็นเส้นโครงร่าง (outline) และการพรีวิวบนเบราว์เซอร์ หากเครื่องมือสร้างรายงานยังเป็นเรื่องใหม่สำหรับคุณ ให้เริ่มจาก **พื้นฐานเลย์เอาต์ของรายงาน** เพื่อจับความรู้สึกของแนวคิดก่อน แล้วจึงสร้าง PDF ฉบับแรกของคุณตามบทแนะนำ
 
+## ออกแบบรายงานแบบ WYSIWYG ด้วย tsreport-editor
+
+[tsreport-editor](https://github.com/pontasan/tsreport-editor) คือเครื่องมือออกแบบรายงานแบบ WYSIWYG ที่สร้างบน tsreport-core คุณสามารถจัดวางแบนด์และเอลิเมนต์บนหน้าจอ ผูกข้อมูลทดสอบ JSON ตรวจสอบตัวอย่างก่อนพิมพ์ นำเข้า PDF และสร้าง PDF ด้วยเอนจินเรนเดอร์ core ชุดเดียวกัน วิดีโอด้านล่างแสดง AI แก้ไขรายงานผ่าน MCP แล้วเปิดตัวอย่างรายงานที่เสร็จสมบูรณ์ใน Editor
+
+| เดโมภาษาอังกฤษ | เดโมภาษาญี่ปุ่น |
+| --- | --- |
+| [![เดโม WYSIWYG ของ tsreport-editor ภาษาอังกฤษ](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![เดโม WYSIWYG ของ tsreport-editor ภาษาญี่ปุ่น](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## จัดวางระบบการเขียนของทั้งโลกอย่างถูกต้อง ด้วยเอนจินเดียว
 
 รายงานหลายภาษาไม่สามารถแสดงผลอย่างถูกต้องได้เพียงแค่เขียนสตริงลงใน PDF ตรง ๆ การเลือกกลิฟ การวัดความกว้างอักขระ การจัดตำแหน่ง การตัดบรรทัด การเขียนแนวตั้ง และการฝังฟอนต์ลงใน PDF — ต่อเมื่อสายกระบวนการทั้งหมดนี้ทำงานประสานกันเท่านั้น คุณจึงจะได้หน้ากระดาษอย่างที่คาดหวัง
@@ -2604,6 +2612,13 @@ const document = createReport(template, dataSource, {
 - ไม่มีแพ็กเกจ dependency ขณะรันไทม์
 
 การบีบอัดและการคลายการบีบอัด Brotli ของ WOFF2 ใช้การพัฒนาแบบ pure TypeScript ที่มีอยู่ในตัว tsreport-core ทั้งบน Node.js และเบราว์เซอร์ ไม่ต้องใช้แพ็กเกจภายนอก WASM หรือไลบรารีเนทีฟใด ๆ
+
+## โครงการที่เกี่ยวข้อง
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## สัญญาอนุญาต
 

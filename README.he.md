@@ -14,6 +14,14 @@ npm install tsreport-core
 
 קובץ README זה מלא בדוגמאות שאפשר להעתיק ולהריץ כפי שהן, והוא מכסה הכול — מיצירת ה-PDF הראשון שלכם ועד כל 16 רכיבי הדוח, כתיבה אנכית, עימוד רב-לשוני, הטמעת גופנים והמרת טקסט לקווי מתאר, ותצוגה מקדימה בדפדפן. אם כלי דוחות חדשים לכם, התחילו ב**יסודות פריסת דוחות** כדי לקבל תחושה של המושגים, ואז בנו את ה-PDF הראשון שלכם עם המדריך.
 
+## עיצוב דוחות WYSIWYG באופן חזותי באמצעות tsreport-editor
+
+‏[tsreport-editor](https://github.com/pontasan/tsreport-editor) הוא מעצב דוחות WYSIWYG המבוסס על tsreport-core. אפשר למקם רצועות ורכיבים באופן חזותי, לקשר נתוני בדיקה מסוג JSON, לבדוק תצוגה מקדימה להדפסה, לייבא קובצי PDF וליצור PDF באמצעות אותו מנוע רינדור מרכזי. הסרטונים מציגים בינה מלאכותית שעורכת דוח דרך MCP ולאחר מכן פותחת את התצוגה המקדימה המוגמרת ב-Editor.
+
+| הדגמה באנגלית | הדגמה ביפנית |
+| --- | --- |
+| [![הדגמת WYSIWYG באנגלית של tsreport-editor](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![הדגמת WYSIWYG ביפנית של tsreport-editor](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## עימוד נכון של מערכות הכתב של העולם, במנוע אחד
 
 דוח רב-לשוני אינו יכול להיות מוצג נכון פשוט על ידי כתיבת מחרוזות ישירות לתוך PDF. בחירת גליפים, מדידת רוחבי תווים, מיקום, שבירת שורות, כתיבה אנכית והטמעת גופנים לתוך ה-PDF — רק כאשר כל שרשרת העיבוד הזו משתלבת יחד מתקבל העמוד שציפיתם לו.
@@ -2604,6 +2612,13 @@ const document = createReport(template, dataSource, {
 - ללא חבילות תלות בזמן ריצה
 
 דחיסת Brotli ופריסתה עבור WOFF2 משתמשות במימוש ה-TypeScript הטהור המובנה ב-tsreport-core גם ב-Node.js וגם בדפדפנים. אין צורך בחבילות חיצוניות, ב-WASM או בספריות מקוריות.
+
+## פרויקטים קשורים
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## רישיון
 

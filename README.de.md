@@ -14,6 +14,14 @@ npm install tsreport-core
 
 Diese README ist voller Beispiele, die Sie unverändert kopieren und ausführen können — von Ihrer ersten PDF-Erzeugung über alle 16 Berichtselemente, vertikalen Schriftsatz, mehrsprachigen Textsatz, Schriftarteinbettung und die Umwandlung von Text in Pfade bis hin zur Browser-Vorschau. Wenn Berichtswerkzeuge für Sie neu sind, beginnen Sie mit den **Grundlagen des Berichtslayouts**, um ein Gefühl für die Konzepte zu bekommen, und erstellen Sie dann mit dem Tutorial Ihr erstes PDF.
 
+## Berichte mit tsreport-editor visuell als WYSIWYG gestalten
+
+[tsreport-editor](https://github.com/pontasan/tsreport-editor) ist ein WYSIWYG-Berichtsdesigner auf Basis von tsreport-core. Sie können Bänder und Elemente visuell anordnen, JSON-Testdaten binden, die Druckvorschau prüfen, PDFs importieren und PDFs mit derselben Core-Rendering-Engine erzeugen. Die Videos zeigen, wie eine KI einen Bericht über MCP bearbeitet und anschließend die fertige Vorschau im Editor öffnet.
+
+| Englische Demo | Japanische Demo |
+| --- | --- |
+| [![Englische tsreport-editor-WYSIWYG-Demo](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![Japanische tsreport-editor-WYSIWYG-Demo](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## Die Schriftsysteme der Welt korrekt setzen — mit einer einzigen Engine
 
 Ein mehrsprachiger Bericht lässt sich nicht korrekt darstellen, indem man Zeichenketten einfach direkt in ein PDF schreibt. Glyphenauswahl, Vermessung der Zeichenbreiten, Positionierung, Zeilenumbruch, vertikaler Schriftsatz und die Einbettung der Schriftart ins PDF — erst wenn diese gesamte Verarbeitungskette ineinandergreift, erhalten Sie die erwartete Seite.
@@ -2604,6 +2612,13 @@ Die Sammlung von Bildreferenzen behandelt nicht nur gewöhnliche `image`-Element
 - Keine Laufzeit-Abhängigkeitspakete
 
 Die Brotli-Komprimierung und -Dekomprimierung von WOFF2 nutzt sowohl unter Node.js als auch in Browsern die in tsreport-core eingebaute reine TypeScript-Implementierung. Es werden keine externen Pakete, kein WASM und keine nativen Bibliotheken benötigt.
+
+## Verwandte Projekte
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## Lizenz
 

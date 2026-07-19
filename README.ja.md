@@ -12,6 +12,14 @@ npm install tsreport-core
 
 このREADMEには、最初のPDF生成から全16帳票要素・縦書き・多言語組版・フォントの埋込みとアウトライン化・ブラウザプレビューまで、コピーしてそのまま動かせるサンプルを揃えています。帳票ツールが初めての方は[帳票レイアウトの基本](#帳票レイアウトの基本)で考え方をつかんでから、チュートリアルで最初のPDFを作ってみてください。
 
+## tsreport-editorで帳票をWYSIWYGデザイン
+
+[tsreport-editor](https://github.com/pontasan/tsreport-editor)は、tsreport-coreを使ったWYSIWYG帳票デザイナーです。バンドと要素を画面上で配置し、JSONテストデータを結び付け、印刷プレビューを確認し、PDFを取り込み、同じcore描画エンジンでPDFを生成できます。動画では、AIがMCP経由で帳票を編集し、完成した帳票をEditorでプレビューするまでを紹介しています。
+
+| 英語版デモ | 日本語版デモ |
+| --- | --- |
+| [![英語版 tsreport-editor WYSIWYGデモ](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![日本語版 tsreport-editor WYSIWYGデモ](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## 世界中の文字を、一つのエンジンで正しく組む
 
 多言語の帳票は、文字列をそのままPDFへ書き出すだけでは正しく表示できません。字形の選択、文字幅の計測、位置の調整、改行、縦書き、そしてPDFへのフォント埋込み——この一連の処理がすべて噛み合って、はじめて期待どおりの紙面になります。
@@ -2604,6 +2612,13 @@ alternateがレイアウト時に解決できなかった場合は、元のimage
 - 実行時依存パッケージなし
 
 WOFF2のBrotli圧縮・展開は、Node.jsとブラウザのどちらでもtsreport-core内蔵のPure TypeScript実装を使用します。外部パッケージ、WASM、ネイティブライブラリは必要ありません。
+
+## 関連プロジェクト
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## License
 

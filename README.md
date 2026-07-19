@@ -14,6 +14,14 @@ npm install tsreport-core
 
 This README is full of samples you can copy and run as-is, covering everything from your first PDF generation to all 16 report elements, vertical writing, multilingual typesetting, font embedding and converting text to outlines, and browser preview. If report tools are new to you, start with **Report layout basics** to get a feel for the concepts, then build your first PDF with the tutorial.
 
+## Design reports visually with tsreport-editor
+
+[tsreport-editor](https://github.com/pontasan/tsreport-editor) is a WYSIWYG report designer built on tsreport-core. You can lay out bands and elements visually, bind JSON test data, inspect the print preview, import PDFs, and generate PDFs with the same core rendering engine. These videos show AI editing a report through MCP and opening the completed preview in the Editor.
+
+| English demo | Japanese demo |
+| --- | --- |
+| [![English tsreport-editor WYSIWYG demo](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![Japanese tsreport-editor WYSIWYG demo](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## Typesetting the world's writing systems correctly, with one engine
 
 A multilingual report cannot be displayed correctly by simply writing strings straight into a PDF. Glyph selection, character-width measurement, positioning, line breaking, vertical writing, and font embedding into the PDF — only when this whole chain of processing meshes together do you get the page you expect.
@@ -2604,6 +2612,13 @@ Image reference collection handles not only ordinary `image` elements but also a
 - No runtime dependency packages
 
 WOFF2 Brotli compression and decompression use the pure TypeScript implementation built into tsreport-core on both Node.js and browsers. No external packages, WASM, or native libraries are required.
+
+## Related projects
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## License
 

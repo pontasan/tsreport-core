@@ -14,6 +14,14 @@ npm install tsreport-core
 
 本 README 汇集了从第一个 PDF 的生成，到全部 16 种报表元素、竖排、多语言排版、字体嵌入与文字转曲、浏览器预览等可以直接复制运行的示例。如果您是第一次接触报表工具，建议先阅读**报表布局的基本概念**一节掌握思路，再跟随教程生成您的第一个 PDF。
 
+## 使用 tsreport-editor 进行 WYSIWYG 报表设计
+
+[tsreport-editor](https://github.com/pontasan/tsreport-editor) 是基于 tsreport-core 构建的 WYSIWYG 报表设计器。您可以在画面上直观配置带区与元素、绑定 JSON 测试数据、检查打印预览、导入 PDF，并使用同一套 core 绘制引擎生成 PDF。以下视频展示了 AI 通过 MCP 编辑报表并在 Editor 中打开最终预览的完整过程。
+
+| 英文演示 | 日文演示 |
+| --- | --- |
+| [![英文版 tsreport-editor WYSIWYG 演示](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![日文版 tsreport-editor WYSIWYG 演示](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## 用一个引擎，正确排布世界上的各种文字
 
 多语言报表并不是把字符串原样写入 PDF 就能正确显示的。字形的选择、字宽的测量、位置的调整、换行、竖排，以及向 PDF 嵌入字体——只有这一整套处理环环相扣，才能得到符合预期的版面。
@@ -2606,6 +2614,13 @@ alternate 在布局时无法解析的场合，保持原来的 image ID。因此 
 - 无运行时依赖包
 
 WOFF2 的 Brotli 压缩、解压在 Node.js 和浏览器中都使用 tsreport-core 内置的 Pure TypeScript 实现。不需要外部包、WASM、原生库。
+
+## 相关项目
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## License
 

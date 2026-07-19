@@ -14,6 +14,14 @@ npm install tsreport-core
 
 هذا الملف التعريفي مليء بعينات يمكنك نسخها وتشغيلها كما هي، وتغطي كل شيء من توليد أول ملف PDF لك وصولًا إلى جميع عناصر التقارير الستة عشر، والكتابة العمودية، والتنضيد متعدد اللغات، وتضمين الخطوط وتحويل النص إلى مسارات (outlines)، والمعاينة في المتصفح. إذا كانت أدوات التقارير جديدة عليك، فابدأ بقسم **أساسيات تخطيط التقارير** لتكوين إحساس بالمفاهيم، ثم أنشئ أول ملف PDF لك مع الدرس التطبيقي.
 
+## تصميم التقارير بصريًا بنمط WYSIWYG باستخدام tsreport-editor
+
+إن [tsreport-editor](https://github.com/pontasan/tsreport-editor) هو مصمم تقارير بنمط WYSIWYG مبني على tsreport-core. يمكنك ترتيب الأشرطة والعناصر بصريًا، وربط بيانات اختبار JSON، وفحص معاينة الطباعة، واستيراد ملفات PDF، وإنشاء ملفات PDF باستخدام محرك العرض الأساسي نفسه. تعرض مقاطع الفيديو ذكاءً اصطناعيًا يحرر تقريرًا عبر MCP ثم يفتح المعاينة المكتملة في Editor.
+
+| العرض التوضيحي بالإنجليزية | العرض التوضيحي باليابانية |
+| --- | --- |
+| [![عرض WYSIWYG بالإنجليزية في tsreport-editor](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![عرض WYSIWYG باليابانية في tsreport-editor](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## تنضيد أنظمة الكتابة في العالم تنضيدًا صحيحًا بمحرك واحد
 
 لا يمكن عرض تقرير متعدد اللغات عرضًا صحيحًا بمجرد كتابة السلاسل النصية مباشرة في ملف PDF. فاختيار الغليفات، وقياس عرض الحروف، وتحديد المواضع، وكسر الأسطر، والكتابة العمودية، وتضمين الخطوط في ملف PDF — لا تحصل على الصفحة التي تتوقعها إلا عندما تتشابك سلسلة المعالجة هذه بأكملها معًا.
@@ -2606,6 +2614,13 @@ const document = createReport(template, dataSource, {
 - بلا حزم تبعيات وقت تشغيل
 
 يستخدم ضغط WOFF2 بـ Brotli وفكّ ضغطه التنفيذَ المكتوب بـ TypeScript خالصة والمدمج في tsreport-core على Node.js والمتصفحات معًا. ولا يلزم أي حزم خارجية ولا WASM ولا مكتبات أصلية (native).
+
+## المشاريع ذات الصلة
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## الترخيص
 

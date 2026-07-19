@@ -14,6 +14,14 @@ npm install tsreport-core
 
 이 README에는 첫 PDF 생성부터 전체 16가지 리포트 요소·세로쓰기·다국어 조판·폰트 임베딩과 아웃라인화·브라우저 미리보기까지, 복사해서 그대로 실행할 수 있는 샘플을 갖추어 놓았습니다. 리포트 도구가 처음이신 분은 **리포트 레이아웃의 기본** 섹션에서 개념을 익힌 뒤, 튜토리얼로 첫 PDF를 만들어 보시기 바랍니다.
 
+## tsreport-editor로 WYSIWYG 보고서 디자인
+
+[tsreport-editor](https://github.com/pontasan/tsreport-editor)는 tsreport-core를 기반으로 만든 WYSIWYG 보고서 디자이너입니다. 화면에서 밴드와 요소를 배치하고, JSON 테스트 데이터를 연결하고, 인쇄 미리보기를 확인하고, PDF를 가져오며, 동일한 core 렌더링 엔진으로 PDF를 생성할 수 있습니다. 아래 동영상은 AI가 MCP를 통해 보고서를 편집하고 Editor에서 완성된 미리보기를 여는 과정을 보여 줍니다.
+
+| 영어 데모 | 일본어 데모 |
+| --- | --- |
+| [![영어판 tsreport-editor WYSIWYG 데모](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![일본어판 tsreport-editor WYSIWYG 데모](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## 전 세계의 문자를 하나의 엔진으로 올바르게 조판합니다
 
 다국어 리포트는 문자열을 그대로 PDF에 써 넣는 것만으로는 올바르게 표시되지 않습니다. 글자 모양의 선택, 문자 너비의 계측, 위치 조정, 줄바꿈, 세로쓰기, 그리고 PDF로의 폰트 임베딩——이 일련의 처리가 모두 맞물려야 비로소 기대한 대로의 지면이 됩니다.
@@ -2606,6 +2614,13 @@ alternate가 레이아웃 시에 해결되지 않았던 경우는 원래의 imag
 - 런타임 의존 패키지 없음
 
 WOFF2의 Brotli 압축·전개는 Node.js와 브라우저의 어느 쪽에서도 tsreport-core 내장의 Pure TypeScript 구현을 사용합니다. 외부 패키지, WASM, 네이티브 라이브러리는 필요 없습니다.
+
+## 관련 프로젝트
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## License
 

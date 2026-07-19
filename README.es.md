@@ -14,6 +14,14 @@ npm install tsreport-core
 
 Este README está lleno de ejemplos que puede copiar y ejecutar tal cual, y cubre desde la generación de su primer PDF hasta los 16 elementos de informe, la escritura vertical, la composición tipográfica multilingüe, la incrustación de fuentes y la conversión de texto a contornos, y la previsualización en el navegador. Si las herramientas de informes son nuevas para usted, empiece por **Fundamentos de la maquetación de informes** para familiarizarse con los conceptos y construya después su primer PDF con el tutorial.
 
+## Diseñar informes WYSIWYG visualmente con tsreport-editor
+
+[tsreport-editor](https://github.com/pontasan/tsreport-editor) es un diseñador de informes WYSIWYG construido sobre tsreport-core. Puede distribuir visualmente bandas y elementos, vincular datos de prueba JSON, revisar la vista previa de impresión, importar PDF y generar PDF con el mismo motor de renderizado central. Los vídeos muestran cómo una IA edita un informe mediante MCP y abre la vista previa terminada en el Editor.
+
+| Demostración en inglés | Demostración en japonés |
+| --- | --- |
+| [![Demostración WYSIWYG de tsreport-editor en inglés](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![Demostración WYSIWYG de tsreport-editor en japonés](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## Componer correctamente los sistemas de escritura del mundo con un solo motor
 
 Un informe multilingüe no puede mostrarse correctamente escribiendo las cadenas tal cual dentro de un PDF. La selección de glifos, la medición de la anchura de los caracteres, el posicionamiento, el corte de líneas, la escritura vertical y la incrustación de fuentes en el PDF: solo cuando toda esta cadena de procesamiento engrana obtiene usted la página que espera.
@@ -2604,6 +2612,13 @@ La recopilación de referencias a imágenes gestiona no solo los elementos `imag
 - Sin paquetes de dependencia en tiempo de ejecución
 
 La compresión y descompresión Brotli de WOFF2 usan la implementación en TypeScript puro integrada en tsreport-core, tanto en Node.js como en los navegadores. No se requieren paquetes externos, WASM ni bibliotecas nativas.
+
+## Proyectos relacionados
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## Licencia
 

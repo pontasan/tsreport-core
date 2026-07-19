@@ -14,6 +14,14 @@ npm install tsreport-core
 
 README ini penuh dengan contoh yang dapat Anda salin dan jalankan apa adanya, mencakup segalanya mulai dari pembuatan PDF pertama Anda hingga seluruh 16 elemen laporan, penulisan vertikal, penataan huruf multibahasa, penyematan font dan konversi teks menjadi outline, serta pratinjau di browser. Jika perkakas laporan masih baru bagi Anda, mulailah dari **Dasar-dasar tata letak laporan** untuk memahami konsep-konsepnya, lalu buat PDF pertama Anda dengan tutorialnya.
 
+## Mendesain laporan WYSIWYG secara visual dengan tsreport-editor
+
+[tsreport-editor](https://github.com/pontasan/tsreport-editor) adalah desainer laporan WYSIWYG yang dibangun di atas tsreport-core. Anda dapat menata band dan elemen secara visual, mengikat data uji JSON, memeriksa pratinjau cetak, mengimpor PDF, dan menghasilkan PDF dengan mesin rendering core yang sama. Video berikut menunjukkan AI mengedit laporan melalui MCP lalu membuka pratinjau akhirnya di Editor.
+
+| Demo bahasa Inggris | Demo bahasa Jepang |
+| --- | --- |
+| [![Demo WYSIWYG tsreport-editor bahasa Inggris](https://img.youtube.com/vi/CHsNew6yQr4/hqdefault.jpg)](https://youtu.be/CHsNew6yQr4) | [![Demo WYSIWYG tsreport-editor bahasa Jepang](https://img.youtube.com/vi/0I3ljxLUbys/hqdefault.jpg)](https://youtu.be/0I3ljxLUbys) |
+
 ## Menata huruf sistem tulisan dunia dengan benar, dengan satu mesin
 
 Laporan multibahasa tidak dapat ditampilkan dengan benar hanya dengan menulis string langsung ke dalam PDF. Pemilihan glif, pengukuran lebar karakter, penempatan posisi, pemenggalan baris, penulisan vertikal, dan penyematan font ke dalam PDF — hanya ketika seluruh rangkaian pemrosesan ini bekerja saling terkait, Anda mendapatkan halaman yang diharapkan.
@@ -2604,6 +2612,13 @@ Pengumpulan rujukan gambar menangani bukan hanya elemen `image` biasa, melainkan
 - Tanpa paket dependensi runtime
 
 Kompresi dan dekompresi Brotli WOFF2 memakai implementasi pure TypeScript yang tertanam dalam tsreport-core, baik di Node.js maupun browser. Tidak diperlukan paket eksternal, WASM, maupun pustaka native.
+
+## Proyek terkait
+
+- [tsreport-core](https://github.com/pontasan/tsreport-core)
+- [tsreport-editor](https://github.com/pontasan/tsreport-editor)
+- [tsreport-sdk](https://github.com/pontasan/tsreport-sdk)
+- [tsreport-react](https://github.com/pontasan/tsreport-react)
 
 ## Lisensi
 
