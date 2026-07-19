@@ -203,7 +203,18 @@ describe('JPEG decoder', () => {
     expect(transformed.samples[0]).toBeGreaterThan(transformed.samples[1]!)
   })
 
-  it.skipIf(!LIBJPEG_TOOLS_AVAILABLE)('matches libjpeg-turbo per sample across process, scan, restart, and subsampling combinations', () => {
+  const libjpegOracleVariants = [
+    ['sequential 4:4:4', ['-quality', '90', '-sample', '1x1,1x1,1x1']],
+    ['sequential 4:2:0', ['-quality', '90', '-sample', '2x2,1x1,1x1']],
+    ['progressive', ['-quality', '90', '-progressive']],
+    ['arithmetic sequential', ['-quality', '90', '-arithmetic']],
+    ['arithmetic progressive', ['-quality', '90', '-arithmetic', '-progressive']],
+    ['restart interval', ['-quality', '90', '-restart', '1B']],
+    ['lossless', ['-lossless', '4']],
+    ['lossless restart interval', ['-lossless', '4', '-restart', '1']],
+  ] as const
+
+  it.skipIf(!LIBJPEG_TOOLS_AVAILABLE).each(libjpegOracleVariants)('matches libjpeg-turbo per sample for %s', (name, arguments_) => {
     const width = 17
     const height = 13
     const header = new TextEncoder().encode(`P6\n${width} ${height}\n255\n`)
@@ -217,28 +228,24 @@ describe('JPEG decoder', () => {
         ppm[position++] = (x * 11 + y * 7) & 255
       }
     }
-    const matrix = [
-      ['-quality', '90', '-sample', '1x1,1x1,1x1'],
-      ['-quality', '90', '-sample', '2x2,1x1,1x1'],
-      ['-quality', '90', '-progressive'],
-      ['-quality', '90', '-arithmetic'],
-      ['-quality', '90', '-arithmetic', '-progressive'],
-      ['-quality', '90', '-restart', '1B'],
-      ['-lossless', '4'],
-      ['-lossless', '4', '-restart', '1'],
-    ]
-    for (let variant = 0; variant < matrix.length; variant++) {
-      const encoded = spawnSync('cjpeg', matrix[variant]!, { input: ppm })
-      expect(encoded.status, encoded.stderr.toString()).toBe(0)
-      const jpeg = new Uint8Array(encoded.stdout)
-      const expected = oracleRgb(jpeg)
-      const actual = decodeJpegToRgba(jpeg).rgba
-      expect(expected.length).toBe(width * height * 3)
-      for (let sample = 0; sample < expected.length; sample++) {
-        const mine = actual[Math.trunc(sample / 3) * 4 + sample % 3]!
-        expect(Math.abs(mine - expected[sample]!), `variant ${variant}, sample ${sample}`).toBeLessThanOrEqual(3)
+
+    const encoded = spawnSync('cjpeg', arguments_, { input: ppm })
+    expect(encoded.status, encoded.stderr.toString()).toBe(0)
+    const jpeg = new Uint8Array(encoded.stdout)
+    const expected = oracleRgb(jpeg)
+    const actual = decodeJpegToRgba(jpeg).rgba
+    expect(expected.length).toBe(width * height * 3)
+    let largestDifference = 0
+    let largestDifferenceSample = 0
+    for (let sample = 0; sample < expected.length; sample++) {
+      const mine = actual[Math.trunc(sample / 3) * 4 + sample % 3]!
+      const difference = Math.abs(mine - expected[sample]!)
+      if (difference > largestDifference) {
+        largestDifference = difference
+        largestDifferenceSample = sample
       }
     }
+    expect(largestDifference, `${name}, sample ${largestDifferenceSample}`).toBeLessThanOrEqual(3)
   })
 })
 
