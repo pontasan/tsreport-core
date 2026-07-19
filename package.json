@@ -2,6 +2,14 @@
   "name": "tsreport-core",
   "version": "1.0.0",
   "description": "Pure TypeScript report engine: OpenType font parsing and shaping, band-based report layout, barcodes, SVG, and PDF rendering with embedded fonts - zero runtime dependencies",
+  "homepage": "https://github.com/pontasan/tsreport-core#readme",
+  "bugs": {
+    "url": "https://github.com/pontasan/tsreport-core/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pontasan/tsreport-core.git"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -69,7 +77,10 @@
     "esbuild": "^0.28.1"
   },
   "license": "MIT OR Apache-2.0",
-  "sideEffects": ["./dist/node.js", "./dist/node.cjs"],
+  "sideEffects": [
+    "./dist/node.js",
+    "./dist/node.cjs"
+  ],
   "engines": {
     "node": ">=18"
   },
@@ -84,5 +95,10 @@
     "barcode",
     "invoice",
     "zero-dependency"
-  ]
+  ],
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "fsevents@2.3.3": true,
+    "sharp@0.34.5": true
+  }
 }
